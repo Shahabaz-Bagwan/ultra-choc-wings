@@ -129,6 +129,3 @@ dist
 .yarn/install-state.gz
 .pnp.*
 
-
-# Output dir from ergogen
-output

@@ -85,24 +85,24 @@ outlines:
       what: polygon
       points:
         - ref: matrix_middle_top # Top left
-          shift: [-2px-0.5lpx, 0.5py]
+          shift: [-2px-0.5lpx, 0.6py]
         - ref: matrix_middle_top # Top right
-          shift: [0, 0.5py]
+          shift: [3px, 0.6py]
         - ref: matrix_middle_top # Bottom right (in board)
-          shift: [0, -1py]
+          shift: [3px, -0.6py]
         - ref: matrix_middle_top # Bottom left
           shift: [-2px-0.5lpx, -1py]
     battery:
       what: polygon
       points:
         - ref: matrix_middle_home # Top left (in board)
-          shift: [-0.5lpx, 0]
+          shift: [-lpx, 0.6py]
         - ref: matrix_inner_home # Top right (in board)
-          shift: [0.5lpx, 0]
+          shift: [lpx, 0.6py]
         - ref: thumbfan_home_thumb # Bottom right
-          shift: [0.5lpx, -0.5py]
+          shift: [1.4lpx, -0.6py]
         - ref: thumbfan_inner_thumb # Bottom left
-          shift: [-0.5lpx, -0.5py]
+          shift: [-0.65lpx, -0.6py]
   board:
     - what: outline
       name: board_noround
