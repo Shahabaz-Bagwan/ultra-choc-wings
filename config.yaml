@@ -55,16 +55,21 @@ points:
     thumbfan:
       anchor:
         ref: matrix_inner_bottom
-        shift: [-2px, -py]
+        shift: [-1.4px, -py]
       columns:
         inner:
           key:
+            origin: [-11.75, -9]
             column_net: P2
         middle:
           key:
+            splay: -10
+            origin: [-7.75, -9]
             column_net: P1
         home:
           key:
+            splay: -20
+            origin: [0, -10]
             column_net: P0
       rows:
         thumb:
