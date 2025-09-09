@@ -246,13 +246,6 @@ pcbs:
           from: BAT+
           to: RAW
           side: B
-      monkey:
-        what: monkey
-        where:
-          # In middle of MCU
-          ref: matrix_pinky_top
-          shift: [-1.5, 1py+2.5]
-          rotate: 90
   top_plate:
     outlines:
       top_plate:
