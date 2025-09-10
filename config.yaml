@@ -95,14 +95,14 @@ outlines:
     battery:
       what: polygon
       points:
-        - ref: matrix_middle_home # Top left (in board)
-          shift: [-0.5lpx, 0]
-        - ref: matrix_inner_home # Top right (in board)
-          shift: [0.5lpx, 0]
+        - ref: matrix_pinky_bottom # Top left (in board)
+          shift: [-10, -10]
+        - ref: matrix_index_bottom # Top right (in board)
+          shift: [0, 30]
         - ref: thumbfan_home_thumb # Bottom right
-          shift: [0.5lpx, -0.5py]
-        - ref: thumbfan_inner_thumb # Bottom left
-          shift: [-0.5lpx, -0.5py]
+          shift: [0, 0]
+        - ref: thumbfan_middle_thumb # Bottom left
+          shift: [-0, -15]
   board:
     - what: outline
       name: board_noround
@@ -224,15 +224,15 @@ pcbs:
           net: RAW
           width: 1.5
           height: 1.5
-      battery_pads:
-        what: battery_pad
+      battery_connector:
+        what: jst-s2b-ph-kl
         where:
           ref: matrix_index_bottom
-          shift: [0, -0.5ky-2]
-          rotate: 0
+          shift: [-kx, -5]
+          rotate: -45 
         params:
-          plus: BAT+
-          minus: GND
+            pos: BAT+
+            neg: GND
       slider_f:
         what: slider
         where:
