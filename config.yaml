@@ -231,7 +231,7 @@ pcbs:
           shift: [-kx, -5]
           rotate: -45 
         params:
-            pos: BAT+
+            pos: pos
             neg: GND
       slider_f:
         what: slider
@@ -239,7 +239,7 @@ pcbs:
           ref: matrix_middle_top
           shift: [-1px, 0.5px-3]
         params:
-          from: BAT+
+          from: pos
           to: RAW
           side: F
       slider_b:
@@ -248,7 +248,7 @@ pcbs:
           ref: matrix_middle_top
           shift: [-1px, 0.5px-3]
         params:
-          from: BAT+
+          from: pos
           to: RAW
           side: B
   top_plate:
