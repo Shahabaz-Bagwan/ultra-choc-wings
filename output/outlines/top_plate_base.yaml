@@ -1,0 +1,172 @@
+models:
+    export:
+        models:
+            a:
+                models: {}
+                origin:
+                    - 0
+                    - 0
+            b:
+                paths:
+                    p1:
+                        type: line
+                        origin:
+                            - -8
+                            - -8
+                        end:
+                            - -8
+                            - 42
+                    p2:
+                        type: line
+                        origin:
+                            - -8
+                            - 42
+                        end:
+                            - 9
+                            - 42
+                    p3:
+                        type: line
+                        origin:
+                            - 9
+                            - 42
+                        end:
+                            - 9
+                            - 55.6
+                    p4:
+                        type: line
+                        origin:
+                            - 9
+                            - 55.6
+                        end:
+                            - 26
+                            - 55.6
+                    p5:
+                        type: line
+                        origin:
+                            - 26
+                            - 55.6
+                        end:
+                            - 26
+                            - 62.4
+                    p6:
+                        type: line
+                        origin:
+                            - 26
+                            - 62.4
+                        end:
+                            - 42
+                            - 62.4
+                    p7:
+                        type: line
+                        origin:
+                            - 42
+                            - 62.4
+                        end:
+                            - 42
+                            - 53.9
+                    p8:
+                        type: line
+                        origin:
+                            - 42
+                            - 53.9
+                        end:
+                            - 59
+                            - 53.9
+                    p9:
+                        type: line
+                        origin:
+                            - 59
+                            - 53.9
+                        end:
+                            - 59
+                            - 50.5
+                    p10:
+                        type: line
+                        origin:
+                            - 59
+                            - 50.5
+                        end:
+                            - 76
+                            - 50.5
+                    p11:
+                        type: line
+                        origin:
+                            - 76
+                            - 50.5
+                        end:
+                            - 85.5785469
+                            - -25.0505493
+                    p12:
+                        type: line
+                        origin:
+                            - 85.5785469
+                            - -25.0505493
+                        end:
+                            - 53.3774463
+                            - -16.4717802
+                    p13:
+                        type: line
+                        origin:
+                            - 53.3774463
+                            - -16.4717802
+                        end:
+                            - 43
+                            - 3.9000000000000004
+                    p14:
+                        type: line
+                        origin:
+                            - 43
+                            - 3.9000000000000004
+                        end:
+                            - 43
+                            - 12.399999999999999
+                    p15:
+                        type: line
+                        origin:
+                            - 43
+                            - 12.399999999999999
+                        end:
+                            - 25
+                            - 12.399999999999999
+                    p16:
+                        type: line
+                        origin:
+                            - 25
+                            - 12.399999999999999
+                        end:
+                            - 25
+                            - 5.6
+                    p17:
+                        type: line
+                        origin:
+                            - 25
+                            - 5.6
+                        end:
+                            - 8
+                            - 5.6
+                    p18:
+                        type: line
+                        origin:
+                            - 8
+                            - 5.6
+                        end:
+                            - 8
+                            - -8
+                    p19:
+                        type: line
+                        origin:
+                            - 8
+                            - -8
+                        end:
+                            - -8
+                            - -8
+                origin:
+                    - 0
+                    - 0
+        origin:
+            - 0
+            - 0
+units: mm
+origin:
+    - 0
+    - 0

@@ -1,0 +1,257 @@
+units:
+  # Size of each key. cx and cy for choc, u and U for MX.
+  kx: 16 
+  ky: 16
+  # key spread and padding
+  px: 17
+  py: 17
+  # From that, get the spacing between keys
+  ksx: px-kx
+  ksy: py-ky
+  lpx: px + 1
+  
+  # Stagger for all of the different columns
+  stagger1: 0.8py # ring column one key above the pinky column
+  stagger2: 0.4py # middle column .3 key above the ring column
+  stagger3: -0.5py # index
+  stagger4: -0.2py # inner
+
+  xiao_length: 21
+  xiao_width: 17.78
+
+points:
+  key:
+    spread: 1px
+    padding: 1py
+  zones:
+    matrix:
+      columns:
+        pinky:
+          key:
+            column_net: P5
+        ring:
+          key:
+            stagger: stagger1
+            column_net: P3
+        middle:
+          key:
+            stagger: stagger2
+            column_net: P2
+        index:
+          key:
+            stagger: stagger3
+            column_net: P1
+        inner:
+          key:
+            stagger: stagger4
+            column_net: P0
+      rows:
+        bottom:
+          row_net: P10
+        home:
+          row_net: P9
+        top:
+          row_net: P8
+    thumbfan:
+      anchor:
+        ref: matrix_inner_bottom
+        shift: [-1.4px, -py]
+      columns:
+        inner:
+          key:
+            origin: [-11.75, -9]
+            column_net: P2
+        middle:
+          key:
+            splay: -10
+            origin: [-7.75, -9]
+            column_net: P1
+        home:
+          key:
+            splay: -20
+            origin: [0, -10]
+            column_net: P0
+      rows:
+        thumb:
+          row_net: P4
+
+outlines:
+  board_noround:
+    keys:
+      what: rectangle
+      where: true
+      size: [lpx, py]
+    mcu:
+      what: polygon
+      points:
+        - ref: matrix_middle_top # Top left
+          shift: [-2px-0.5lpx, 0.5py]
+        - ref: matrix_middle_top # Top right
+          shift: [0, 0.5py]
+        - ref: matrix_middle_top # Bottom right (in board)
+          shift: [0, -1py]
+        - ref: matrix_middle_top # Bottom left
+          shift: [-2px-0.5lpx, -1py]
+    battery:
+      what: polygon
+      points:
+        - ref: matrix_middle_home # Top left (in board)
+          shift: [-0.5lpx, 0]
+        - ref: matrix_inner_home # Top right (in board)
+          shift: [0.5lpx, 0]
+        - ref: thumbfan_home_thumb # Bottom right
+          shift: [0.5lpx, -0.5py]
+        - ref: thumbfan_inner_thumb # Bottom left
+          shift: [-0.5lpx, -0.5py]
+  board:
+    - what: outline
+      name: board_noround
+      fillet: 1
+
+  top_plate_base:
+    keys:
+      what: polygon
+      points:
+        - ref: matrix_pinky_top
+          shift: [-0.5kx, 0.5ky]
+        - ref: matrix_pinky_top
+          shift: [0.5kx+ksx, 0.5ky]
+        - ref: matrix_ring_top
+          shift: [-0.5kx, 0.5ky]
+        - ref: matrix_ring_top
+          shift: [0.5kx+ksx, 0.5ky]
+        - ref: matrix_middle_top
+          shift: [-0.5kx, 0.5ky]
+        - ref: matrix_middle_top
+          shift: [0.5kx, 0.5ky]
+        - ref: matrix_index_top
+          shift: [-0.5kx-ksx, 0.5ky]
+        - ref: matrix_index_top
+          shift: [0.5kx, 0.5ky]
+        - ref: matrix_inner_top
+          shift: [-0.5kx-ksx, 0.5ky]
+        - ref: matrix_inner_top
+          shift: [0.5kx, 0.5ky]
+        - ref: thumbfan_home_thumb
+          shift: [0.5kx, -0.5ky]
+        - ref: thumbfan_middle_thumb
+          shift: [-0.5kx, -0.5ky]
+        - ref: matrix_index_bottom
+          shift: [-0.5kx, -0.5ky]
+        - ref: matrix_middle_bottom
+          shift: [0.5kx+ksx, -0.5ky]
+        - ref: matrix_middle_bottom
+          shift: [-0.5kx-ksx, -0.5ky]
+        - ref: matrix_ring_bottom
+          shift: [0.5kx, -0.5ky]
+        - ref: matrix_ring_bottom
+          shift: [-0.5kx-ksx, -0.5ky]
+        - ref: matrix_pinky_bottom
+          shift: [0.5kx, -0.5ky]
+        - ref: matrix_pinky_bottom
+          shift: [-0.5kx, -0.5ky]
+  top_plate:
+    top_plate_base:
+      what: outline
+      name: top_plate_base
+      fillet: 1
+    cutouts:
+      what: rectangle
+      where: true
+      size: 14
+      operation: subtract
+
+pcbs:
+  main:
+    outlines:
+      main:
+        outline: board
+    footprints:
+      pg1316s_switch:
+        what: pg1316s
+        where: true
+        params:
+          from: "{{colrow}}"
+          to: "{{column_net}}"
+      diode:
+        what: pad_diode
+        where: true
+        params:
+          from: "{{colrow}}"
+          to: "{{row_net}}"
+        adjust:
+          shift: [0, -0.3py]
+      diode_via_1:
+        what: via
+        where: true
+        params:
+          net: "{{colrow}}"
+        adjust:
+          shift: [2.8, -0.3py]
+      diode_via_2:
+        what: via
+        where: true
+        params:
+          net: "{{row_net}}"
+        adjust:
+          shift: [-2.8, -0.3py]
+      key_via_1:
+        what: via
+        where: true
+        params:
+          net: "{{column_net}}"
+        adjust:
+          shift: [0, 3.67]
+      key_via_2:
+        what: via
+        where: true
+        params:
+          net: "{{colrow}}"
+        adjust:
+          shift: [0, 2.67]
+      xiao_flippable:
+        what: xiao_flippable
+        where:
+          ref: matrix_pinky_top
+          shift: [0.5px-0.5ksx-xiao_width-(kx-xiao_width)/2, 0.5py+0.5ksy]
+          rotate: -90
+      raw_pad:
+        what: pad
+        where:
+          ref: matrix_pinky_top
+          shift: [0, 0.5py]
+        params:
+          net: RAW
+          width: 1.5
+          height: 1.5
+      battery_pads:
+        what: battery_pad
+        where:
+          ref: matrix_index_bottom
+          shift: [0, -0.5ky-2]
+          rotate: 0
+        params:
+          plus: BAT+
+          minus: GND
+      slider_f:
+        what: slider
+        where:
+          ref: matrix_middle_top
+          shift: [-1px, 0.5px-3]
+        params:
+          from: BAT+
+          to: RAW
+          side: F
+      slider_b:
+        what: slider
+        where:
+          ref: matrix_middle_top
+          shift: [-1px, 0.5px-3]
+        params:
+          from: BAT+
+          to: RAW
+          side: B
+  top_plate:
+    outlines:
+      top_plate:
+        outline: top_plate
