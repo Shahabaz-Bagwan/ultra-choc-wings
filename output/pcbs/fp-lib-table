@@ -1,4 +1,0 @@
-(fp_lib_table
-  (version 7)
-  (lib (name "leptiosis")(type "KiCad")(uri "/home/shahabaz/repos/leptosis/hardware/library/leptiosis.pretty")(options "")(descr ""))
-)
