@@ -63,8 +63,8 @@ points:
             column_net: P2
         middle:
           key:
-            splay: -10
-            origin: [-7.75, -9]
+            splay: -15
+            origin: [-6.75, -9]
             column_net: P1
         home:
           key:
