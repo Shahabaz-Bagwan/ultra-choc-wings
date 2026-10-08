@@ -1,0 +1,13 @@
+file_format: "1"
+id: ultra_choc_wings
+name: Ultra Choc Wings
+type: shield
+url: https://github.com/Shahabaz-Bagwan/ultra-choc-wings
+requires: [seeeduino_xiao_ble]
+features:
+  - keys
+  - backlight
+siblings:
+  - ultra_choc_wings_dongle
+  - ultra_choc_wings_left
+  - ultra_choc_wings_right
