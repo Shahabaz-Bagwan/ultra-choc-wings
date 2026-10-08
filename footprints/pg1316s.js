@@ -39,10 +39,10 @@ module.exports = {
       (fp_line (start 6.75 6.5) (end -6.75 6.5) (layer B.Fab) (width 0.1))
       (fp_line (start -6.75 6.5) (end -6.75 -6.5) (layer B.Fab) (width 0.1))
 
-      (fp_circle (center -5.8 -2.75) (end -5.2 -2.75) (layer Edge.Cuts) (width 0.1))
-      (fp_circle (center -5.8 2.75) (end -5.3 2.75) (layer Edge.Cuts) (width 0.1))
-      (fp_circle (center 5.8 -2.75) (end 6.4 -2.75) (layer Edge.Cuts) (width 0.1))
-      (fp_circle (center 5.8 2.75) (end 6.3 2.75) (layer Edge.Cuts) (width 0.1))
+      (pad "" np_thru_hole circle (at -5.8 -2.75) (size 1.2 1.2) (drill 1.2) (layers *.Cu *.Mask))
+      (pad "" np_thru_hole circle (at -5.8 2.75) (size 1 1) (drill 1) (layers *.Cu *.Mask))
+      (pad "" np_thru_hole circle (at 5.8 -2.75) (size 1.2 1.2) (drill 1.2) (layers *.Cu *.Mask))
+      (pad "" np_thru_hole circle (at 5.8 2.75) (size 1 1) (drill 1) (layers *.Cu *.Mask))
 
       (pad 1 smd roundrect (at -1.55 2.65 ${p.rot}) (size 3.25 2) (layers F.Cu F.Paste F.Mask) (roundrect_rratio 0.125) ${p.from.str})
       (pad 1 smd roundrect (at -1.55 2.65 ${p.rot}) (size 2 2) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.125) ${p.from.str})

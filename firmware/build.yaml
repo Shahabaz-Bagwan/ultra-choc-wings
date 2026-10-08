@@ -1,0 +1,12 @@
+# Firmware builds for the GitHub Actions workflow in .github/workflows/zmk.yml.
+# The dongle is the ZMK central (plugs into the computer); both halves are
+# peripherals, which is what lets them run for months on a CR2032.
+include:
+  - board: seeeduino_xiao_ble
+    shield: ultra_choc_wings_dongle
+  - board: seeeduino_xiao_ble
+    shield: ultra_choc_wings_left
+  - board: seeeduino_xiao_ble
+    shield: ultra_choc_wings_right
+  - board: seeeduino_xiao_ble
+    shield: settings_reset

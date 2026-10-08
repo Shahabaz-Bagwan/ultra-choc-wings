@@ -1,0 +1,1019 @@
+** Drc report for pcb/ultra-choc-wings.kicad_pcb **
+** Created on 2026-10-08 16:01:12 **
+
+** Found 276 DRC violations **
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(57.6425 mm, 0.7557 mm): Line on F.Silkscreen
+    @(64.3298 mm, 2.6511 mm): Line on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(68.2500 mm, -2.0000 mm): Line on F.Silkscreen
+    @(76.0000 mm, -0.5000 mm): Line on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(34.2500 mm, -13.9000 mm): Line on F.Silkscreen
+    @(42.0000 mm, -12.4000 mm): Line on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(59.0000 mm, -3.9000 mm): Line on F.Silkscreen
+    @(51.2500 mm, -5.4000 mm): Line on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(36.2000 mm, 0.5000 mm): Line on F.Silkscreen
+    @(43.1500 mm, 0.6000 mm): Line on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(68.2500 mm, -19.0000 mm): Line on F.Silkscreen
+    @(76.0000 mm, -17.5000 mm): Line on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(68.2500 mm, -36.0000 mm): Line on F.Silkscreen
+    @(76.0000 mm, -34.5000 mm): Line on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(59.0000 mm, -37.9000 mm): Line on F.Silkscreen
+    @(51.2500 mm, -39.4000 mm): Line on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(51.2500 mm, -22.4000 mm): Line on F.Silkscreen
+    @(59.0000 mm, -20.9000 mm): Line on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(25.0000 mm, -22.6000 mm): Line on F.Silkscreen
+    @(17.2500 mm, -24.1000 mm): Line on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(8.0000 mm, 8.0000 mm): Line on F.Silkscreen
+    @(0.2500 mm, 6.5000 mm): Line on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(8.0000 mm, -9.0000 mm): Line on F.Silkscreen
+    @(0.2500 mm, -10.5000 mm): Line on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(8.0000 mm, -26.0000 mm): Line on F.Silkscreen
+    @(0.2500 mm, -27.5000 mm): Line on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(25.0000 mm, -5.6000 mm): Line on F.Silkscreen
+    @(17.2500 mm, -7.1000 mm): Line on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(42.0000 mm, -29.4000 mm): Line on F.Silkscreen
+    @(34.2500 mm, -30.9000 mm): Line on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(34.2500 mm, -47.9000 mm): Line on F.Silkscreen
+    @(42.0000 mm, -46.4000 mm): Line on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(25.0000 mm, -39.6000 mm): Line on F.Silkscreen
+    @(17.2500 mm, -41.1000 mm): Line on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(86.5388 mm, 9.3478 mm): Line on F.Silkscreen
+    @(80.9031 mm, 5.2795 mm): Line on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(72.9500 mm, -19.0000 mm): Line on B.Silkscreen
+    @(76.0000 mm, -17.5000 mm): Line on B.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(72.9500 mm, -36.0000 mm): Line on B.Silkscreen
+    @(76.0000 mm, -34.5000 mm): Line on B.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(59.0000 mm, -3.9000 mm): Line on B.Silkscreen
+    @(55.9500 mm, -5.4000 mm): Line on B.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(59.0000 mm, -37.9000 mm): Line on B.Silkscreen
+    @(55.9500 mm, -39.4000 mm): Line on B.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(38.9500 mm, -47.9000 mm): Line on B.Silkscreen
+    @(42.0000 mm, -46.4000 mm): Line on B.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(55.9500 mm, -22.4000 mm): Line on B.Silkscreen
+    @(59.0000 mm, -20.9000 mm): Line on B.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(8.0000 mm, 8.0000 mm): Line on B.Silkscreen
+    @(4.9500 mm, 6.5000 mm): Line on B.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(8.0000 mm, -26.0000 mm): Line on B.Silkscreen
+    @(4.9500 mm, -27.5000 mm): Line on B.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(25.0000 mm, -5.6000 mm): Line on B.Silkscreen
+    @(21.9500 mm, -7.1000 mm): Line on B.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(8.0000 mm, -9.0000 mm): Line on B.Silkscreen
+    @(4.9500 mm, -10.5000 mm): Line on B.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(68.8697 mm, 3.8676 mm): Line on B.Silkscreen
+    @(57.6425 mm, 0.7557 mm): Line on B.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(76.0000 mm, -0.5000 mm): Line on B.Silkscreen
+    @(72.9500 mm, -2.0000 mm): Line on B.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(47.8500 mm, 0.6000 mm): Line on B.Silkscreen
+    @(36.2000 mm, 0.5000 mm): Line on B.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(90.3888 mm, 12.0436 mm): Line on B.Silkscreen
+    @(80.9031 mm, 5.2795 mm): Line on B.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(25.0000 mm, -22.6000 mm): Line on B.Silkscreen
+    @(21.9500 mm, -24.1000 mm): Line on B.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(25.0000 mm, -39.6000 mm): Line on B.Silkscreen
+    @(21.9500 mm, -41.1000 mm): Line on B.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(42.0000 mm, -29.4000 mm): Line on B.Silkscreen
+    @(38.9500 mm, -30.9000 mm): Line on B.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(38.9500 mm, -13.9000 mm): Line on B.Silkscreen
+    @(42.0000 mm, -12.4000 mm): Line on B.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; Severity: warning
+    @(-8.0000 mm, -42.0000 mm): Line on B.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; Severity: warning
+    @(-8.0000 mm, -42.0000 mm): Line on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; Severity: warning
+    @(82.5809 mm, 16.8309 mm): Reference 'SW18'
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; Severity: warning
+    @(13.7000 mm, -61.2500 mm): Line on B.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; Severity: warning
+    @(13.7000 mm, -61.2500 mm): Line on B.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; Severity: warning
+    @(13.7000 mm, -58.4000 mm): Line on B.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; Severity: warning
+    @(20.3000 mm, -58.4000 mm): Line on B.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; Severity: warning
+    @(13.7000 mm, -61.2500 mm): Line on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; Severity: warning
+    @(13.7000 mm, -61.2500 mm): Line on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; Severity: warning
+    @(13.7000 mm, -58.4000 mm): Line on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; Severity: warning
+    @(20.3000 mm, -58.4000 mm): Line on F.Silkscreen
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; Severity: error
+    @(6.3500 mm, -61.1200 mm): Pad [<no net>] of xiao-ble1 on F.Cu
+    @(7.6200 mm, -61.1200 mm): PTH pad [<no net>] of xiao-ble1
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; Severity: error
+    @(6.3500 mm, -61.1200 mm): Pad [<no net>] of xiao-ble1 on F.Cu
+    @(5.8420 mm, -61.1200 mm): Pad [<no net>] of xiao-ble1 on F.Cu
+[solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; Severity: error
+    @(6.3500 mm, -61.1200 mm): Pad [<no net>] of xiao-ble1 on B.Cu
+    @(7.6200 mm, -61.1200 mm): PTH pad [<no net>] of xiao-ble1
+[solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; Severity: error
+    @(6.3500 mm, -61.1200 mm): Pad [<no net>] of xiao-ble1 on B.Cu
+    @(5.8420 mm, -61.1200 mm): Pad [<no net>] of xiao-ble1 on B.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; Severity: error
+    @(-6.3500 mm, -61.1200 mm): Pad [<no net>] of xiao-ble1 on F.Cu
+    @(-5.8420 mm, -61.1200 mm): Pad [<no net>] of xiao-ble1 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; Severity: error
+    @(-6.3500 mm, -61.1200 mm): Pad [<no net>] of xiao-ble1 on F.Cu
+    @(-7.6200 mm, -61.1200 mm): PTH pad [<no net>] of xiao-ble1
+[solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; Severity: error
+    @(-6.3500 mm, -61.1200 mm): Pad [<no net>] of xiao-ble1 on B.Cu
+    @(-7.6200 mm, -61.1200 mm): PTH pad [<no net>] of xiao-ble1
+[solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; Severity: error
+    @(-6.3500 mm, -61.1200 mm): Pad [<no net>] of xiao-ble1 on B.Cu
+    @(-5.8420 mm, -61.1200 mm): Pad [<no net>] of xiao-ble1 on B.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; Severity: error
+    @(6.3500 mm, -58.5800 mm): Pad [<no net>] of xiao-ble1 on F.Cu
+    @(5.8420 mm, -58.5800 mm): Pad [<no net>] of xiao-ble1 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; Severity: error
+    @(6.3500 mm, -58.5800 mm): Pad [<no net>] of xiao-ble1 on F.Cu
+    @(7.6200 mm, -58.5800 mm): PTH pad [<no net>] of xiao-ble1
+[solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; Severity: error
+    @(6.3500 mm, -58.5800 mm): Pad [<no net>] of xiao-ble1 on B.Cu
+    @(7.6200 mm, -58.5800 mm): PTH pad [<no net>] of xiao-ble1
+[solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; Severity: error
+    @(6.3500 mm, -58.5800 mm): Pad [<no net>] of xiao-ble1 on B.Cu
+    @(5.8420 mm, -58.5800 mm): Pad [<no net>] of xiao-ble1 on B.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; Severity: error
+    @(-6.3500 mm, -58.5800 mm): Pad [<no net>] of xiao-ble1 on F.Cu
+    @(-7.6200 mm, -58.5800 mm): PTH pad [<no net>] of xiao-ble1
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; Severity: error
+    @(-6.3500 mm, -58.5800 mm): Pad [<no net>] of xiao-ble1 on F.Cu
+    @(-5.8420 mm, -58.5800 mm): Pad [<no net>] of xiao-ble1 on F.Cu
+[solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; Severity: error
+    @(-6.3500 mm, -58.5800 mm): Pad [<no net>] of xiao-ble1 on B.Cu
+    @(-7.6200 mm, -58.5800 mm): PTH pad [<no net>] of xiao-ble1
+[solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; Severity: error
+    @(-6.3500 mm, -58.5800 mm): Pad [<no net>] of xiao-ble1 on B.Cu
+    @(-5.8420 mm, -58.5800 mm): Pad [<no net>] of xiao-ble1 on B.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; Severity: error
+    @(6.3500 mm, -56.0400 mm): Pad [<no net>] of xiao-ble1 on F.Cu
+    @(7.6200 mm, -56.0400 mm): PTH pad [<no net>] of xiao-ble1
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; Severity: error
+    @(6.3500 mm, -56.0400 mm): Pad [<no net>] of xiao-ble1 on F.Cu
+    @(5.8420 mm, -56.0400 mm): Pad [<no net>] of xiao-ble1 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; Severity: error
+    @(-12.5320 mm, -13.9700 mm): Polygon on F.Mask
+    @(4.8260 mm, -56.0400 mm): Track [VCC3] on F.Cu, length 1.6037 mm
+[solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; Severity: error
+    @(6.3500 mm, -56.0400 mm): Pad [<no net>] of xiao-ble1 on B.Cu
+    @(7.6200 mm, -56.0400 mm): PTH pad [<no net>] of xiao-ble1
+[solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; Severity: error
+    @(6.3500 mm, -56.0400 mm): Pad [<no net>] of xiao-ble1 on B.Cu
+    @(5.8420 mm, -56.0400 mm): Pad [<no net>] of xiao-ble1 on B.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; Severity: error
+    @(-6.3500 mm, -56.0400 mm): Pad [<no net>] of xiao-ble1 on F.Cu
+    @(-7.6200 mm, -56.0400 mm): PTH pad [<no net>] of xiao-ble1
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; Severity: error
+    @(-6.3500 mm, -56.0400 mm): Pad [<no net>] of xiao-ble1 on F.Cu
+    @(-5.8420 mm, -56.0400 mm): Pad [<no net>] of xiao-ble1 on F.Cu
+[solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; Severity: error
+    @(-6.3500 mm, -56.0400 mm): Pad [<no net>] of xiao-ble1 on B.Cu
+    @(-7.6200 mm, -56.0400 mm): PTH pad [<no net>] of xiao-ble1
+[solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; Severity: error
+    @(-6.3500 mm, -56.0400 mm): Pad [<no net>] of xiao-ble1 on B.Cu
+    @(-5.8420 mm, -56.0400 mm): Pad [<no net>] of xiao-ble1 on B.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; Severity: error
+    @(-9.9920 mm, -13.9700 mm): Polygon on F.Mask
+    @(4.7689 mm, -53.5000 mm): Track [P10] on F.Cu, length 1.7010 mm
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; Severity: error
+    @(6.3500 mm, -53.5000 mm): Pad [<no net>] of xiao-ble1 on F.Cu
+    @(7.6200 mm, -53.5000 mm): PTH pad [<no net>] of xiao-ble1
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; Severity: error
+    @(6.3500 mm, -53.5000 mm): Pad [<no net>] of xiao-ble1 on F.Cu
+    @(5.8420 mm, -53.5000 mm): Pad [<no net>] of xiao-ble1 on F.Cu
+[solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; Severity: error
+    @(6.3500 mm, -53.5000 mm): Pad [<no net>] of xiao-ble1 on B.Cu
+    @(7.6200 mm, -53.5000 mm): PTH pad [<no net>] of xiao-ble1
+[solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; Severity: error
+    @(6.3500 mm, -53.5000 mm): Pad [<no net>] of xiao-ble1 on B.Cu
+    @(5.8420 mm, -53.5000 mm): Pad [<no net>] of xiao-ble1 on B.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; Severity: error
+    @(-6.3500 mm, -53.5000 mm): Pad [<no net>] of xiao-ble1 on F.Cu
+    @(-5.8420 mm, -53.5000 mm): Pad [<no net>] of xiao-ble1 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; Severity: error
+    @(-6.3500 mm, -53.5000 mm): Pad [<no net>] of xiao-ble1 on F.Cu
+    @(-7.6200 mm, -53.5000 mm): PTH pad [<no net>] of xiao-ble1
+[solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; Severity: error
+    @(-6.3500 mm, -53.5000 mm): Pad [<no net>] of xiao-ble1 on B.Cu
+    @(-5.8420 mm, -53.5000 mm): Pad [<no net>] of xiao-ble1 on B.Cu
+[solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; Severity: error
+    @(-6.3500 mm, -53.5000 mm): Pad [<no net>] of xiao-ble1 on B.Cu
+    @(-7.6200 mm, -53.5000 mm): PTH pad [<no net>] of xiao-ble1
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; Severity: error
+    @(6.3500 mm, -50.9600 mm): Pad [<no net>] of xiao-ble1 on F.Cu
+    @(7.6200 mm, -50.9600 mm): PTH pad [<no net>] of xiao-ble1
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; Severity: error
+    @(6.3500 mm, -50.9600 mm): Pad [<no net>] of xiao-ble1 on F.Cu
+    @(5.8420 mm, -50.9600 mm): Pad [<no net>] of xiao-ble1 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; Severity: error
+    @(-7.4520 mm, -13.9700 mm): Polygon on F.Mask
+    @(4.8260 mm, -50.9600 mm): Track [P9] on F.Cu, length 1.9884 mm
+[solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; Severity: error
+    @(6.3500 mm, -50.9600 mm): Pad [<no net>] of xiao-ble1 on B.Cu
+    @(7.6200 mm, -50.9600 mm): PTH pad [<no net>] of xiao-ble1
+[solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; Severity: error
+    @(6.3500 mm, -50.9600 mm): Pad [<no net>] of xiao-ble1 on B.Cu
+    @(5.8420 mm, -50.9600 mm): Pad [<no net>] of xiao-ble1 on B.Cu
+[solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; Severity: error
+    @(-7.4520 mm, -13.9700 mm): Polygon on B.Mask
+    @(4.5376 mm, -50.9600 mm): Track [P4] on B.Cu, length 1.5937 mm
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; Severity: error
+    @(-6.3500 mm, -50.9600 mm): Pad [<no net>] of xiao-ble1 on F.Cu
+    @(-7.6200 mm, -50.9600 mm): PTH pad [<no net>] of xiao-ble1
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; Severity: error
+    @(-6.3500 mm, -50.9600 mm): Pad [<no net>] of xiao-ble1 on F.Cu
+    @(-5.8420 mm, -50.9600 mm): Pad [<no net>] of xiao-ble1 on F.Cu
+[solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; Severity: error
+    @(-6.3500 mm, -50.9600 mm): Pad [<no net>] of xiao-ble1 on B.Cu
+    @(-5.8420 mm, -50.9600 mm): Pad [<no net>] of xiao-ble1 on B.Cu
+[solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; Severity: error
+    @(-6.3500 mm, -50.9600 mm): Pad [<no net>] of xiao-ble1 on B.Cu
+    @(-7.6200 mm, -50.9600 mm): PTH pad [<no net>] of xiao-ble1
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; Severity: error
+    @(6.3500 mm, -48.4200 mm): Pad [<no net>] of xiao-ble1 on F.Cu
+    @(5.8420 mm, -48.4200 mm): Pad [<no net>] of xiao-ble1 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; Severity: error
+    @(6.3500 mm, -48.4200 mm): Pad [<no net>] of xiao-ble1 on F.Cu
+    @(7.6200 mm, -48.4200 mm): PTH pad [<no net>] of xiao-ble1
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; Severity: error
+    @(-4.9120 mm, -13.9700 mm): Polygon on F.Mask
+    @(4.5376 mm, -48.4200 mm): Track [P8] on F.Cu, length 1.7961 mm
+[solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; Severity: error
+    @(6.3500 mm, -48.4200 mm): Pad [<no net>] of xiao-ble1 on B.Cu
+    @(7.6200 mm, -48.4200 mm): PTH pad [<no net>] of xiao-ble1
+[solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; Severity: error
+    @(6.3500 mm, -48.4200 mm): Pad [<no net>] of xiao-ble1 on B.Cu
+    @(5.8420 mm, -48.4200 mm): Pad [<no net>] of xiao-ble1 on B.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; Severity: error
+    @(-6.3500 mm, -48.4200 mm): Pad [<no net>] of xiao-ble1 on F.Cu
+    @(-5.8420 mm, -48.4200 mm): Pad [<no net>] of xiao-ble1 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; Severity: error
+    @(-6.3500 mm, -48.4200 mm): Pad [<no net>] of xiao-ble1 on F.Cu
+    @(-7.6200 mm, -48.4200 mm): PTH pad [<no net>] of xiao-ble1
+[solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; Severity: error
+    @(-6.3500 mm, -48.4200 mm): Pad [<no net>] of xiao-ble1 on B.Cu
+    @(-5.8420 mm, -48.4200 mm): Pad [<no net>] of xiao-ble1 on B.Cu
+[solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; Severity: error
+    @(-6.3500 mm, -48.4200 mm): Pad [<no net>] of xiao-ble1 on B.Cu
+    @(-7.6200 mm, -48.4200 mm): PTH pad [<no net>] of xiao-ble1
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; Severity: error
+    @(6.3500 mm, -45.8800 mm): Pad [<no net>] of xiao-ble1 on F.Cu
+    @(7.6200 mm, -45.8800 mm): PTH pad [<no net>] of xiao-ble1
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; Severity: error
+    @(6.3500 mm, -45.8800 mm): Pad [<no net>] of xiao-ble1 on F.Cu
+    @(5.8420 mm, -45.8800 mm): Pad [<no net>] of xiao-ble1 on F.Cu
+[solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; Severity: error
+    @(6.3500 mm, -45.8800 mm): Pad [<no net>] of xiao-ble1 on B.Cu
+    @(7.6200 mm, -45.8800 mm): PTH pad [<no net>] of xiao-ble1
+[solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; Severity: error
+    @(6.3500 mm, -45.8800 mm): Pad [<no net>] of xiao-ble1 on B.Cu
+    @(5.8420 mm, -45.8800 mm): Pad [<no net>] of xiao-ble1 on B.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; Severity: error
+    @(-6.3500 mm, -45.8800 mm): Pad [<no net>] of xiao-ble1 on F.Cu
+    @(-5.8420 mm, -45.8800 mm): Pad [<no net>] of xiao-ble1 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; Severity: error
+    @(-6.3500 mm, -45.8800 mm): Pad [<no net>] of xiao-ble1 on F.Cu
+    @(-7.6200 mm, -45.8800 mm): PTH pad [<no net>] of xiao-ble1
+[solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; Severity: error
+    @(-6.3500 mm, -45.8800 mm): Pad [<no net>] of xiao-ble1 on B.Cu
+    @(-7.6200 mm, -45.8800 mm): PTH pad [<no net>] of xiao-ble1
+[solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; Severity: error
+    @(-6.3500 mm, -45.8800 mm): Pad [<no net>] of xiao-ble1 on B.Cu
+    @(-5.8420 mm, -45.8800 mm): Pad [<no net>] of xiao-ble1 on B.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; Severity: error
+    @(-17.6120 mm, -13.9700 mm): Polygon on F.Mask
+    @(5.8420 mm, -61.1200 mm): Pad [<no net>] of xiao-ble1 on F.Cu
+[solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; Severity: error
+    @(-18.6280 mm, -3.8100 mm): Polygon on B.Mask
+    @(-5.8420 mm, -61.1200 mm): Pad [<no net>] of xiao-ble1 on B.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; Severity: error
+    @(-15.0720 mm, -13.9700 mm): Polygon on F.Mask
+    @(5.8420 mm, -58.5800 mm): Pad [<no net>] of xiao-ble1 on F.Cu
+[solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; Severity: error
+    @(-16.0880 mm, -3.8100 mm): Polygon on B.Mask
+    @(-5.8420 mm, -58.5800 mm): Pad [<no net>] of xiao-ble1 on B.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; Severity: error
+    @(-12.5320 mm, -13.9700 mm): Polygon on F.Mask
+    @(5.8420 mm, -56.0400 mm): Pad [<no net>] of xiao-ble1 on F.Cu
+[solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; Severity: error
+    @(-13.5480 mm, -3.8100 mm): Polygon on B.Mask
+    @(-5.8420 mm, -56.0400 mm): Pad [<no net>] of xiao-ble1 on B.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; Severity: error
+    @(-9.9920 mm, -13.9700 mm): Polygon on F.Mask
+    @(5.8420 mm, -53.5000 mm): Pad [<no net>] of xiao-ble1 on F.Cu
+[solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; Severity: error
+    @(-11.0080 mm, -3.8100 mm): Polygon on B.Mask
+    @(-5.8420 mm, -53.5000 mm): Pad [<no net>] of xiao-ble1 on B.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; Severity: error
+    @(-7.4520 mm, -13.9700 mm): Polygon on F.Mask
+    @(5.8420 mm, -50.9600 mm): Pad [<no net>] of xiao-ble1 on F.Cu
+[solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; Severity: error
+    @(-8.4680 mm, -3.8100 mm): Polygon on B.Mask
+    @(-5.8420 mm, -50.9600 mm): Pad [<no net>] of xiao-ble1 on B.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; Severity: error
+    @(-4.9120 mm, -13.9700 mm): Polygon on F.Mask
+    @(5.8420 mm, -48.4200 mm): Pad [<no net>] of xiao-ble1 on F.Cu
+[solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; Severity: error
+    @(-5.9280 mm, -3.8100 mm): Polygon on B.Mask
+    @(-5.8420 mm, -48.4200 mm): Pad [<no net>] of xiao-ble1 on B.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; Severity: error
+    @(-2.3720 mm, -13.9700 mm): Polygon on F.Mask
+    @(5.8420 mm, -45.8800 mm): Pad [<no net>] of xiao-ble1 on F.Cu
+[solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; Severity: error
+    @(-3.3880 mm, -3.8100 mm): Polygon on B.Mask
+    @(-5.8420 mm, -45.8800 mm): Pad [<no net>] of xiao-ble1 on B.Cu
+[solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; Severity: error
+    @(-2.3720 mm, -13.9700 mm): Polygon on B.Mask
+    @(5.8420 mm, -45.8800 mm): Pad [<no net>] of xiao-ble1 on B.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; Severity: error
+    @(-3.3880 mm, -3.8100 mm): Polygon on F.Mask
+    @(-5.8420 mm, -45.8800 mm): Pad [<no net>] of xiao-ble1 on F.Cu
+[solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; Severity: error
+    @(-4.9120 mm, -13.9700 mm): Polygon on B.Mask
+    @(5.8420 mm, -48.4200 mm): Pad [<no net>] of xiao-ble1 on B.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; Severity: error
+    @(-5.9280 mm, -3.8100 mm): Polygon on F.Mask
+    @(-5.8420 mm, -48.4200 mm): Pad [<no net>] of xiao-ble1 on F.Cu
+[solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; Severity: error
+    @(-7.4520 mm, -13.9700 mm): Polygon on B.Mask
+    @(5.8420 mm, -50.9600 mm): Pad [<no net>] of xiao-ble1 on B.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; Severity: error
+    @(-8.4680 mm, -3.8100 mm): Polygon on F.Mask
+    @(-5.8420 mm, -50.9600 mm): Pad [<no net>] of xiao-ble1 on F.Cu
+[solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; Severity: error
+    @(-9.9920 mm, -13.9700 mm): Polygon on B.Mask
+    @(5.8420 mm, -53.5000 mm): Pad [<no net>] of xiao-ble1 on B.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; Severity: error
+    @(-11.0080 mm, -3.8100 mm): Polygon on F.Mask
+    @(-5.8420 mm, -53.5000 mm): Pad [<no net>] of xiao-ble1 on F.Cu
+[solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; Severity: error
+    @(-12.5320 mm, -13.9700 mm): Polygon on B.Mask
+    @(5.8420 mm, -56.0400 mm): Pad [<no net>] of xiao-ble1 on B.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; Severity: error
+    @(-13.5480 mm, -3.8100 mm): Polygon on F.Mask
+    @(-5.8420 mm, -56.0400 mm): Pad [<no net>] of xiao-ble1 on F.Cu
+[solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; Severity: error
+    @(-15.0720 mm, -13.9700 mm): Polygon on B.Mask
+    @(5.8420 mm, -58.5800 mm): Pad [<no net>] of xiao-ble1 on B.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; Severity: error
+    @(-16.0880 mm, -3.8100 mm): Polygon on F.Mask
+    @(-5.8420 mm, -58.5800 mm): Pad [<no net>] of xiao-ble1 on F.Cu
+[solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; Severity: error
+    @(-17.6120 mm, -13.9700 mm): Polygon on B.Mask
+    @(5.8420 mm, -61.1200 mm): Pad [<no net>] of xiao-ble1 on B.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; Severity: error
+    @(-18.6280 mm, -3.8100 mm): Polygon on F.Mask
+    @(-5.8420 mm, -61.1200 mm): Pad [<no net>] of xiao-ble1 on F.Cu
+[lib_footprint_issues]: The current configuration does not include the library ''.
+    Local override; Severity: warning
+    @(68.0000 mm, -25.5000 mm): Footprint SW14
+[lib_footprint_issues]: The current configuration does not include the library 'ucw'.
+    Local override; Severity: warning
+    @(17.0000 mm, -33.1000 mm): Footprint L5
+[lib_footprint_issues]: The current configuration does not include the library 'ucw'.
+    Local override; Severity: warning
+    @(34.0000 mm, -22.9000 mm): Footprint L7
+[lib_footprint_issues]: The current configuration does not include the library 'ucw'.
+    Local override; Severity: warning
+    @(40.3000 mm, 1.3000 mm): Footprint R16
+[lib_footprint_issues]: The current configuration does not include the library 'ucw'.
+    Local override; Severity: warning
+    @(-2.6000 mm, -9.8000 mm): Footprint R2
+[lib_footprint_issues]: The current configuration does not include the library 'ucw'.
+    Local override; Severity: warning
+    @(68.0000 mm, -28.0000 mm): Footprint L14
+[lib_footprint_issues]: The current configuration does not include the library ''.
+    Local override; Severity: warning
+    @(0.0000 mm, 0.0000 mm): Footprint SW1
+[lib_footprint_issues]: The current configuration does not include the library 'ucw'.
+    Local override; Severity: warning
+    @(88.0623 mm, 11.2691 mm): Footprint D18
+[lib_footprint_issues]: The current configuration does not include the library 'ucw'.
+    Local override; Severity: warning
+    @(73.0000 mm, 3.0000 mm): Footprint H3
+[lib_footprint_issues]: The current configuration does not include the library 'ucw'.
+    Local override; Severity: warning
+    @(70.6000 mm, -35.3000 mm): Footprint D15
+[lib_footprint_issues]: The current configuration does not include the library 'ucw'.
+    Local override; Severity: warning
+    @(24.5000 mm, -59.5000 mm): Footprint H1
+[lib_footprint_issues]: The current configuration does not include the library ''.
+    Local override; Severity: warning
+    @(17.0000 mm, -30.6000 mm): Footprint SW5
+[lib_footprint_issues]: The current configuration does not include the library 'ucw'.
+    Local override; Severity: warning
+    @(-2.6000 mm, 7.2000 mm): Footprint R1
+[lib_footprint_issues]: The current configuration does not include the library 'ucw'.
+    Local override; Severity: warning
+    @(48.4000 mm, -4.7000 mm): Footprint R10
+[lib_footprint_issues]: The current configuration does not include the library ''.
+    Local override; Severity: warning
+    @(63.2994 mm, 10.5537 mm): Footprint SW17
+[lib_footprint_issues]: The current configuration does not include the library 'ucw'.
+    Local override; Severity: warning
+    @(14.4000 mm, -40.4000 mm): Footprint R6
+[lib_footprint_issues]: The current configuration does not include the library 'ucw'.
+    Local override; Severity: warning
+    @(14.4000 mm, -6.4000 mm): Footprint R4
+[lib_footprint_issues]: The current configuration does not include the library 'ucw'.
+    Local override; Severity: warning
+    @(45.5000 mm, 1.3000 mm): Footprint D16
+[lib_footprint_issues]: The current configuration does not include the library 'ucw'.
+    Local override; Severity: warning
+    @(17.0000 mm, -16.1000 mm): Footprint L4
+[lib_footprint_issues]: The current configuration does not include the library 'ucw'.
+    Local override; Severity: warning
+    @(2.0000 mm, 10.8000 mm): Footprint H2
+[lib_footprint_issues]: The current configuration does not include the library ''.
+    Local override; Severity: warning
+    @(68.0000 mm, -42.5000 mm): Footprint SW15
+[lib_footprint_issues]: The current configuration does not include the library ''.
+    Local override; Severity: warning
+    @(51.0000 mm, -11.9000 mm): Footprint SW10
+[lib_footprint_issues]: The current configuration does not include the library 'ucw'.
+    Local override; Severity: warning
+    @(48.4000 mm, -38.7000 mm): Footprint R12
+[lib_footprint_issues]: The current configuration does not include the library ''.
+    Local override; Severity: warning
+    @(34.0000 mm, -37.4000 mm): Footprint SW8
+[lib_footprint_issues]: The current configuration does not include the library 'ucw'.
+    Local override; Severity: warning
+    @(31.4000 mm, -47.2000 mm): Footprint R9
+[lib_footprint_issues]: The current configuration does not include the library 'ucw'.
+    Local override; Severity: warning
+    @(83.8027 mm, 8.2865 mm): Footprint R18
+[lib_footprint_issues]: The current configuration does not include the library ''.
+    Local override; Severity: warning
+    @(0.0000 mm, -34.0000 mm): Footprint SW3
+[lib_footprint_issues]: The current configuration does not include the library 'ucw'.
+    Local override; Severity: warning
+    @(51.0000 mm, -14.4000 mm): Footprint L10
+[lib_footprint_issues]: The current configuration does not include the library 'ucw'.
+    Local override; Severity: warning
+    @(51.0000 mm, -31.4000 mm): Footprint L11
+[lib_footprint_issues]: The current configuration does not include the library 'ucw'.
+    Local override; Severity: warning
+    @(68.0000 mm, -45.0000 mm): Footprint L15
+[lib_footprint_issues]: The current configuration does not include the library ''.
+    Local override; Severity: warning
+    @(17.0000 mm, -13.6000 mm): Footprint SW4
+[lib_footprint_issues]: The current configuration does not include the library 'ucw'.
+    Local override; Severity: warning
+    @(68.0000 mm, -11.0000 mm): Footprint L13
+[lib_footprint_issues]: The current configuration does not include the library 'ucw'.
+    Local override; Severity: warning
+    @(19.6000 mm, -23.4000 mm): Footprint D5
+[lib_footprint_issues]: The current configuration does not include the library ''.
+    Local override; Severity: warning
+    @(51.0000 mm, -45.9000 mm): Footprint SW12
+[lib_footprint_issues]: The current configuration does not include the library 'ucw'.
+    Local override; Severity: warning
+    @(0.0000 mm, -2.5000 mm): Footprint L1
+[lib_footprint_issues]: The current configuration does not include the library 'ucw'.
+    Local override; Severity: warning
+    @(36.6000 mm, -30.2000 mm): Footprint D8
+[lib_footprint_issues]: The current configuration does not include the library 'ucw'.
+    Local override; Severity: warning
+    @(39.0000 mm, -2.5000 mm): Footprint R19
+[lib_footprint_issues]: The current configuration does not include the library 'ucw'.
+    Local override; Severity: warning
+    @(53.6000 mm, -38.7000 mm): Footprint D12
+[lib_footprint_issues]: The current configuration does not include the library 'ucw'.
+    Local override; Severity: warning
+    @(34.0000 mm, -56.9000 mm): Footprint L9
+[lib_footprint_issues]: The current configuration does not include the library ''.
+    Local override; Severity: warning
+    @(0.0000 mm, -17.0000 mm): Footprint SW2
+[lib_footprint_issues]: The current configuration does not include the library ''.
+    Local override; Severity: warning
+    @(82.8677 mm, 16.4214 mm): Footprint SW18
+[lib_footprint_issues]: The current configuration does not include the library ''.
+    Local override; Severity: warning
+    @(68.0000 mm, -8.5000 mm): Footprint SW13
+[lib_footprint_issues]: The current configuration does not include the library ''.
+    Local override; Severity: warning
+    @(0.0000 mm, -42.5000 mm): Footprint PAD1
+[lib_footprint_issues]: The current configuration does not include the library 'ucw'.
+    Local override; Severity: warning
+    @(36.6000 mm, -13.2000 mm): Footprint D7
+[lib_footprint_issues]: The current configuration does not include the library 'ucw'.
+    Local override; Severity: warning
+    @(-2.6000 mm, -26.8000 mm): Footprint R3
+[lib_footprint_issues]: The current configuration does not include the library 'ucw'.
+    Local override; Severity: warning
+    @(70.6000 mm, -1.3000 mm): Footprint D13
+[lib_footprint_issues]: The current configuration does not include the library 'ucw'.
+    Local override; Severity: warning
+    @(84.3016 mm, 14.3735 mm): Footprint L18
+[lib_footprint_issues]: The current configuration does not include the library 'ucw'.
+    Local override; Severity: warning
+    @(31.4000 mm, -30.2000 mm): Footprint R8
+[lib_footprint_issues]: The current configuration does not include the library 'ucw'.
+    Local override; Severity: warning
+    @(70.6000 mm, -18.3000 mm): Footprint D14
+[lib_footprint_issues]: The current configuration does not include the library ''.
+    Local override; Severity: warning
+    @(17.0000 mm, -47.6000 mm): Footprint SW6
+[lib_footprint_issues]: The current configuration does not include the library 'ucw'.
+    Local override; Severity: warning
+    @(17.0000 mm, -50.1000 mm): Footprint L6
+[lib_footprint_issues]: The current configuration does not include the library 'ucw'.
+    Local override; Severity: warning
+    @(48.4000 mm, -21.7000 mm): Footprint R11
+[lib_footprint_issues]: The current configuration does not include the library 'ucw'.
+    Local override; Severity: warning
+    @(19.6000 mm, -6.4000 mm): Footprint D4
+[lib_footprint_issues]: The current configuration does not include the library 'ucw'.
+    Local override; Severity: warning
+    @(61.3958 mm, 2.5896 mm): Footprint R17
+[lib_footprint_issues]: The current configuration does not include the library 'ucw'.
+    Local override; Severity: warning
+    @(65.4000 mm, -1.3000 mm): Footprint R13
+[lib_footprint_issues]: The current configuration does not include the library 'ucw'.
+    Local override; Severity: warning
+    @(29.0000 mm, -9.0000 mm): Footprint D19
+[lib_footprint_issues]: The current configuration does not include the library ''.
+    Local override; Severity: warning
+    @(44.2000 mm, 8.5000 mm): Footprint SW16
+[lib_footprint_issues]: The current configuration does not include the library 'ucw'.
+    Local override; Severity: warning
+    @(0.0000 mm, -36.5000 mm): Footprint L3
+[lib_footprint_issues]: The current configuration does not include the library 'ucw'.
+    Local override; Severity: warning
+    @(36.6000 mm, -47.2000 mm): Footprint D9
+[lib_footprint_issues]: The current configuration does not include the library ''.
+    Local override; Severity: warning
+    @(34.0000 mm, -54.4000 mm): Footprint SW9
+[lib_footprint_issues]: The current configuration does not include the library 'ucw'.
+    Local override; Severity: warning
+    @(53.6000 mm, -21.7000 mm): Footprint D11
+[lib_footprint_issues]: The current configuration does not include the library 'ucw'.
+    Local override; Severity: warning
+    @(2.6000 mm, -9.8000 mm): Footprint D2
+[lib_footprint_issues]: The current configuration does not include the library 'ucw'.
+    Local override; Severity: warning
+    @(39.0000 mm, -7.0000 mm): Footprint Q1
+[lib_footprint_issues]: The current configuration does not include the library 'ucw'.
+    Local override; Severity: warning
+    @(53.6000 mm, -4.7000 mm): Footprint D10
+[lib_footprint_issues]: The current configuration does not include the library 'ucw'.
+    Local override; Severity: warning
+    @(22.0000 mm, 10.0000 mm): Footprint BT1
+[lib_footprint_issues]: The current configuration does not include the library 'ucw'.
+    Local override; Severity: warning
+    @(31.4000 mm, -13.2000 mm): Footprint R7
+[lib_footprint_issues]: The current configuration does not include the library 'ucw'.
+    Local override; Severity: warning
+    @(14.4000 mm, -23.4000 mm): Footprint R5
+[lib_footprint_issues]: The current configuration does not include the library 'ucw'.
+    Local override; Severity: warning
+    @(65.4000 mm, -35.3000 mm): Footprint R15
+[lib_footprint_issues]: The current configuration does not include the library 'ucw'.
+    Local override; Severity: warning
+    @(51.0000 mm, -48.4000 mm): Footprint L12
+[lib_footprint_issues]: The current configuration does not include the library 'ucw'.
+    Local override; Severity: warning
+    @(17.0000 mm, -59.9000 mm): Footprint T1
+[lib_footprint_issues]: The current configuration does not include the library ''.
+    Local override; Severity: warning
+    @(51.0000 mm, -28.9000 mm): Footprint SW11
+[lib_footprint_issues]: The current configuration does not include the library 'ucw'.
+    Local override; Severity: warning
+    @(29.0000 mm, -5.5000 mm): Footprint C1
+[lib_footprint_issues]: The current configuration does not include the library 'ucw'.
+    Local override; Severity: warning
+    @(33.0000 mm, -3.0000 mm): Footprint C2
+[lib_footprint_issues]: The current configuration does not include the library 'ucw'.
+    Local override; Severity: warning
+    @(19.6000 mm, -40.4000 mm): Footprint D6
+[lib_footprint_issues]: The current configuration does not include the library 'ucw'.
+    Local override; Severity: warning
+    @(34.0000 mm, -39.9000 mm): Footprint L8
+[lib_footprint_issues]: The current configuration does not include the library 'ucw'.
+    Local override; Severity: warning
+    @(65.4000 mm, -18.3000 mm): Footprint R14
+[lib_footprint_issues]: The current configuration does not include the library ''.
+    Local override; Severity: warning
+    @(-8.8900 mm, -43.0000 mm): Footprint xiao-ble1
+[lib_footprint_issues]: The current configuration does not include the library 'ucw'.
+    Local override; Severity: warning
+    @(66.4186 mm, 3.9355 mm): Footprint D17
+[lib_footprint_issues]: The current configuration does not include the library ''.
+    Local override; Severity: warning
+    @(34.0000 mm, -20.4000 mm): Footprint SW7
+[lib_footprint_issues]: The current configuration does not include the library 'ucw'.
+    Local override; Severity: warning
+    @(2.6000 mm, 7.2000 mm): Footprint D1
+[lib_footprint_issues]: The current configuration does not include the library 'ucw'.
+    Local override; Severity: warning
+    @(63.9464 mm, 8.1389 mm): Footprint L17
+[lib_footprint_issues]: The current configuration does not include the library 'ucw'.
+    Local override; Severity: warning
+    @(44.2000 mm, 6.0000 mm): Footprint L16
+[lib_footprint_issues]: The current configuration does not include the library 'ucw'.
+    Local override; Severity: warning
+    @(0.0000 mm, -19.5000 mm): Footprint L2
+[lib_footprint_issues]: The current configuration does not include the library 'ucw'.
+    Local override; Severity: warning
+    @(2.6000 mm, -26.8000 mm): Footprint D3
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.2200 mm)
+    Rule: board setup constraints hole; Severity: error
+    @(7.6200 mm, -61.1200 mm): PTH pad [<no net>] of xiao-ble1
+    @(6.3500 mm, -61.1200 mm): Pad [<no net>] of xiao-ble1 on F.Cu
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.2200 mm)
+    Rule: board setup constraints hole; Severity: error
+    @(7.6200 mm, -61.1200 mm): PTH pad [<no net>] of xiao-ble1
+    @(6.3500 mm, -61.1200 mm): Pad [<no net>] of xiao-ble1 on B.Cu
+[clearance]: Clearance violation (pad clearance 0.1000 mm; actual 0.0000 mm)
+    Local override; Severity: error
+    @(6.3500 mm, -61.1200 mm): Pad [<no net>] of xiao-ble1 on F.Cu
+    @(5.8420 mm, -61.1200 mm): Pad [<no net>] of xiao-ble1 on F.Cu
+[clearance]: Clearance violation (pad clearance 0.1000 mm; actual 0.0000 mm)
+    Local override; Severity: error
+    @(6.3500 mm, -61.1200 mm): Pad [<no net>] of xiao-ble1 on B.Cu
+    @(5.8420 mm, -61.1200 mm): Pad [<no net>] of xiao-ble1 on B.Cu
+[clearance]: Clearance violation (pad clearance 0.1000 mm; actual 0.0000 mm)
+    Local override; Severity: error
+    @(-5.8420 mm, -61.1200 mm): Pad [<no net>] of xiao-ble1 on F.Cu
+    @(-6.3500 mm, -61.1200 mm): Pad [<no net>] of xiao-ble1 on F.Cu
+[clearance]: Clearance violation (pad clearance 0.1000 mm; actual 0.0000 mm)
+    Local override; Severity: error
+    @(-5.8420 mm, -61.1200 mm): Pad [<no net>] of xiao-ble1 on B.Cu
+    @(-6.3500 mm, -61.1200 mm): Pad [<no net>] of xiao-ble1 on B.Cu
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.2200 mm)
+    Rule: board setup constraints hole; Severity: error
+    @(-6.3500 mm, -61.1200 mm): Pad [<no net>] of xiao-ble1 on F.Cu
+    @(-7.6200 mm, -61.1200 mm): PTH pad [<no net>] of xiao-ble1
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.2200 mm)
+    Rule: board setup constraints hole; Severity: error
+    @(-6.3500 mm, -61.1200 mm): Pad [<no net>] of xiao-ble1 on B.Cu
+    @(-7.6200 mm, -61.1200 mm): PTH pad [<no net>] of xiao-ble1
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.2200 mm)
+    Rule: board setup constraints hole; Severity: error
+    @(7.6200 mm, -58.5800 mm): PTH pad [<no net>] of xiao-ble1
+    @(6.3500 mm, -58.5800 mm): Pad [<no net>] of xiao-ble1 on F.Cu
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.2200 mm)
+    Rule: board setup constraints hole; Severity: error
+    @(7.6200 mm, -58.5800 mm): PTH pad [<no net>] of xiao-ble1
+    @(6.3500 mm, -58.5800 mm): Pad [<no net>] of xiao-ble1 on B.Cu
+[clearance]: Clearance violation (pad clearance 0.1000 mm; actual 0.0000 mm)
+    Local override; Severity: error
+    @(6.3500 mm, -58.5800 mm): Pad [<no net>] of xiao-ble1 on F.Cu
+    @(5.8420 mm, -58.5800 mm): Pad [<no net>] of xiao-ble1 on F.Cu
+[clearance]: Clearance violation (pad clearance 0.1000 mm; actual 0.0000 mm)
+    Local override; Severity: error
+    @(6.3500 mm, -58.5800 mm): Pad [<no net>] of xiao-ble1 on B.Cu
+    @(5.8420 mm, -58.5800 mm): Pad [<no net>] of xiao-ble1 on B.Cu
+[clearance]: Clearance violation (pad clearance 0.1000 mm; actual 0.0000 mm)
+    Local override; Severity: error
+    @(-5.8420 mm, -58.5800 mm): Pad [<no net>] of xiao-ble1 on F.Cu
+    @(-6.3500 mm, -58.5800 mm): Pad [<no net>] of xiao-ble1 on F.Cu
+[clearance]: Clearance violation (pad clearance 0.1000 mm; actual 0.0000 mm)
+    Local override; Severity: error
+    @(-5.8420 mm, -58.5800 mm): Pad [<no net>] of xiao-ble1 on B.Cu
+    @(-6.3500 mm, -58.5800 mm): Pad [<no net>] of xiao-ble1 on B.Cu
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.2200 mm)
+    Rule: board setup constraints hole; Severity: error
+    @(-6.3500 mm, -58.5800 mm): Pad [<no net>] of xiao-ble1 on F.Cu
+    @(-7.6200 mm, -58.5800 mm): PTH pad [<no net>] of xiao-ble1
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.2200 mm)
+    Rule: board setup constraints hole; Severity: error
+    @(-6.3500 mm, -58.5800 mm): Pad [<no net>] of xiao-ble1 on B.Cu
+    @(-7.6200 mm, -58.5800 mm): PTH pad [<no net>] of xiao-ble1
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.2200 mm)
+    Rule: board setup constraints hole; Severity: error
+    @(7.6200 mm, -56.0400 mm): PTH pad [<no net>] of xiao-ble1
+    @(6.3500 mm, -56.0400 mm): Pad [<no net>] of xiao-ble1 on F.Cu
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.2200 mm)
+    Rule: board setup constraints hole; Severity: error
+    @(7.6200 mm, -56.0400 mm): PTH pad [<no net>] of xiao-ble1
+    @(6.3500 mm, -56.0400 mm): Pad [<no net>] of xiao-ble1 on B.Cu
+[clearance]: Clearance violation (pad clearance 0.1000 mm; actual 0.0000 mm)
+    Local override; Severity: error
+    @(6.3500 mm, -56.0400 mm): Pad [<no net>] of xiao-ble1 on F.Cu
+    @(5.8420 mm, -56.0400 mm): Pad [<no net>] of xiao-ble1 on F.Cu
+[clearance]: Clearance violation (pad clearance 0.1000 mm; actual 0.0000 mm)
+    Local override; Severity: error
+    @(6.3500 mm, -56.0400 mm): Pad [<no net>] of xiao-ble1 on B.Cu
+    @(5.8420 mm, -56.0400 mm): Pad [<no net>] of xiao-ble1 on B.Cu
+[clearance]: Clearance violation (pad clearance 0.1000 mm; actual 0.0000 mm)
+    Local override; Severity: error
+    @(-5.8420 mm, -56.0400 mm): Pad [<no net>] of xiao-ble1 on F.Cu
+    @(-6.3500 mm, -56.0400 mm): Pad [<no net>] of xiao-ble1 on F.Cu
+[clearance]: Clearance violation (pad clearance 0.1000 mm; actual 0.0000 mm)
+    Local override; Severity: error
+    @(-5.8420 mm, -56.0400 mm): Pad [<no net>] of xiao-ble1 on B.Cu
+    @(-6.3500 mm, -56.0400 mm): Pad [<no net>] of xiao-ble1 on B.Cu
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.2200 mm)
+    Rule: board setup constraints hole; Severity: error
+    @(-6.3500 mm, -56.0400 mm): Pad [<no net>] of xiao-ble1 on F.Cu
+    @(-7.6200 mm, -56.0400 mm): PTH pad [<no net>] of xiao-ble1
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.2200 mm)
+    Rule: board setup constraints hole; Severity: error
+    @(-6.3500 mm, -56.0400 mm): Pad [<no net>] of xiao-ble1 on B.Cu
+    @(-7.6200 mm, -56.0400 mm): PTH pad [<no net>] of xiao-ble1
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.2200 mm)
+    Rule: board setup constraints hole; Severity: error
+    @(7.6200 mm, -53.5000 mm): PTH pad [<no net>] of xiao-ble1
+    @(6.3500 mm, -53.5000 mm): Pad [<no net>] of xiao-ble1 on F.Cu
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.2200 mm)
+    Rule: board setup constraints hole; Severity: error
+    @(7.6200 mm, -53.5000 mm): PTH pad [<no net>] of xiao-ble1
+    @(6.3500 mm, -53.5000 mm): Pad [<no net>] of xiao-ble1 on B.Cu
+[clearance]: Clearance violation (pad clearance 0.1000 mm; actual 0.0000 mm)
+    Local override; Severity: error
+    @(6.3500 mm, -53.5000 mm): Pad [<no net>] of xiao-ble1 on F.Cu
+    @(5.8420 mm, -53.5000 mm): Pad [<no net>] of xiao-ble1 on F.Cu
+[clearance]: Clearance violation (pad clearance 0.1000 mm; actual 0.0000 mm)
+    Local override; Severity: error
+    @(6.3500 mm, -53.5000 mm): Pad [<no net>] of xiao-ble1 on B.Cu
+    @(5.8420 mm, -53.5000 mm): Pad [<no net>] of xiao-ble1 on B.Cu
+[clearance]: Clearance violation (pad clearance 0.1000 mm; actual 0.0000 mm)
+    Local override; Severity: error
+    @(-5.8420 mm, -53.5000 mm): Pad [<no net>] of xiao-ble1 on F.Cu
+    @(-6.3500 mm, -53.5000 mm): Pad [<no net>] of xiao-ble1 on F.Cu
+[clearance]: Clearance violation (pad clearance 0.1000 mm; actual 0.0000 mm)
+    Local override; Severity: error
+    @(-5.8420 mm, -53.5000 mm): Pad [<no net>] of xiao-ble1 on B.Cu
+    @(-6.3500 mm, -53.5000 mm): Pad [<no net>] of xiao-ble1 on B.Cu
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.2200 mm)
+    Rule: board setup constraints hole; Severity: error
+    @(-6.3500 mm, -53.5000 mm): Pad [<no net>] of xiao-ble1 on F.Cu
+    @(-7.6200 mm, -53.5000 mm): PTH pad [<no net>] of xiao-ble1
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.2200 mm)
+    Rule: board setup constraints hole; Severity: error
+    @(-6.3500 mm, -53.5000 mm): Pad [<no net>] of xiao-ble1 on B.Cu
+    @(-7.6200 mm, -53.5000 mm): PTH pad [<no net>] of xiao-ble1
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.2200 mm)
+    Rule: board setup constraints hole; Severity: error
+    @(7.6200 mm, -50.9600 mm): PTH pad [<no net>] of xiao-ble1
+    @(6.3500 mm, -50.9600 mm): Pad [<no net>] of xiao-ble1 on F.Cu
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.2200 mm)
+    Rule: board setup constraints hole; Severity: error
+    @(7.6200 mm, -50.9600 mm): PTH pad [<no net>] of xiao-ble1
+    @(6.3500 mm, -50.9600 mm): Pad [<no net>] of xiao-ble1 on B.Cu
+[clearance]: Clearance violation (pad clearance 0.1000 mm; actual 0.0000 mm)
+    Local override; Severity: error
+    @(6.3500 mm, -50.9600 mm): Pad [<no net>] of xiao-ble1 on F.Cu
+    @(5.8420 mm, -50.9600 mm): Pad [<no net>] of xiao-ble1 on F.Cu
+[clearance]: Clearance violation (pad clearance 0.1000 mm; actual 0.0000 mm)
+    Local override; Severity: error
+    @(6.3500 mm, -50.9600 mm): Pad [<no net>] of xiao-ble1 on B.Cu
+    @(5.8420 mm, -50.9600 mm): Pad [<no net>] of xiao-ble1 on B.Cu
+[clearance]: Clearance violation (pad clearance 0.1000 mm; actual 0.0000 mm)
+    Local override; Severity: error
+    @(-5.8420 mm, -50.9600 mm): Pad [<no net>] of xiao-ble1 on F.Cu
+    @(-6.3500 mm, -50.9600 mm): Pad [<no net>] of xiao-ble1 on F.Cu
+[clearance]: Clearance violation (pad clearance 0.1000 mm; actual 0.0000 mm)
+    Local override; Severity: error
+    @(-5.8420 mm, -50.9600 mm): Pad [<no net>] of xiao-ble1 on B.Cu
+    @(-6.3500 mm, -50.9600 mm): Pad [<no net>] of xiao-ble1 on B.Cu
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.2200 mm)
+    Rule: board setup constraints hole; Severity: error
+    @(-6.3500 mm, -50.9600 mm): Pad [<no net>] of xiao-ble1 on F.Cu
+    @(-7.6200 mm, -50.9600 mm): PTH pad [<no net>] of xiao-ble1
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.2200 mm)
+    Rule: board setup constraints hole; Severity: error
+    @(-6.3500 mm, -50.9600 mm): Pad [<no net>] of xiao-ble1 on B.Cu
+    @(-7.6200 mm, -50.9600 mm): PTH pad [<no net>] of xiao-ble1
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.2200 mm)
+    Rule: board setup constraints hole; Severity: error
+    @(7.6200 mm, -48.4200 mm): PTH pad [<no net>] of xiao-ble1
+    @(6.3500 mm, -48.4200 mm): Pad [<no net>] of xiao-ble1 on F.Cu
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.2200 mm)
+    Rule: board setup constraints hole; Severity: error
+    @(7.6200 mm, -48.4200 mm): PTH pad [<no net>] of xiao-ble1
+    @(6.3500 mm, -48.4200 mm): Pad [<no net>] of xiao-ble1 on B.Cu
+[clearance]: Clearance violation (pad clearance 0.1000 mm; actual 0.0000 mm)
+    Local override; Severity: error
+    @(6.3500 mm, -48.4200 mm): Pad [<no net>] of xiao-ble1 on F.Cu
+    @(5.8420 mm, -48.4200 mm): Pad [<no net>] of xiao-ble1 on F.Cu
+[clearance]: Clearance violation (pad clearance 0.1000 mm; actual 0.0000 mm)
+    Local override; Severity: error
+    @(6.3500 mm, -48.4200 mm): Pad [<no net>] of xiao-ble1 on B.Cu
+    @(5.8420 mm, -48.4200 mm): Pad [<no net>] of xiao-ble1 on B.Cu
+[clearance]: Clearance violation (pad clearance 0.1000 mm; actual 0.0000 mm)
+    Local override; Severity: error
+    @(-5.8420 mm, -48.4200 mm): Pad [<no net>] of xiao-ble1 on F.Cu
+    @(-6.3500 mm, -48.4200 mm): Pad [<no net>] of xiao-ble1 on F.Cu
+[clearance]: Clearance violation (pad clearance 0.1000 mm; actual 0.0000 mm)
+    Local override; Severity: error
+    @(-5.8420 mm, -48.4200 mm): Pad [<no net>] of xiao-ble1 on B.Cu
+    @(-6.3500 mm, -48.4200 mm): Pad [<no net>] of xiao-ble1 on B.Cu
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.2200 mm)
+    Rule: board setup constraints hole; Severity: error
+    @(-6.3500 mm, -48.4200 mm): Pad [<no net>] of xiao-ble1 on F.Cu
+    @(-7.6200 mm, -48.4200 mm): PTH pad [<no net>] of xiao-ble1
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.2200 mm)
+    Rule: board setup constraints hole; Severity: error
+    @(-6.3500 mm, -48.4200 mm): Pad [<no net>] of xiao-ble1 on B.Cu
+    @(-7.6200 mm, -48.4200 mm): PTH pad [<no net>] of xiao-ble1
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.2200 mm)
+    Rule: board setup constraints hole; Severity: error
+    @(7.6200 mm, -45.8800 mm): PTH pad [<no net>] of xiao-ble1
+    @(6.3500 mm, -45.8800 mm): Pad [<no net>] of xiao-ble1 on F.Cu
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.2200 mm)
+    Rule: board setup constraints hole; Severity: error
+    @(7.6200 mm, -45.8800 mm): PTH pad [<no net>] of xiao-ble1
+    @(6.3500 mm, -45.8800 mm): Pad [<no net>] of xiao-ble1 on B.Cu
+[clearance]: Clearance violation (pad clearance 0.1000 mm; actual 0.0000 mm)
+    Local override; Severity: error
+    @(6.3500 mm, -45.8800 mm): Pad [<no net>] of xiao-ble1 on F.Cu
+    @(5.8420 mm, -45.8800 mm): Pad [<no net>] of xiao-ble1 on F.Cu
+[clearance]: Clearance violation (pad clearance 0.1000 mm; actual 0.0000 mm)
+    Local override; Severity: error
+    @(6.3500 mm, -45.8800 mm): Pad [<no net>] of xiao-ble1 on B.Cu
+    @(5.8420 mm, -45.8800 mm): Pad [<no net>] of xiao-ble1 on B.Cu
+[clearance]: Clearance violation (pad clearance 0.1000 mm; actual 0.0000 mm)
+    Local override; Severity: error
+    @(-5.8420 mm, -45.8800 mm): Pad [<no net>] of xiao-ble1 on F.Cu
+    @(-6.3500 mm, -45.8800 mm): Pad [<no net>] of xiao-ble1 on F.Cu
+[clearance]: Clearance violation (pad clearance 0.1000 mm; actual 0.0000 mm)
+    Local override; Severity: error
+    @(-5.8420 mm, -45.8800 mm): Pad [<no net>] of xiao-ble1 on B.Cu
+    @(-6.3500 mm, -45.8800 mm): Pad [<no net>] of xiao-ble1 on B.Cu
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.2200 mm)
+    Rule: board setup constraints hole; Severity: error
+    @(-6.3500 mm, -45.8800 mm): Pad [<no net>] of xiao-ble1 on F.Cu
+    @(-7.6200 mm, -45.8800 mm): PTH pad [<no net>] of xiao-ble1
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.2200 mm)
+    Rule: board setup constraints hole; Severity: error
+    @(-6.3500 mm, -45.8800 mm): Pad [<no net>] of xiao-ble1 on B.Cu
+    @(-7.6200 mm, -45.8800 mm): PTH pad [<no net>] of xiao-ble1
+
+** Found 0 unconnected pads **
+
+** Found 0 Footprint errors **
+
+** End of Report **

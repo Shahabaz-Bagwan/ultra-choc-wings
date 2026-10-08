@@ -1,68 +1,79 @@
-# Based ON Triboard -- Ultra-Choc-wings
+# Ultra Choc Wings
 
 ![Picture](ultra-choc-wings.png)
 
-The Triboard is an ergonomic, split mechanical keyboard using hotswappable Kailh Choc switches and any Seeed XIAO compatible controller. Its main feature is being super small and therefore portable, without compromising on ergonomics/usabitity.
+A 36-key split keyboard for Kailh PG1316S switches, based on the
+[Triboard](https://github.com/tarneaux/triboard).
 
-[Blog post](https://tarneo.fr/posts/triboard/)
+* **36 keys**: 3×5 plus 3 thumb keys per half.
+* **One reversible PCB** for both halves. The right half is the same board
+  flipped over.
+* **Per-key LEDs** (single colour, PWM dimmed, off by default).
+* **CR2032 coin cell** per half, with a power switch.
+* **ZMK with a dongle**: a third XIAO nRF52840 on USB is the central, both
+  halves are low-power peripherals.
+* **Seeed XIAO nRF52840** on each half.
+* **JLCPCB ready**: gerbers, BOM and placement files for both halves; all SMD
+  parts are assembled by JLCPCB on one side per half.
+* **Uniboard case**: one printed tray that joins both halves.
 
-![Picture](picture.jpg)
+| Folder | What's in it |
+| --- | --- |
+| `config.yaml`, `footprints/` | Ergogen source of the PCB |
+| `pcb/` | Routed KiCad board and DRC report |
+| `jlcpcb/` | Gerbers, BOM and CPL files, [ordering guide](jlcpcb/README.md) |
+| `firmware/` | ZMK config: dongle, left, right, keymap |
+| `case/` | Uniboard case, [notes](case/README.md) |
+| `docs/power.md` | [Coin cell vs. LEDs](docs/power.md), the power budget |
+| `archive/v1-lipo/` | The earlier hand-routed LiPo version |
 
-Three builds are possible:
-- 34 keys, wireless, with ZMK on XIAO nRF52840 controllers
-- 36 keys, wired, with QMK on XIAO RP2040 controllers*
-- 36 keys, wired, with KMK on XIAO ESP32C3 controllers*
+## Coin cell and LEDs
 
-*: Nobody has published QMK or KMK firmware for this keyboard yet. Only build the RP2040 or ESP32C3 versions if you are ready to get your hands dirty.
+A CR2032 cannot run 18 LEDs for long. The LEDs share one MOSFET, so when they
+are off they draw nothing; the firmware keeps them off at boot, starts them at
+10 % when you toggle them on (LOWER + RAISE, then `BL_TOG`), and turns them off
+whenever the half goes idle. See [docs/power.md](docs/power.md) for the numbers
+and the option of running from a LiPo instead.
 
-On the wireless version, one thumb key needs to be removed on each half to fit the battery (therefore it is only 34 keys).
+## Firmware
 
-For now I have only tried a full build with ZMK but KMK seems to work well on ESP32C3 XIAOs.
+`firmware/` is a ZMK user config (ZMK v0.3). GitHub Actions builds it on every
+push (`.github/workflows/zmk.yml`); download the `firmware` artifact and flash:
 
-The PCB is automatically generated with Ergogen and then routed by hand. You could in theory use Freerouting or similar software instead.
+* `ultra_choc_wings_dongle` onto the XIAO that stays plugged into the computer,
+* `ultra_choc_wings_left` and `ultra_choc_wings_right` onto the halves,
+* `settings_reset` first if the boards were paired to something before.
 
-A flippable XIAO footprint based on a [similar promicro footprint](https://github.com/50an6xy06r6n/keyboard_reversible.pretty) helps to make the board smaller.
-
-[PCB releases](https://github.com/tarneaux/triboard/releases) are available.
-
-[Link to ZMK config repo](https://github.com/tarneaux/zmk-config-triboard)
+The keymap is `firmware/ultra_choc_wings.keymap` (QWERTY with LOWER, RAISE and
+ADJUST layers).
 
 ## Building the PCB
 
-To build the keyboard with ergogen and open the PCB in KiCad's PCBnew, run:
 ```sh
 npm install
-./build.sh # Automatically update the PCB and reopen pcbnew whenever config.yaml changes
+KICAD_PYTHON=python3 FREEROUTING_JAR=path/to/freerouting.jar scripts/build_pcb.sh
 ```
 
-Here are some things you may want to change:
-- Vertical stagger values, defined in the `units` section at the top of the file.
-- Hotswappability: I couldn't make the board support both hot-swap sockets and direct switch soldering. Search for `hotswap` in `config.yaml` and adjust accordingly.
+This runs Ergogen, autoroutes with [Freerouting](https://github.com/freerouting/freerouting),
+joins the few connections Freerouting misreads around the flippable XIAO
+pads (`scripts/finish_routes.py`), adds ground pours on both layers, writes a DRC report, exports gerbers, the
+JLCPCB BOM/CPL files and the case. It needs KiCad 7 or newer (with its Python
+module), Java, and `xvfb-run` on a headless machine. The committed board was
+autorouted; review it in KiCad before ordering and hand-tidy any routes you
+don't like.
 
-## Routing
+`pcb/drc.rpt` has no unconnected items. The remaining entries are known: the
+flippable XIAO footprint's solder jumpers sit closer than the default clearance
+and hole clearance by design, solder mask bridges between those jumpers,
+library-footprint notes (the footprints are generated, not from a library),
+and silkscreen overlaps.
 
-To make the routing process easier, you can route a single key (diode to via and vias to hotswap socket pads), select all traces (by filtering the selection from the right-click menu) and paste those traces for each key. Then connect the rest according to the KiCad nets as usual.
+## Assembly notes
 
-## Where's the build guide?
-
-As of now I haven't written a build guide. If you want to build this keyboard, just [get in touch with me](https://tarneo.fr/contact/) and I'll be happy to give you some basic instructions.
-
-If you've already built other keyboards yourself, here are some specificities of this one:
-- Before soldering the XIAO in, bridge the `[> ]`-shaped pads below it (on the same side of the PCB, so that the XIAO covers the bridged pads).
-- When soldering the XIAO, use a short length of insulated wire to connect the battery pad on the PCB (just above the top pinky key) to the positive battery pad below the XIAO. This applies only to wireless builds.
-
-Here's a parts list for a wireless build:
-- a pair of flippable PCB's (download gerbers from [releases](https://github.com/tarneaux/triboard/releases/))
-- 2 [Seeed XIAO nrf52840 microcontrollers](https://www.seeedstudio.com/Seeed-XIAO-BLE-nRF52840-p-5201.html)
-- 2 3.7 v lithium ion batteries with dimensions < 20x30 mm
-- 2 [Power switches](https://splitkb.com/products/wireless-controller-expansion-bundle)
-- A few round rubber feet, ideally 10 (one per corner, plus one on the bottom middle for thumb key support)
-- 4 7-pin rows of [Mill max sockets](https://splitkb.com/products/mill-max-low-profile-sockets)
-- For each key (34 if wireless, make sure to get a few extra of each):
-  - 1 [diode](https://splitkb.com/products/smd-diodes)
-  - 1 kailh choc switch. I like the [ambients](https://splitkb.com/products/ambients-kailh-low-profile-choc-switches)
-  - 1 [choc hotswap socket](https://splitkb.com/products/kailh-hotswap-sockets?variant=39472161456205)
-  - 1 keycap (make sure to get convex ones for thumb keys, plus two homing ones): I like [blank MBK's](https://splitkb.com/products/blank-mbk-choc-low-profile-keycaps)
+* All SMD parts, the switches and the XIAO go on the **same side** of each
+  PCB: the front for the left half, the back for the right half.
+* Bridge the `[> ]` jumper pads under the XIAO on the side the XIAO sits on.
+* Wire the **RAW** pad (next to the XIAO) to the BAT+ pad under the XIAO.
 
 ## Credits
 

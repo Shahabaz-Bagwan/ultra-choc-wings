@@ -132,3 +132,8 @@ dist
 
 # Output dir from ergogen
 # output
+
+# Pipeline scratch (scripts/build_pcb.sh)
+/build/
+*.kicad_prl
+fp-info-cache
