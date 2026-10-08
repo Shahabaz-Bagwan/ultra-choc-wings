@@ -3,18 +3,35 @@ units:
   kx: 16 
   ky: 16
   # key spread and padding
-  px: 17
+  # Chocofi spacing: 18 mm columns, 17 mm rows (Kailh Choc spacing)
+  px: 18
   py: 17
   # From that, get the spacing between keys
   ksx: px-kx
   ksy: py-ky
   lpx: px + 1
   
-  # Stagger for all of the different columns
-  stagger1: 0.8py # ring column one key above the pinky column
-  stagger2: 0.4py # middle column .3 key above the ring column
-  stagger3: -0.5py # index
-  stagger4: -0.2py # inner
+  # Column stagger, in mm, copied from the Chocofi PCB (pashutk/chocofi),
+  # which keeps the Fifi stagger in mm with the pinky moved down.
+  stagger1: 12      # ring, above pinky
+  stagger2: 6       # middle, above ring
+  stagger3: -6.625  # index, below middle
+  stagger4: -2.375  # inner, below index
+
+  # CR2032 holder position, relative to the pinky bottom key
+  coin_x: 22
+  coin_y: -10
+
+  # M2 case mounting holes, relative to the pinky bottom key
+  hole_top_x: 24.5
+  hole_top_y: 59.5
+  hole_bottom_x: 2
+  hole_bottom_y: -10.8
+  hole_thumb_x: 73
+  hole_thumb_y: -3
+
+  # Board top edge above the pinky top key (clears the XIAO's top pin row)
+  mcu_top: 28.9
 
   xiao_length: 21
   xiao_width: 17.78
@@ -52,24 +69,30 @@ points:
           row_net: P9
         top:
           row_net: P8
+    # Chocofi thumb cluster: key centres and rotations taken from the Chocofi
+    # PCB, relative to the bottom pinky key. Fan is 0, -15, -30 degrees.
     thumbfan:
       anchor:
-        ref: matrix_inner_bottom
-        shift: [-1.4px, -py]
+        ref: matrix_pinky_bottom
+      key:
+        spread: 0
       columns:
         inner:
           key:
-            origin: [-11.75, -9]
+            adjust:
+              shift: [48.1, -8.59]
             column_net: P2
         middle:
           key:
-            splay: -10
-            origin: [-7.75, -9]
+            adjust:
+              shift: [68.15, -11.18]
+              rotate: -15
             column_net: P1
         home:
           key:
-            splay: -20
-            origin: [0, -10]
+            adjust:
+              shift: [88.75, -14.39]
+              rotate: -30
             column_net: P0
       rows:
         thumb:
@@ -81,28 +104,36 @@ outlines:
       what: rectangle
       where: true
       size: [lpx, py]
+    # Top edge is set from the pinky key, not the middle column, so it stays
+    # clear of the XIAO's top pin row whatever the stagger is.
     mcu:
       what: polygon
       points:
-        - ref: matrix_middle_top # Top left
-          shift: [-2px-0.5lpx, 0.5py]
-        - ref: matrix_middle_top # Top right
-          shift: [0, 0.5py]
-        - ref: matrix_middle_top # Bottom right (in board)
-          shift: [0, -1py]
-        - ref: matrix_middle_top # Bottom left
-          shift: [-2px-0.5lpx, -1py]
+        - ref: matrix_pinky_top # Top left
+          shift: [-0.5lpx, mcu_top]
+        - ref: matrix_pinky_top # Top right
+          shift: [2px, mcu_top]
+        - ref: matrix_pinky_top # Bottom right (in board)
+          shift: [2px, 0]
+        - ref: matrix_pinky_top # Bottom left
+          shift: [-0.5lpx, 0]
     battery:
       what: polygon
       points:
-        - ref: matrix_middle_home # Top left (in board)
-          shift: [-0.5lpx, 0]
-        - ref: matrix_inner_home # Top right (in board)
-          shift: [0.5lpx, 0]
+        - ref: matrix_pinky_bottom # Top left (in board)
+          shift: [-10, -10]
+        - ref: matrix_index_bottom # Top right (in board)
+          shift: [0, 30]
         - ref: thumbfan_home_thumb # Bottom right
-          shift: [0.5lpx, -0.5py]
-        - ref: thumbfan_inner_thumb # Bottom left
-          shift: [-0.5lpx, -0.5py]
+          shift: [0, 0]
+        - ref: thumbfan_middle_thumb # Bottom left
+          shift: [-0, -15]
+    coincell:
+      what: circle
+      where:
+        ref: matrix_pinky_bottom
+        shift: [coin_x, coin_y]
+      radius: 14.5
   board:
     - what: outline
       name: board_noround
@@ -167,54 +198,86 @@ pcbs:
       main:
         outline: board
     footprints:
+      # Every footprint below is reversible: the same PCB is used for the
+      # left half (parts on F) and the right half (parts on B). All SMD parts
+      # sit on the switch side so JLCPCB only has to assemble one side per half.
       pg1316s_switch:
         what: pg1316s
         where: true
         params:
           from: "{{colrow}}"
           to: "{{column_net}}"
+      # Matrix diode, in the strip below the switch body (under the keycap).
       diode:
-        what: pad_diode
+        what: rev_smd2
+        where: /matrix_/
+        params:
+          designator: D
+          package: SOD123
+          polarized: true
+          value: 1N4148W
+          pad1: "{{row_net}}"
+          pad2: "{{colrow}}"
+        adjust:
+          shift: [2.6, -7.2]
+      # Thumb keys sit on the board edge, so their diode and resistor go in the
+      # strip above the switch instead.
+      diode_thumb:
+        what: rev_smd2
+        where: /thumbfan_/
+        params:
+          designator: D
+          package: SOD123
+          polarized: true
+          value: 1N4148W
+          pad1: "{{row_net}}"
+          pad2: "{{colrow}}"
+        adjust:
+          shift: [1.3, 7.2]
+      # Per-key LED in the component pocket under the PG1316S body, with its
+      # series resistor next to the diode. Anodes go to 3V3 through the
+      # resistor, cathodes share LED_K, switched to GND by Q1 (PWM on D6).
+      led:
+        what: rev_smd2
         where: true
         params:
-          from: "{{colrow}}"
-          to: "{{row_net}}"
+          designator: L
+          package: LED0603
+          polarized: true
+          value: LED_red_0603
+          pad1: LED_K
+          pad2: "LA_{{colrow}}"
         adjust:
-          shift: [0, -0.3py]
-      diode_via_1:
-        what: via
-        where: true
+          shift: [0, 2.5]
+      led_resistor:
+        what: rev_smd2
+        where: /matrix_/
         params:
-          net: "{{colrow}}"
+          designator: R
+          package: "0603"
+          value: 1k
+          pad1: VCC3
+          pad2: "LA_{{colrow}}"
         adjust:
-          shift: [2.8, -0.3py]
-      diode_via_2:
-        what: via
-        where: true
+          shift: [-2.6, -7.2]
+      led_resistor_thumb:
+        what: rev_smd2
+        where: /thumbfan_/
         params:
-          net: "{{row_net}}"
+          designator: R
+          package: "0603"
+          value: 1k
+          pad1: VCC3
+          pad2: "LA_{{colrow}}"
         adjust:
-          shift: [-2.8, -0.3py]
-      key_via_1:
-        what: via
-        where: true
-        params:
-          net: "{{column_net}}"
-        adjust:
-          shift: [0, 3.67]
-      key_via_2:
-        what: via
-        where: true
-        params:
-          net: "{{colrow}}"
-        adjust:
-          shift: [0, 2.67]
+          shift: [-3.9, 7.2]
       xiao_flippable:
         what: xiao_flippable
         where:
           ref: matrix_pinky_top
           shift: [0.5px-0.5ksx-xiao_width-(kx-xiao_width)/2, 0.5py+0.5ksy]
           rotate: -90
+      # Wire this pad to the BAT+ pad under the XIAO (see README).
       raw_pad:
         what: pad
         where:
@@ -224,33 +287,101 @@ pcbs:
           net: RAW
           width: 1.5
           height: 1.5
-      battery_pads:
-        what: battery_pad
+      # Power: CR2032 -> slide switch -> Schottky -> RAW (XIAO BAT+).
+      # The Schottky stops the XIAO charger from ever pushing current into
+      # the non-rechargeable coin cell while USB is plugged in.
+      coin_cell:
+        what: rev_coincell
         where:
-          ref: matrix_index_bottom
-          shift: [0, -0.5ky-2]
-          rotate: 0
+          ref: matrix_pinky_bottom
+          shift: [coin_x, coin_y]
         params:
-          plus: BAT+
-          minus: GND
-      slider_f:
-        what: slider
+          pos: BAT
+          neg: GND
+      power_switch:
+        what: rev_slider
         where:
-          ref: matrix_middle_top
-          shift: [-1px, 0.5px-3]
+          ref: matrix_pinky_top
+          shift: [17, mcu_top-3]
         params:
-          from: BAT+
-          to: RAW
-          side: F
-      slider_b:
-        what: slider
+          from: BAT
+          to: SW_BAT
+      power_diode:
+        what: rev_smd2
         where:
-          ref: matrix_middle_top
-          shift: [-1px, 0.5px-3]
+          ref: matrix_pinky_bottom
+          shift: [29, 9]
         params:
-          from: BAT+
-          to: RAW
-          side: B
+          designator: D
+          package: SOD123
+          polarized: true
+          value: B5819W
+          pad1: RAW
+          pad2: SW_BAT
+      bulk_cap_1:
+        what: rev_smd2
+        where:
+          ref: matrix_pinky_bottom
+          shift: [29, 5.5]
+        params:
+          designator: C
+          package: "0805"
+          value: 22uF
+          pad1: RAW
+          pad2: GND
+      bulk_cap_2:
+        what: rev_smd2
+        where:
+          ref: matrix_pinky_bottom
+          shift: [33, 3]
+        params:
+          designator: C
+          package: "0805"
+          value: 22uF
+          pad1: RAW
+          pad2: GND
+      # Low-side LED switch. D6 drives the gate with PWM; the pull-down keeps
+      # the LEDs off while the MCU sleeps or boots.
+      led_mosfet:
+        what: rev_sot23
+        where:
+          ref: matrix_pinky_bottom
+          shift: [39, 7]
+          rotate: 90
+        params:
+          designator: Q
+          value: AO3400A
+          pad1: P6
+          pad2: GND
+          pad3: LED_K
+      led_gate_pulldown:
+        what: rev_smd2
+        where:
+          ref: matrix_pinky_bottom
+          shift: [39, 2.5]
+          rotate: 90
+        params:
+          designator: R
+          package: "0603"
+          value: 100k
+          pad1: P6
+          pad2: GND
+      # M2 holes for the uniboard case (case/). Keep case/case.scad in sync.
+      mount_top:
+        what: m2_hole
+        where:
+          ref: matrix_pinky_bottom
+          shift: [hole_top_x, hole_top_y]
+      mount_bottom:
+        what: m2_hole
+        where:
+          ref: matrix_pinky_bottom
+          shift: [hole_bottom_x, hole_bottom_y]
+      mount_thumb:
+        what: m2_hole
+        where:
+          ref: matrix_pinky_bottom
+          shift: [hole_thumb_x, hole_thumb_y]
   top_plate:
     outlines:
       top_plate:

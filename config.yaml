@@ -3,18 +3,20 @@ units:
   kx: 16 
   ky: 16
   # key spread and padding
-  px: 17
+  # Chocofi spacing: 18 mm columns, 17 mm rows (Kailh Choc spacing)
+  px: 18
   py: 17
   # From that, get the spacing between keys
   ksx: px-kx
   ksy: py-ky
   lpx: px + 1
   
-  # Stagger for all of the different columns
-  stagger1: 0.8py # ring column one key above the pinky column
-  stagger2: 0.4py # middle column .3 key above the ring column
-  stagger3: -0.5py # index
-  stagger4: -0.2py # inner
+  # Column stagger, in mm, copied from the Chocofi PCB (pashutk/chocofi),
+  # which keeps the Fifi stagger in mm with the pinky moved down.
+  stagger1: 12      # ring, above pinky
+  stagger2: 6       # middle, above ring
+  stagger3: -6.625  # index, below middle
+  stagger4: -2.375  # inner, below index
 
   # CR2032 holder position, relative to the pinky bottom key
   coin_x: 22
@@ -25,8 +27,11 @@ units:
   hole_top_y: 59.5
   hole_bottom_x: 2
   hole_bottom_y: -10.8
-  hole_thumb_x: 73
-  hole_thumb_y: -3
+  hole_thumb_x: 76.5
+  hole_thumb_y: -2.5
+
+  # Board top edge above the pinky top key (clears the XIAO's top pin row)
+  mcu_top: 28.9
 
   xiao_length: 21
   xiao_width: 17.78
@@ -64,24 +69,30 @@ points:
           row_net: P9
         top:
           row_net: P8
+    # Chocofi thumb cluster: key centres and rotations taken from the Chocofi
+    # PCB, relative to the bottom pinky key. Fan is 0, -15, -30 degrees.
     thumbfan:
       anchor:
-        ref: matrix_inner_bottom
-        shift: [-1.4px, -py]
+        ref: matrix_pinky_bottom
+      key:
+        spread: 0
       columns:
         inner:
           key:
-            origin: [-11.75, -9]
+            adjust:
+              shift: [48.1, -8.59]
             column_net: P2
         middle:
           key:
-            splay: -15
-            origin: [-6.75, -9]
+            adjust:
+              shift: [68.15, -11.18]
+              rotate: -15
             column_net: P1
         home:
           key:
-            splay: -20
-            origin: [0, -10]
+            adjust:
+              shift: [88.75, -14.39]
+              rotate: -30
             column_net: P0
       rows:
         thumb:
@@ -93,17 +104,19 @@ outlines:
       what: rectangle
       where: true
       size: [lpx, py]
+    # Top edge is set from the pinky key, not the middle column, so it stays
+    # clear of the XIAO's top pin row whatever the stagger is.
     mcu:
       what: polygon
       points:
-        - ref: matrix_middle_top # Top left
-          shift: [-2px-0.5lpx, 0.5py]
-        - ref: matrix_middle_top # Top right
-          shift: [0, 0.5py]
-        - ref: matrix_middle_top # Bottom right (in board)
-          shift: [0, -1py]
-        - ref: matrix_middle_top # Bottom left
-          shift: [-2px-0.5lpx, -1py]
+        - ref: matrix_pinky_top # Top left
+          shift: [-0.5lpx, mcu_top]
+        - ref: matrix_pinky_top # Top right
+          shift: [2px, mcu_top]
+        - ref: matrix_pinky_top # Bottom right (in board)
+          shift: [2px, 0]
+        - ref: matrix_pinky_top # Bottom left
+          shift: [-0.5lpx, 0]
     battery:
       what: polygon
       points:
@@ -288,8 +301,8 @@ pcbs:
       power_switch:
         what: rev_slider
         where:
-          ref: matrix_middle_top
-          shift: [-1px, 0.5px-3]
+          ref: matrix_pinky_top
+          shift: [17, mcu_top-3]
         params:
           from: BAT
           to: SW_BAT

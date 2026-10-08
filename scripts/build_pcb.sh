@@ -26,7 +26,8 @@ npx ergogen . -o output
 $PYTHON scripts/kicad_route.py export output/pcbs/main.kicad_pcb build/main.dsn
 java -jar "$JAR" -de build/main.dsn -do build/main.ses -mp "$PASSES"
 $PYTHON scripts/kicad_route.py import output/pcbs/main.kicad_pcb build/main.ses pcb/ultra-choc-wings.kicad_pcb
-# Freerouting misreads a few pads and leaves some nets split; join them.
+# Freerouting misreads a few pads and leaves some nets split, and keeps only
+# 0.2 mm from the board edge; join the islands and reroute edge tracks.
 $PYTHON scripts/finish_routes.py pcb/ultra-choc-wings.kicad_pcb
 $PYTHON scripts/kicad_route.py pour pcb/ultra-choc-wings.kicad_pcb
 $PYTHON scripts/kicad_route.py drc pcb/ultra-choc-wings.kicad_pcb pcb/drc.rpt

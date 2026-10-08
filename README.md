@@ -6,6 +6,10 @@ A 36-key split keyboard for Kailh PG1316S switches, based on the
 [Triboard](https://github.com/tarneaux/triboard).
 
 * **36 keys**: 3×5 plus 3 thumb keys per half.
+* **Chocofi layout**: 18 × 17 mm key spacing, the same column stagger and the
+  same thumb cluster (0°, 15°, 30° fan) as the
+  [chocofi](https://github.com/pashutk/chocofi), so keymaps, keycaps and muscle
+  memory carry over. The stagger is Fifi's, which Chocofi kept in mm.
 * **One reversible PCB** for both halves. The right half is the same board
   flipped over.
 * **Per-key LEDs** (single colour, PWM dimmed, off by default).
