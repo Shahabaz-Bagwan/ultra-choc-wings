@@ -49,4 +49,9 @@
   (pad "1" smd roundrect (at 1.65 0) (size 0.9 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (roundrect_rratio 0.25) (tstamp 06222787-0eec-4bb6-9ad2-ebf300aa4fb1))
   (pad "2" smd roundrect (at -1.65 0) (size 0.9 1.2) (layers "B.Cu" "B.Paste" "B.Mask") (roundrect_rratio 0.25) (tstamp 59558192-db32-4562-916f-a25ac754f686))
   (pad "2" smd roundrect (at 1.65 0) (size 0.9 1.2) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25) (tstamp bedcde80-f765-4a38-b071-cd698c71367b))
+  (model "${KIPRJMOD}/ucw.3dshapes/ucw_sod123.wrl"
+    (offset (xyz 0 0 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 0))
+  )
 )

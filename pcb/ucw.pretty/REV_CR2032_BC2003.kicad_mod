@@ -39,4 +39,9 @@
   (pad "1" smd rect (at 11.905 0) (size 2.6 5.56) (layers "B.Cu" "B.Paste" "B.Mask") (tstamp a8b50dd1-52dc-46ad-8fb5-640b70c52888))
   (pad "2" smd circle (at 0 0) (size 17.8 17.8) (layers "F.Cu" "F.Mask") (tstamp 2c3857e3-d46e-4181-882d-897a4f78a6f9))
   (pad "2" smd circle (at 0 0) (size 17.8 17.8) (layers "B.Cu" "B.Mask") (tstamp 294fe9bc-94a0-4a5d-8479-0735ccbcf0d9))
+  (model "${KIPRJMOD}/ucw.3dshapes/ucw_cr2032.wrl"
+    (offset (xyz 0 0 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 0))
+  )
 )

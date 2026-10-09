@@ -1505,4 +1505,9 @@
         )
         (width 0) (fill yes))
     ) (tstamp 4d7a6515-7c8e-411c-9e6d-91a9c1583fa8))
+  (model "${KIPRJMOD}/ucw.3dshapes/ucw_xiao.wrl"
+    (offset (xyz 0 0 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 0))
+  )
 )

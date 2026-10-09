@@ -69,4 +69,9 @@
   (pad "2" smd rect (at 0.75 2.075) (size 0.9 1.25) (layers "B.Cu" "B.Paste" "B.Mask") (tstamp cf2de86e-12d7-44ce-8487-dbcb406f805e))
   (pad "3" smd rect (at -2.25 2.075) (size 0.9 1.25) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp c00e75dc-a3ae-4fce-a070-1d9905c7aea7))
   (pad "3" smd rect (at 2.25 2.075) (size 0.9 1.25) (layers "B.Cu" "B.Paste" "B.Mask") (tstamp b3c0af1d-ed15-4a9d-8eb5-4c6fa7b1f943))
+  (model "${KIPRJMOD}/ucw.3dshapes/ucw_slide.wrl"
+    (offset (xyz 0 0 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 0))
+  )
 )
