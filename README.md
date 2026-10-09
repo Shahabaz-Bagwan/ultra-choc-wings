@@ -19,7 +19,8 @@ A 36-key split keyboard for Kailh PG1316S switches, based on the
 * **Seeed XIAO nRF52840** on each half.
 * **JLCPCB ready**: gerbers, BOM and placement files for both halves; all SMD
   parts are assembled by JLCPCB on one side per half.
-* **Uniboard case**: one printed tray that joins both halves.
+* **Two cases**: a thin folding case after Aronia's (opens flat as a uniboard,
+  folds shut), and split trays that join into a uniboard or work apart.
 
 | Folder | What's in it |
 | --- | --- |
@@ -27,7 +28,7 @@ A 36-key split keyboard for Kailh PG1316S switches, based on the
 | `pcb/` | Routed KiCad board and DRC report |
 | `jlcpcb/` | Gerbers, BOM and CPL files, [ordering guide](jlcpcb/README.md) |
 | `firmware/` | ZMK config: dongle, left, right, keymap |
-| `case/` | Uniboard case, [notes](case/README.md) |
+| `case/` | Folding and split cases, [notes](case/README.md) |
 | `docs/power.md` | [Coin cell vs. LEDs](docs/power.md), the power budget |
 | `archive/v1-lipo/` | The earlier hand-routed LiPo version |
 
@@ -61,7 +62,7 @@ KICAD_PYTHON=python3 FREEROUTING_JAR=path/to/freerouting.jar scripts/build_pcb.s
 This runs Ergogen, autoroutes with [Freerouting](https://github.com/freerouting/freerouting),
 joins the few connections Freerouting misreads around the flippable XIAO
 pads (`scripts/finish_routes.py`), adds ground pours on both layers, writes a DRC report, exports gerbers, the
-JLCPCB BOM/CPL files and the case. It needs KiCad 7 or newer (with its Python
+JLCPCB BOM/CPL files and the cases. It needs KiCad 7 or newer (with its Python
 module), Java, and `xvfb-run` on a headless machine. The committed board was
 autorouted; review it in KiCad before ordering and hand-tidy any routes you
 don't like.

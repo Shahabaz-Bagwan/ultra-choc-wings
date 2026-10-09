@@ -12,7 +12,7 @@
 #   pcb/drc.rpt                   DRC report
 #   jlcpcb/gerbers.zip            upload to JLCPCB (same file for both halves)
 #   jlcpcb/bom.csv, jlcpcb/cpl-*.csv  assembly files, see jlcpcb/README.md
-#   case/ultra_choc_wings_case.{scad,stl}  uniboard case
+#   case/board.scad, case/stl/       board data for the cases, printable parts
 set -euo pipefail
 cd "$(dirname "$0")/.."
 
@@ -40,8 +40,8 @@ kicad-cli pcb export drill pcb/ultra-choc-wings.kicad_pcb -o build/gerbers/ --ex
 
 $PYTHON scripts/jlcpcb.py pcb/ultra-choc-wings.kicad_pcb jlcpcb/
 
-# Uniboard case from the routed board outline
-$PYTHON scripts/make_case.py pcb/ultra-choc-wings.kicad_pcb case/ultra_choc_wings_case.scad
+# Cases: board outline, holes and parts from the routed board, then the STLs
+$PYTHON scripts/make_case.py pcb/ultra-choc-wings.kicad_pcb case/board.scad
 if command -v openscad >/dev/null; then
-  openscad -o case/ultra_choc_wings_case.stl case/ultra_choc_wings_case.scad
+  scripts/build_case.sh
 fi
