@@ -7,6 +7,6 @@ mkdir -p stl
 for part in left_frame right_frame left_cover right_cover link; do
   openscad -D "part=\"$part\"" -o "stl/fold_$part.stl" fold.scad
 done
-for part in left right key; do
+for part in left right bridge; do
   openscad -D "part=\"$part\"" -o "stl/split_$part.stl" split.scad
 done

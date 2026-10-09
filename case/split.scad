@@ -2,15 +2,16 @@
 //
 // Two trays, one per half. On their own each is a complete case for one
 // half. Pushed together along their straight inner edges they make one
-// uniboard at a fixed splay, held by two printed dog-bone keys that slide
-// into channels in the seam from the front and back edges. Slide the keys
-// out to split it again.
+// uniboard at a fixed splay, held rigid by a bridge plate that sits in a
+// recess across the seam, flush with the top, with three M2 screws into each
+// tray. The plate keeps the two trays from hinging at the seam, so the
+// joined board stays flat even when one half is not fully supported (an
+// uneven desk, a lap). Unscrew the plate to split it again.
 //
 // Each half drops into its pocket and sits flat on the floor (every SMD part
 // is on the switch side, so the bottom is bare), held by three M2 screws that
 // self-tap into the floor. The CR2032 is reachable from the top; the top-edge
-// notch clears the XIAO USB-C and the power switch. The deck between the
-// halves is a shallow tray (the dongle fits there for travel).
+// notch clears the XIAO USB-C and the power switch.
 //
 // Export one part at a time, e.g.
 //   openscad -D 'part="left"' -o split_left.stl split.scad
@@ -18,7 +19,7 @@
 include <common.scad>
 
 /* [Part] */
-part = "assembly"; // [assembly, left, right, key]
+part = "assembly"; // [assembly, left, right, bridge]
 
 /* [Layout] */
 splay = 12;        // degrees each half is rotated away from straight
@@ -35,15 +36,16 @@ pilot_depth = 2.6;
 /* [Details] */
 xiao_relief_depth = 2;
 notch_depth = 10;  // how far the top-edge notch reaches into the wall
-center_tray = true; // hollow the deck between the halves
-/* [Seam and keys] */
+/* [Seam and bridge] */
 seam_clr = 0.1;    // gap between the two trays at the seam
-spine = 12;        // solid band along the seam that holds the key channels
-key_len = 18;      // length of each dog-bone key
-key_d = 3.2;       // dog-bone end diameter
-key_neck = 1.8;    // dog-bone neck thickness
-key_offset = 2.6;  // seam to dog-bone end centre
-key_clr = 0.15;    // channel clearance around the key
+bridge_w = 40;     // bridge plate width across the seam (trimmed to the deck)
+bridge_t = 2.4;    // bridge plate thickness = recess depth
+bridge_clr = 0.2;  // recess clearance around the plate
+bridge_margin = 1.6; // deck left between the recess and the PCB pockets
+bridge_screw_x = 5; // seam to the bridge screws
+bridge_screw_y = [0.2, 0.5, 0.8]; // screw positions along the seam, 0 = front, 1 = back
+head_d = 4.2;      // counterbore for the bridge screw heads
+head_depth = 1.0;
 $fn = 48;
 
 h = floor_t + pcb_t + lip;
@@ -61,15 +63,6 @@ module tray() {
         linear_extrude(h) outer_shape();
         // PCB pockets
         translate([0, 0, floor_t]) linear_extrude(h) pockets();
-        // Deck between the halves, minus the spine along the seam
-        if (center_tray)
-            translate([0, 0, floor_t]) linear_extrude(h)
-                // offset in, then out: drops slivers too thin to be useful
-                offset(r = 3) offset(delta = -3) difference() {
-                    offset(r = -wall) outer_shape();
-                    offset(r = wall + clearance) both() board_shape();
-                    translate([-spine / 2, y_lo - 1]) square([spine, y_hi - y_lo + 2]);
-                }
         // XIAO pin relief
         translate([0, 0, floor_t - xiao_relief_depth]) linear_extrude(h)
             both() xiao_shape();
@@ -81,19 +74,18 @@ module tray() {
     }
 }
 
-// Dog-bone profile in the x-z plane, centred on the seam.
-module key_profile(grow) {
-    for (sx = [-1, 1]) translate([sx * key_offset, 0]) circle(d = key_d + 2 * grow);
-    translate([-key_offset, -key_neck / 2 - grow]) square([2 * key_offset, key_neck + 2 * grow]);
-}
+// Bridge plate outline: the deck between the halves, inset from the walls
+// and the PCB pockets.
+module bridge_shape()
+    difference() {
+        intersection() {
+            offset(r = -wall) outer_shape();
+            translate([-bridge_w / 2, y_lo]) square([bridge_w, y_hi - y_lo]);
+        }
+        offset(r = bridge_margin + bridge_clr) pockets();
+    }
 
-// The two channels, entering from the front and back edges.
-module key_channels() {
-    len = key_len + 0.5;
-    for (end = [[y_hi + 1, -1], [y_lo - 1, 1]])
-        translate([0, end[0], h / 2]) rotate([-90 * end[1], 0, 0])
-            linear_extrude(len + 1) key_profile(key_clr);
-}
+bridge_screws = [for (f = bridge_screw_y, sx = [-1, 1]) [sx * bridge_screw_x, y_lo + f * (y_hi - y_lo)]];
 
 module left_tray() {
     difference() {
@@ -101,18 +93,26 @@ module left_tray() {
             tray();
             translate([-500, -500, -1]) cube([500 - seam_clr / 2, 1000, h + 2]);
         }
-        key_channels();
+        translate([0, 0, h - bridge_t]) linear_extrude(h) offset(delta = bridge_clr) bridge_shape();
+        for (p = bridge_screws) translate([p[0], p[1], h - bridge_t - pilot_depth])
+            cylinder(d = pilot_d, h = pilot_depth + 0.01);
     }
 }
 
-module key() linear_extrude(key_len) key_profile(0);
+module bridge()
+    difference() {
+        linear_extrude(bridge_t) bridge_shape();
+        for (p = bridge_screws) translate([p[0], p[1], -1]) {
+            cylinder(d = 2.4, h = bridge_t + 2);
+            translate([0, 0, bridge_t + 1 - head_depth]) cylinder(d = head_d, h = head_depth + 1);
+        }
+    }
 
 if (part == "left") left_tray();
 else if (part == "right") mirror([1, 0, 0]) left_tray();
-else if (part == "key") key();
+else if (part == "bridge") bridge();
 else {
     color("SteelBlue") left_tray();
     color("LightSteelBlue") mirror([1, 0, 0]) left_tray();
-    color("Orange") for (end = [[y_hi, -1], [y_lo, 1]])
-        translate([0, end[0], h / 2]) rotate([-90 * end[1], 0, 0]) key();
+    color("Orange") translate([0, 0, h - bridge_t]) bridge();
 }
