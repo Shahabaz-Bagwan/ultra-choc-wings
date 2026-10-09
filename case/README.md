@@ -7,7 +7,7 @@ same uniboard outline when opened out.
 | | Folding (`fold.scad`) | Split (`split.scad`) |
 | --- | --- | --- |
 | Style | Thin frame and bottom cover per half, after the [Aronia](https://github.com/kumekay/aronia/tree/main/case) case | Open tray per half, like the earlier one-piece tray |
-| Joining | Double hinge on two brass rods: open flat as a uniboard, or fold shut like a book | A bridge plate screwed across the seam makes a rigid uniboard; unscrew it to use the halves apart |
+| Joining | Double hinge on two brass rods: open flat as a uniboard, or fold shut like a book | Two dovetail bridge plates slide into the seam, no screws or tools, and make a rigid uniboard; pull them out to use the halves apart |
 | Size per half | about 120 × 110 × 7.2 mm; 17.8 mm thick folded | about 119 × 114 × 5.6 mm |
 
 Printed STLs are in `stl/`. The right-hand parts are mirror images of the
@@ -50,15 +50,20 @@ bare), held by three M2 × 4 mm screws that self-tap into the floor. For
 heat-set inserts set `pilot_d = 3.2`. The CR2032 is reachable from the top, and
 a notch in the top wall clears the XIAO's USB-C port and the power switch.
 
-To join the halves, butt the straight inner edges together, drop the
-`split_bridge` plate into the recess across the seam (it sits flush with the
-top), and fix it with six M2 × 4 mm screws, three into each tray. The plate
-holds the two trays rigidly, so the board doesn't hinge or rock at the seam
-when one half isn't fully supported, e.g. on an uneven desk or on your lap.
-Unscrew the plate to split the board again.
+To join the halves, butt the straight inner edges together and slide the two
+bridge plates into the groove along the seam: `split_bridge_back` from the back
+edge, `split_bridge_front` from the front. Each plate is a tapered dovetail.
+Push it in until it wedges tight, flush with the top, with only its grip tab
+sticking out. The undercut sides grip both trays, so the halves can't pull
+apart, lift, or hinge at the seam. The joined board stays flat even when one
+half isn't fully supported, e.g. on an uneven desk or on your lap. No screws
+or tools are needed. To split the board, pull the plates out by their tabs.
 
-Parts: `split_left`, `split_right`, and `split_bridge`. Print everything flat,
-the trays floor down. No supports.
+If a plate is too loose or too tight on your printer, change `bridge_clr`.
+
+Parts: `split_left`, `split_right`, `split_bridge_back` and
+`split_bridge_front`. Print everything flat, the trays floor down and the
+plates on their wide face. No supports.
 
 ## Changing them
 

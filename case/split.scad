@@ -2,11 +2,13 @@
 //
 // Two trays, one per half. On their own each is a complete case for one
 // half. Pushed together along their straight inner edges they make one
-// uniboard at a fixed splay, held rigid by a bridge plate that sits in a
-// recess across the seam, flush with the top, with three M2 screws into each
-// tray. The plate keeps the two trays from hinging at the seam, so the
-// joined board stays flat even when one half is not fully supported (an
-// uneven desk, a lap). Unscrew the plate to split it again.
+// uniboard at a fixed splay, held rigid by two bridge plates. No screws or
+// tools: each plate is a tapered dovetail that slides into a matching groove
+// along the seam, one from the back edge and one from the front, and wedges
+// tight, flush with the top. Their undercut sides grip both trays, so they
+// can't pull apart, lift, or hinge at the seam, and the joined board stays
+// flat even when one half is not fully supported (an uneven desk, a lap).
+// Pull the plates out by their tabs to split the board again.
 //
 // Each half drops into its pocket and sits flat on the floor (every SMD part
 // is on the switch side, so the bottom is bare), held by three M2 screws that
@@ -19,7 +21,7 @@
 include <common.scad>
 
 /* [Part] */
-part = "assembly"; // [assembly, left, right, bridge]
+part = "assembly"; // [assembly, left, right, bridge_back, bridge_front]
 
 /* [Layout] */
 splay = 12;        // degrees each half is rotated away from straight
@@ -38,14 +40,13 @@ xiao_relief_depth = 2;
 notch_depth = 10;  // how far the top-edge notch reaches into the wall
 /* [Seam and bridge] */
 seam_clr = 0.1;    // gap between the two trays at the seam
-bridge_w = 40;     // bridge plate width across the seam (trimmed to the deck)
-bridge_t = 2.4;    // bridge plate thickness = recess depth
-bridge_clr = 0.2;  // recess clearance around the plate
-bridge_margin = 1.6; // deck left between the recess and the PCB pockets
-bridge_screw_x = 5; // seam to the bridge screws
-bridge_screw_y = [0.2, 0.5, 0.8]; // screw positions along the seam, 0 = front, 1 = back
-head_d = 4.2;      // counterbore for the bridge screw heads
-head_depth = 1.0;
+// Two plates: [edge it enters from (1 = back, -1 = front), length,
+// width at that edge, width at its inner end].
+bridges = [[1, 70, 22, 12], [-1, 26, 16, 10]];
+bridge_t = 2.4;    // plate thickness = groove depth
+dovetail = 0.8;    // undercut of each side, bottom vs. top of the plate
+bridge_clr = 0.1;  // groove clearance; the taper takes up the rest
+tab = 4;           // grip tab sticking out of the case edge
 $fn = 48;
 
 h = floor_t + pcb_t + lip;
@@ -74,18 +75,22 @@ module tray() {
     }
 }
 
-// Bridge plate outline: the deck between the halves, inset from the walls
-// and the PCB pockets.
-module bridge_shape()
-    difference() {
-        intersection() {
-            offset(r = -wall) outer_shape();
-            translate([-bridge_w / 2, y_lo]) square([bridge_w, y_hi - y_lo]);
-        }
-        offset(r = bridge_margin + bridge_clr) pockets();
-    }
+// Plate plan at its top face, tapering inward from the edge it enters by.
+// `extra` carries the taper on past the edge for the open end of the groove.
+module bridge_plan(b, grow = 0, extra = 0) {
+    side = b[0]; L = b[1]; edge = side > 0 ? y_hi : y_lo;
+    function hw(d) = b[3] / 2 + (b[2] - b[3]) / 2 * d / L; // d: distance from the inner end
+    y_in = edge - side * L;
+    y_out = edge + side * (tab + extra);
+    offset(delta = grow) polygon([[-hw(0), y_in], [hw(0), y_in], [hw(L + tab + extra), y_out], [-hw(L + tab + extra), y_out]]);
+}
 
-bridge_screws = [for (f = bridge_screw_y, sx = [-1, 1]) [sx * bridge_screw_x, y_lo + f * (y_hi - y_lo)]];
+// Dovetail solid: the bottom face is wider than the top by `dovetail` a side.
+module bridge_solid(b, grow = 0, extra = 0)
+    hull() {
+        linear_extrude(0.01) bridge_plan(b, grow + dovetail, extra);
+        translate([0, 0, bridge_t - 0.01]) linear_extrude(0.01) bridge_plan(b, grow, extra);
+    }
 
 module left_tray() {
     difference() {
@@ -93,26 +98,23 @@ module left_tray() {
             tray();
             translate([-500, -500, -1]) cube([500 - seam_clr / 2, 1000, h + 2]);
         }
-        translate([0, 0, h - bridge_t]) linear_extrude(h) offset(delta = bridge_clr) bridge_shape();
-        for (p = bridge_screws) translate([p[0], p[1], h - bridge_t - pilot_depth])
-            cylinder(d = pilot_d, h = pilot_depth + 0.01);
+        // Groove, open at the back edge; taller than the plate so its top
+        // stays clear.
+        for (b = bridges) {
+            translate([0, 0, h - bridge_t]) bridge_solid(b, bridge_clr, 5);
+            translate([0, 0, h - 0.01]) linear_extrude(1) bridge_plan(b, bridge_clr, 5);
+        }
     }
 }
 
-module bridge()
-    difference() {
-        linear_extrude(bridge_t) bridge_shape();
-        for (p = bridge_screws) translate([p[0], p[1], -1]) {
-            cylinder(d = 2.4, h = bridge_t + 2);
-            translate([0, 0, bridge_t + 1 - head_depth]) cylinder(d = head_d, h = head_depth + 1);
-        }
-    }
+module bridges_in_place() for (b = bridges) bridge_solid(b);
 
 if (part == "left") left_tray();
 else if (part == "right") mirror([1, 0, 0]) left_tray();
-else if (part == "bridge") bridge();
+else if (part == "bridge_back") bridge_solid(bridges[0]);
+else if (part == "bridge_front") bridge_solid(bridges[1]);
 else {
     color("SteelBlue") left_tray();
     color("LightSteelBlue") mirror([1, 0, 0]) left_tray();
-    color("Orange") translate([0, 0, h - bridge_t]) bridge();
+    color("Orange") translate([0, 0, h - bridge_t]) bridges_in_place();
 }
