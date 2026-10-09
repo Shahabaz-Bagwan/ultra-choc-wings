@@ -1,0 +1,14 @@
+(footprint "SMDPad" (version 20221018) (generator pcbnew)
+  (layer "F.Cu")
+  (attr through_hole)
+  (fp_text reference "REF**" (at 0 0) (layer "F.SilkS") hide
+      (effects (font (size 1.27 1.27) (thickness 0.15)))
+    (tstamp 5e777d76-f813-4f9d-a987-82559fdd7f74)
+  )
+  (fp_text value "" (at 0 0) (layer "F.SilkS") hide
+      (effects (font (size 1.27 1.27) (thickness 0.15)))
+    (tstamp 340ba859-572b-4a26-bbf2-a1bc0ebc4412)
+  )
+  (pad "1" smd rect (at 0 0) (size 1.5 1.5) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 5ee0e3dc-0d53-4988-93a6-764e3a5c3a2b))
+  (pad "1" smd rect (at 0 0) (size 1.5 1.5) (layers "B.Cu" "B.Paste" "B.Mask") (tstamp 818c5211-b5c2-4890-848f-1a919ba5cf95))
+)
