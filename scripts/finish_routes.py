@@ -21,6 +21,9 @@ TRACK = MM(0.25)
 VIA_D, VIA_DRILL = MM(0.6), MM(0.3)
 HOLE_CLEARANCE = MM(0.25)
 EDGE = MM(0.4)
+# KiCad's copper-to-edge rule (scripts/kicad_route.py); Freerouting only keeps
+# its 0.2 mm track clearance from the outline.
+EDGE_RULE = MM(0.3)
 # Grid paths step diagonally between cell centres; keep a little extra room.
 SLACK = MM(0.03)
 
@@ -303,8 +306,51 @@ def nudge_edge_vias(board, obs, limit=MM(0.2)):
         print(f"moved {via.GetNetname()} via {pcbnew.ToMM(move):.3f} mm away from the edge")
 
 
+def drop_edge_tracks(board):
+    """Remove tracks that break the edge rule; the island pass reroutes them."""
+    edges = Obstacles(board, 0)
+    bad = [t for t in board.GetTracks() if t.Type() == pcbnew.PCB_TRACE_T and
+           edges.near_edge(pcbnew.SEG(t.GetStart(), t.GetEnd()), t.GetWidth() // 2 + EDGE_RULE)]
+    nets = {t.GetNetname() for t in bad}
+    for t in bad:
+        print(f"{t.GetNetname()}: removed track too close to the board edge")
+        board.Delete(t)
+    return nets
+
+
+def prune_stubs(board, nets):
+    """Delete tracks that drop_edge_tracks left hanging on `nets`."""
+    def joined(end, layer, other):
+        if other.Type() == pcbnew.PCB_TRACE_T:
+            # KiCad wants track ends on the other track's centre line, not
+            # just touching its copper.
+            return pcbnew.SEG(other.GetStart(), other.GetEnd()).Distance(end) <= MM(0.001)
+        return other.GetEffectiveShape(layer).Collide(pcbnew.SHAPE_CIRCLE(end, 0), 0)
+
+    while True:
+        tracks = list(board.GetTracks())
+        pads = list(board.GetPads())
+        stubs = []
+        for i, t in enumerate(tracks):
+            if t.Type() != pcbnew.PCB_TRACE_T or t.GetNetname() not in nets:
+                continue
+            layer = t.GetLayer()
+            # Python wrappers are not identity-stable, so compare by index.
+            others = [o for j, o in enumerate(tracks)
+                      if j != i and o.GetNetCode() == t.GetNetCode() and o.IsOnLayer(layer)]
+            others += [p for p in pads if p.GetNetCode() == t.GetNetCode() and p.IsOnLayer(layer)]
+            if not all(any(joined(end, layer, o) for o in others) for end in (t.GetStart(), t.GetEnd())):
+                stubs.append(t)
+        if not stubs:
+            return
+        for t in stubs:
+            print(f"{t.GetNetname()}: removed dangling track")
+            board.Delete(t)
+
+
 def main():
     board = pcbnew.LoadBoard(sys.argv[1])
+    edge_nets = drop_edge_tracks(board)
     failed = []
     for net in board.GetNetsByName().values():
         code = net.GetNetCode()
@@ -347,6 +393,7 @@ def main():
                 board.Add(via)
             print(f"{net.GetNetname()}: joined island with {len(segs)} track(s), {len(vias)} via(s)")
             groups = islands(board, code)
+    prune_stubs(board, edge_nets)
     nudge_edge_vias(board, Obstacles(board, 0))
     board.Save(sys.argv[1])
     if failed:

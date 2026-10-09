@@ -102,6 +102,16 @@ def import_ses(board, path):
     return True
 
 
+def solid_via_pads(board):
+    """Via-like GND through pads (the flippable XIAO's side jumpers) are never
+    soldered, so tie them solidly into the pour instead of with spokes."""
+    gnd = board.FindNet("GND").GetNetCode()
+    for pad in board.GetPads():
+        if pad.GetNetCode() == gnd and pad.GetAttribute() == pcbnew.PAD_ATTRIB_PTH \
+                and max(pad.GetSize().x, pad.GetSize().y) <= MM(0.8):
+            pad.SetZoneConnection(pcbnew.ZONE_CONNECTION_FULL)
+
+
 def add_ground_pours(board):
     """Fill both copper layers with GND inside the board outline."""
     gnd = board.FindNet("GND")
@@ -135,6 +145,7 @@ def main():
                 board.Remove(track)
         board.Save(sys.argv[4])
     elif mode == "pour":
+        solid_via_pads(board)
         for zone in list(board.Zones()):
             board.Remove(zone)
         add_ground_pours(board)
