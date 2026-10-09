@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "ucw")(type "KiCad")(uri "${KIPRJMOD}/ucw.pretty")(options "")(descr "Footprints of every part on the board"))
+)

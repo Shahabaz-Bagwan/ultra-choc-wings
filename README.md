@@ -63,7 +63,7 @@ KICAD_PYTHON=python3 FREEROUTING_JAR=path/to/freerouting.jar scripts/build_pcb.s
 This runs Ergogen, autoroutes with [Freerouting](https://github.com/freerouting/freerouting),
 joins the few connections Freerouting misreads around the flippable XIAO
 pads (`scripts/finish_routes.py`), adds ground pours on both layers, writes a DRC report, exports gerbers, the
-JLCPCB BOM/CPL files and the cases. It needs KiCad 7 or newer (with its Python
+JLCPCB BOM/CPL files, the schematic and the cases. It needs KiCad 7 or newer (with its Python
 module), Java, and `xvfb-run` on a headless machine. The committed board was
 autorouted; review it in KiCad before ordering and hand-tidy any routes you
 don't like.
@@ -71,8 +71,33 @@ don't like.
 `pcb/drc.rpt` has no unconnected items. The remaining entries are known: the
 flippable XIAO footprint's solder jumpers sit closer than the default clearance
 and hole clearance by design, solder mask bridges between those jumpers,
-library-footprint notes (the footprints are generated, not from a library),
-and silkscreen overlaps.
+library-footprint notes (KiCad compares the generated footprints with the
+`ucw` library), and silkscreen overlaps.
+
+## Schematic and libraries
+
+The board comes from Ergogen, so `scripts/make_schematic.py` writes the
+KiCad side from the routed board (it runs as part of `build_pcb.sh`):
+
+* `pcb/ultra-choc-wings.kicad_sch`: every part of one half with its nets,
+  as net labels, grouped into the key matrix, MCU, power and LED driver.
+* `pcb/ucw.kicad_sym`: one symbol per part type.
+* `pcb/ucw.pretty/`: one footprint per part type, taken from the board.
+* `pcb/fp-lib-table`, `pcb/sym-lib-table`: point the project at both.
+
+![The board with parts and keycaps](docs/board-3d.png)
+
+Every part also has a simple 3D model (`pcb/ucw.3dshapes/`, boxes and
+cylinders from the datasheet outlines, not exact CAD), so KiCad's 3D viewer
+shows the populated board; `docs/board-3d-parts.png` is the same without
+keycaps. `scripts/make_3d_models.py` writes them and links them into the board
+and the `ucw` footprints. The models sit on the switch side, the front (F)
+for the left half.
+
+Every footprint on the board is linked to its `ucw` footprint and to its
+schematic symbol, so cross-probing and "Update PCB from Schematic" match part
+for part. Change the design in `config.yaml` and rerun the build rather than
+editing the schematic; the build overwrites it.
 
 ## Assembly notes
 
