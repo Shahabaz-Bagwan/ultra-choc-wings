@@ -204,10 +204,13 @@ pcbs:
         params:
           from: "{{colrow}}"
           to: "{{column_net}}"
-      # Matrix diode, in the strip below the switch body (under the keycap).
+      # The PG1316S is ultra low profile: nothing may sit beside it, so the
+      # diode, LED and resistor all go under the switch body, as in the v1
+      # board. Positions are in the key frame, so they rotate with the key.
+      # Diode and resistor share the row below the switch pads.
       diode:
         what: rev_smd2
-        where: /matrix_/
+        where: true
         params:
           designator: D
           package: SOD123
@@ -216,24 +219,10 @@ pcbs:
           pad1: "{{row_net}}"
           pad2: "{{colrow}}"
         adjust:
-          shift: [2.6, -7.2]
-      # Thumb keys sit on the board edge, so their diode and resistor go in the
-      # strip above the switch instead.
-      diode_thumb:
-        what: rev_smd2
-        where: /thumbfan_/
-        params:
-          designator: D
-          package: SOD123
-          polarized: true
-          value: 1N4148W
-          pad1: "{{row_net}}"
-          pad2: "{{colrow}}"
-        adjust:
-          shift: [1.3, 7.2]
-      # Per-key LED in the component pocket under the PG1316S body, with its
-      # series resistor next to the diode. Anodes go to 3V3 through the
-      # resistor, cathodes share LED_K, switched to GND by Q1 (PWM on D6).
+          shift: [-2.9, -5.1]
+      # Per-key LED in the component pocket of the PG1316S (the Dwgs.User
+      # polygon in the footprint). Anodes go to 3V3 through the resistor,
+      # cathodes share LED_K, switched to GND by Q1 (PWM on D6).
       led:
         what: rev_smd2
         where: true
@@ -248,7 +237,7 @@ pcbs:
           shift: [0, 2.5]
       led_resistor:
         what: rev_smd2
-        where: /matrix_/
+        where: true
         params:
           designator: R
           package: "0603"
@@ -256,18 +245,7 @@ pcbs:
           pad1: VCC3
           pad2: "LA_{{colrow}}"
         adjust:
-          shift: [-2.6, -7.2]
-      led_resistor_thumb:
-        what: rev_smd2
-        where: /thumbfan_/
-        params:
-          designator: R
-          package: "0603"
-          value: 1k
-          pad1: VCC3
-          pad2: "LA_{{colrow}}"
-        adjust:
-          shift: [-3.9, 7.2]
+          shift: [2.4, -5.1]
       xiao_flippable:
         what: xiao_flippable
         where:
