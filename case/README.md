@@ -7,8 +7,8 @@ same uniboard outline when opened out.
 | | Folding (`fold.scad`) | Split (`split.scad`) |
 | --- | --- | --- |
 | Style | Thin frame and bottom cover per half, after the [Aronia](https://github.com/kumekay/aronia/tree/main/case) case | Open tray per half, like the earlier one-piece tray |
-| Joining | Double hinge on two brass rods: open flat as a uniboard, or fold shut like a book | Two dovetail bridge plates slide into the seam, no screws or tools, and make a rigid uniboard; pull them out to use the halves apart |
-| Size per half | about 120 × 110 × 7.2 mm; 17.8 mm thick folded | about 119 × 114 × 5.6 mm |
+| Joining | Double hinge on two brass rods: open flat as a uniboard, or fold shut like a book | One clip slides on from the back, no screws or tools: a base under both halves and a bridge across the top make a rigid uniboard; slide it off to use the halves apart |
+| Size per half | about 120 × 110 × 7.2 mm; 17.8 mm thick folded | about 119 × 114 × 5.6 mm; 7.6 mm thick on the clip |
 
 Printed STLs are in `stl/`. The right-hand parts are mirror images of the
 left (the right PCB is the same board flipped over).
@@ -42,7 +42,7 @@ Print the frames deck down, the covers flat, the links flat. No supports.
 
 ## Split case
 
-![Split case, joined and apart](split.png)
+![Split case: joined, apart, and from below](split.png)
 
 Each tray is a complete case for one half: the PCB drops into its pocket and
 sits flat on the floor (every SMD part is on the switch side, so the bottom is
@@ -50,26 +50,35 @@ bare), held by three M2 × 4 mm screws that self-tap into the floor. For
 heat-set inserts set `pilot_d = 3.2`. The CR2032 is reachable from the top, and
 a notch in the top wall clears the XIAO's USB-C port and the power switch.
 
-To join the halves, butt the straight inner edges together and slide the two
-bridge plates into the groove along the seam: `split_bridge_back` from the back
-edge, `split_bridge_front` from the front. Each plate is a tapered dovetail.
-Push it in until it wedges tight, flush with the top, with only its grip tab
-sticking out. The undercut sides grip both trays, so the halves can't pull
-apart, lift, or hinge at the seam. The joined board stays flat even when one
-half isn't fully supported, e.g. on an uneven desk or on your lap. No screws
-or tools are needed. To split the board, pull the plates out by their tabs.
+To join the halves, use `split_clip`. It is shaped like an I-beam:
 
-If a plate is too loose or too tight on your printer, change `bridge_clr`.
+* a wide base plate that goes under both trays and covers about half of each
+  one's underside,
+* a thin web that runs up through the seam between the trays,
+* a small wedge-shaped bridge on top that sits flush in a groove along the
+  seam.
 
-Parts: `split_left`, `split_right`, `split_bridge_back` and
-`split_bridge_front`. Print everything flat, the trays floor down and the
-plates on their wide face. No supports.
+Lay the clip on the desk, set the two trays on it either side of the web, and
+slide them forward until their back edges meet the lip at the back of the
+clip, where two small bumps click into dimples under the trays. You can also
+slide the clip in from the back edge of the trays. The base carries both
+halves from below and the bridge holds them down from the top, so the joined
+board is one rigid piece. It doesn't hinge at the seam and doesn't need a
+flat surface under it. No screws or tools are needed. To split the board,
+slide the clip off backwards.
+
+If the clip is too loose or too tight on your printer, change `clip_clr`. Put
+rubber feet under the clip's base and under the outer halves of the trays.
+
+Parts: `split_left`, `split_right` and `split_clip`. Print everything flat:
+the trays floor down, and the clip base down so the web and bridge print
+upwards. The bridge's 45° sides need no supports.
 
 ## Changing them
 
 Open `fold.scad` or `split.scad` in OpenSCAD and change the parameters at the
 top (splay, wall and floor thickness, clearances, component heights, hinge
-and bridge sizes), then preview with `part = "assembly"` (or `"folded"`). Export
+and clip sizes), then preview with `part = "assembly"` (or `"folded"`). Export
 all STLs with `scripts/build_case.sh`.
 
 Measure your parts before printing the folding case: `key_h` (switch height

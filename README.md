@@ -20,8 +20,8 @@ A 36-key split keyboard for Kailh PG1316S switches, based on the
 * **JLCPCB ready**: gerbers, BOM and placement files for both halves; all SMD
   parts are assembled by JLCPCB on one side per half.
 * **Two cases**: a thin folding case after Aronia's (opens flat as a uniboard,
-  folds shut), and split trays that join tool-free into a rigid uniboard with slide-in
-  dovetail plates, or work apart.
+  folds shut), and split trays that a tool-free slide-on clip joins into a rigid uniboard,
+  or that work apart.
 
 | Folder | What's in it |
 | --- | --- |
