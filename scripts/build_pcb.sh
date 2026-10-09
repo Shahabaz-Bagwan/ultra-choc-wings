@@ -14,6 +14,7 @@
 #                                 and pcb/ucw.pretty (symbol and footprint libraries)
 #   jlcpcb/gerbers.zip            upload to JLCPCB (same file for both halves)
 #   jlcpcb/bom.csv, jlcpcb/cpl-*.csv  assembly files, see jlcpcb/README.md
+#   pcb/ucw.3dshapes/             simple 3D models of every part, linked into the board
 #   case/board.scad, case/stl/       board data for the cases, printable parts
 set -euo pipefail
 cd "$(dirname "$0")/.."
@@ -45,6 +46,9 @@ $PYTHON scripts/jlcpcb.py pcb/ultra-choc-wings.kicad_pcb jlcpcb/
 # Schematic, symbol and footprint libraries from the routed board, and the
 # board's footprints linked to them
 $PYTHON scripts/make_schematic.py pcb/ultra-choc-wings.kicad_pcb
+
+# 3D models for the KiCad 3D viewer, and preview renders when OpenSCAD is there
+$PYTHON scripts/make_3d_models.py pcb/ultra-choc-wings.kicad_pcb
 
 # Cases: board outline, holes and parts from the routed board, then the STLs
 $PYTHON scripts/make_case.py pcb/ultra-choc-wings.kicad_pcb case/board.scad
