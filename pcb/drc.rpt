@@ -1,46 +1,10 @@
 ** Drc report for pcb/ultra-choc-wings.kicad_pcb **
-** Created on 2026-10-09 09:48:12 **
+** Created on 2026-10-09 13:57:41 **
 
-** Found 252 DRC violations **
-[silk_over_copper]: Silkscreen clipped by solder mask
-    Local override; Severity: warning
-    @(30.7500 mm, -30.6000 mm): Line on F.Silkscreen
-[silk_over_copper]: Silkscreen clipped by solder mask
-    Local override; Severity: warning
-    @(66.7500 mm, -38.6000 mm): Line on F.Silkscreen
-[silk_over_copper]: Silkscreen clipped by solder mask
-    Local override; Severity: warning
-    @(30.7500 mm, -13.6000 mm): Line on F.Silkscreen
-[silk_over_copper]: Silkscreen clipped by solder mask
-    Local override; Severity: warning
-    @(-5.2500 mm, 4.4000 mm): Line on F.Silkscreen
-[silk_over_copper]: Silkscreen clipped by solder mask
-    Local override; Severity: warning
-    @(12.7500 mm, -41.6000 mm): Line on F.Silkscreen
-[silk_over_copper]: Silkscreen clipped by solder mask
-    Local override; Severity: warning
-    @(48.7500 mm, -23.9750 mm): Line on F.Silkscreen
-[silk_over_copper]: Silkscreen clipped by solder mask
-    Local override; Severity: warning
-    @(-8.0000 mm, -42.0000 mm): Line on B.Silkscreen
-[silk_over_copper]: Silkscreen clipped by solder mask
-    Local override; Severity: warning
-    @(-8.0000 mm, -42.0000 mm): Line on F.Silkscreen
+** Found 237 DRC violations **
 [silk_over_copper]: Silkscreen clipped by solder mask
     Local override; Severity: warning
     @(88.5000 mm, 14.8230 mm): Reference 'SW18'
-[silk_over_copper]: Silkscreen clipped by solder mask
-    Local override; Severity: warning
-    @(48.7500 mm, -6.9750 mm): Line on F.Silkscreen
-[silk_over_copper]: Silkscreen clipped by solder mask
-    Local override; Severity: warning
-    @(12.7500 mm, -24.6000 mm): Line on F.Silkscreen
-[silk_over_copper]: Silkscreen clipped by solder mask
-    Local override; Severity: warning
-    @(66.7500 mm, -4.6000 mm): Line on F.Silkscreen
-[silk_over_copper]: Silkscreen clipped by solder mask
-    Local override; Severity: warning
-    @(12.7500 mm, -7.6000 mm): Line on F.Silkscreen
 [silk_over_copper]: Silkscreen clipped by solder mask
     Local override; Severity: warning
     @(13.7000 mm, -61.2500 mm): Line on B.Silkscreen
@@ -67,28 +31,10 @@
     @(20.3000 mm, -58.4000 mm): Line on F.Silkscreen
 [silk_over_copper]: Silkscreen clipped by solder mask
     Local override; Severity: warning
-    @(66.7500 mm, -21.6000 mm): Line on F.Silkscreen
+    @(-8.0000 mm, -42.0000 mm): Line on B.Silkscreen
 [silk_over_copper]: Silkscreen clipped by solder mask
     Local override; Severity: warning
-    @(-5.2500 mm, -29.6000 mm): Line on F.Silkscreen
-[silk_over_copper]: Silkscreen clipped by solder mask
-    Local override; Severity: warning
-    @(-5.2500 mm, -12.6000 mm): Line on F.Silkscreen
-[silk_over_copper]: Silkscreen clipped by solder mask
-    Local override; Severity: warning
-    @(42.8500 mm, 12.9900 mm): Line on F.Silkscreen
-[silk_over_copper]: Silkscreen clipped by solder mask
-    Local override; Severity: warning
-    @(61.9401 mm, 14.0713 mm): Line on F.Silkscreen
-[silk_over_copper]: Silkscreen clipped by solder mask
-    Local override; Severity: warning
-    @(48.7500 mm, -40.9750 mm): Line on F.Silkscreen
-[silk_over_copper]: Silkscreen clipped by solder mask
-    Local override; Severity: warning
-    @(30.7500 mm, -47.6000 mm): Line on F.Silkscreen
-[silk_over_copper]: Silkscreen clipped by solder mask
-    Local override; Severity: warning
-    @(82.0034 mm, 15.5755 mm): Line on F.Silkscreen
+    @(-8.0000 mm, -42.0000 mm): Line on F.Silkscreen
 [solder_mask_bridge]: Front solder mask aperture bridges items with different nets
     Rule: board setup solder mask min width; Severity: error
     @(6.3500 mm, -61.1200 mm): Pad [<no net>] of xiao-ble1 on F.Cu
@@ -105,14 +51,18 @@
     Rule: board setup solder mask min width; Severity: error
     @(6.3500 mm, -61.1200 mm): Pad [<no net>] of xiao-ble1 on B.Cu
     @(5.8420 mm, -61.1200 mm): Pad [<no net>] of xiao-ble1 on B.Cu
-[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+[solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
     Rule: board setup solder mask min width; Severity: error
-    @(-6.3500 mm, -61.1200 mm): Pad [<no net>] of xiao-ble1 on F.Cu
-    @(-7.6200 mm, -61.1200 mm): PTH pad [<no net>] of xiao-ble1
+    @(-17.6120 mm, -13.9700 mm): Polygon on B.Mask
+    @(5.1000 mm, -61.3000 mm): Track [P0] on B.Cu, length 1.1314 mm
 [solder_mask_bridge]: Front solder mask aperture bridges items with different nets
     Rule: board setup solder mask min width; Severity: error
     @(-6.3500 mm, -61.1200 mm): Pad [<no net>] of xiao-ble1 on F.Cu
     @(-5.8420 mm, -61.1200 mm): Pad [<no net>] of xiao-ble1 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; Severity: error
+    @(-6.3500 mm, -61.1200 mm): Pad [<no net>] of xiao-ble1 on F.Cu
+    @(-7.6200 mm, -61.1200 mm): PTH pad [<no net>] of xiao-ble1
 [solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
     Rule: board setup solder mask min width; Severity: error
     @(-6.3500 mm, -61.1200 mm): Pad [<no net>] of xiao-ble1 on B.Cu
@@ -129,10 +79,6 @@
     Rule: board setup solder mask min width; Severity: error
     @(6.3500 mm, -58.5800 mm): Pad [<no net>] of xiao-ble1 on F.Cu
     @(5.8420 mm, -58.5800 mm): Pad [<no net>] of xiao-ble1 on F.Cu
-[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
-    Rule: board setup solder mask min width; Severity: error
-    @(-15.0720 mm, -13.9700 mm): Polygon on F.Mask
-    @(4.7301 mm, -58.5800 mm): Track [GND] on F.Cu, length 1.6067 mm
 [solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
     Rule: board setup solder mask min width; Severity: error
     @(6.3500 mm, -58.5800 mm): Pad [<no net>] of xiao-ble1 on B.Cu
@@ -168,11 +114,11 @@
 [solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
     Rule: board setup solder mask min width; Severity: error
     @(6.3500 mm, -56.0400 mm): Pad [<no net>] of xiao-ble1 on B.Cu
-    @(7.6200 mm, -56.0400 mm): PTH pad [<no net>] of xiao-ble1
+    @(5.8420 mm, -56.0400 mm): Pad [<no net>] of xiao-ble1 on B.Cu
 [solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
     Rule: board setup solder mask min width; Severity: error
     @(6.3500 mm, -56.0400 mm): Pad [<no net>] of xiao-ble1 on B.Cu
-    @(5.8420 mm, -56.0400 mm): Pad [<no net>] of xiao-ble1 on B.Cu
+    @(7.6200 mm, -56.0400 mm): PTH pad [<no net>] of xiao-ble1
 [solder_mask_bridge]: Front solder mask aperture bridges items with different nets
     Rule: board setup solder mask min width; Severity: error
     @(-6.3500 mm, -56.0400 mm): Pad [<no net>] of xiao-ble1 on F.Cu
@@ -200,11 +146,11 @@
 [solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
     Rule: board setup solder mask min width; Severity: error
     @(6.3500 mm, -53.5000 mm): Pad [<no net>] of xiao-ble1 on B.Cu
-    @(5.8420 mm, -53.5000 mm): Pad [<no net>] of xiao-ble1 on B.Cu
+    @(7.6200 mm, -53.5000 mm): PTH pad [<no net>] of xiao-ble1
 [solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
     Rule: board setup solder mask min width; Severity: error
     @(6.3500 mm, -53.5000 mm): Pad [<no net>] of xiao-ble1 on B.Cu
-    @(7.6200 mm, -53.5000 mm): PTH pad [<no net>] of xiao-ble1
+    @(5.8420 mm, -53.5000 mm): Pad [<no net>] of xiao-ble1 on B.Cu
 [solder_mask_bridge]: Front solder mask aperture bridges items with different nets
     Rule: board setup solder mask min width; Severity: error
     @(-6.3500 mm, -53.5000 mm): Pad [<no net>] of xiao-ble1 on F.Cu
@@ -220,11 +166,15 @@
 [solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
     Rule: board setup solder mask min width; Severity: error
     @(-11.0080 mm, -3.8100 mm): Polygon on B.Mask
-    @(-4.8260 mm, -53.5000 mm): Track [P10] on B.Cu, length 1.7935 mm
+    @(-6.2320 mm, -52.0940 mm): Track [P10] on B.Cu, length 1.9884 mm
 [solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
     Rule: board setup solder mask min width; Severity: error
     @(-6.3500 mm, -53.5000 mm): Pad [<no net>] of xiao-ble1 on B.Cu
     @(-7.6200 mm, -53.5000 mm): PTH pad [<no net>] of xiao-ble1
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; Severity: error
+    @(-7.4520 mm, -13.9700 mm): Polygon on F.Mask
+    @(4.5376 mm, -50.9600 mm): Track [P9] on F.Cu, length 1.6170 mm
 [solder_mask_bridge]: Front solder mask aperture bridges items with different nets
     Rule: board setup solder mask min width; Severity: error
     @(6.3500 mm, -50.9600 mm): Pad [<no net>] of xiao-ble1 on F.Cu
@@ -236,35 +186,43 @@
 [solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
     Rule: board setup solder mask min width; Severity: error
     @(6.3500 mm, -50.9600 mm): Pad [<no net>] of xiao-ble1 on B.Cu
-    @(7.6200 mm, -50.9600 mm): PTH pad [<no net>] of xiao-ble1
+    @(5.8420 mm, -50.9600 mm): Pad [<no net>] of xiao-ble1 on B.Cu
+[solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; Severity: error
+    @(-7.4520 mm, -13.9700 mm): Polygon on B.Mask
+    @(4.9000 mm, -51.1000 mm): Track [P4] on B.Cu, length 1.1314 mm
 [solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
     Rule: board setup solder mask min width; Severity: error
     @(6.3500 mm, -50.9600 mm): Pad [<no net>] of xiao-ble1 on B.Cu
-    @(5.8420 mm, -50.9600 mm): Pad [<no net>] of xiao-ble1 on B.Cu
+    @(7.6200 mm, -50.9600 mm): PTH pad [<no net>] of xiao-ble1
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; Severity: error
+    @(-6.3500 mm, -50.9600 mm): Pad [<no net>] of xiao-ble1 on F.Cu
+    @(-7.6200 mm, -50.9600 mm): PTH pad [<no net>] of xiao-ble1
 [solder_mask_bridge]: Front solder mask aperture bridges items with different nets
     Rule: board setup solder mask min width; Severity: error
     @(-6.3500 mm, -50.9600 mm): Pad [<no net>] of xiao-ble1 on F.Cu
     @(-5.8420 mm, -50.9600 mm): Pad [<no net>] of xiao-ble1 on F.Cu
-[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+[solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
     Rule: board setup solder mask min width; Severity: error
-    @(-6.3500 mm, -50.9600 mm): Pad [<no net>] of xiao-ble1 on F.Cu
+    @(-6.3500 mm, -50.9600 mm): Pad [<no net>] of xiao-ble1 on B.Cu
     @(-7.6200 mm, -50.9600 mm): PTH pad [<no net>] of xiao-ble1
 [solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
     Rule: board setup solder mask min width; Severity: error
     @(-6.3500 mm, -50.9600 mm): Pad [<no net>] of xiao-ble1 on B.Cu
     @(-5.8420 mm, -50.9600 mm): Pad [<no net>] of xiao-ble1 on B.Cu
-[solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
-    Rule: board setup solder mask min width; Severity: error
-    @(-6.3500 mm, -50.9600 mm): Pad [<no net>] of xiao-ble1 on B.Cu
-    @(-7.6200 mm, -50.9600 mm): PTH pad [<no net>] of xiao-ble1
-[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
-    Rule: board setup solder mask min width; Severity: error
-    @(6.3500 mm, -48.4200 mm): Pad [<no net>] of xiao-ble1 on F.Cu
-    @(7.6200 mm, -48.4200 mm): PTH pad [<no net>] of xiao-ble1
 [solder_mask_bridge]: Front solder mask aperture bridges items with different nets
     Rule: board setup solder mask min width; Severity: error
     @(6.3500 mm, -48.4200 mm): Pad [<no net>] of xiao-ble1 on F.Cu
     @(5.8420 mm, -48.4200 mm): Pad [<no net>] of xiao-ble1 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; Severity: error
+    @(-4.9120 mm, -13.9700 mm): Polygon on F.Mask
+    @(4.8260 mm, -48.4200 mm): Track [P8] on F.Cu, length 1.6099 mm
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; Severity: error
+    @(6.3500 mm, -48.4200 mm): Pad [<no net>] of xiao-ble1 on F.Cu
+    @(7.6200 mm, -48.4200 mm): PTH pad [<no net>] of xiao-ble1
 [solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
     Rule: board setup solder mask min width; Severity: error
     @(6.3500 mm, -48.4200 mm): Pad [<no net>] of xiao-ble1 on B.Cu
@@ -276,11 +234,11 @@
 [solder_mask_bridge]: Front solder mask aperture bridges items with different nets
     Rule: board setup solder mask min width; Severity: error
     @(-6.3500 mm, -48.4200 mm): Pad [<no net>] of xiao-ble1 on F.Cu
-    @(-5.8420 mm, -48.4200 mm): Pad [<no net>] of xiao-ble1 on F.Cu
+    @(-7.6200 mm, -48.4200 mm): PTH pad [<no net>] of xiao-ble1
 [solder_mask_bridge]: Front solder mask aperture bridges items with different nets
     Rule: board setup solder mask min width; Severity: error
     @(-6.3500 mm, -48.4200 mm): Pad [<no net>] of xiao-ble1 on F.Cu
-    @(-7.6200 mm, -48.4200 mm): PTH pad [<no net>] of xiao-ble1
+    @(-5.8420 mm, -48.4200 mm): Pad [<no net>] of xiao-ble1 on F.Cu
 [solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
     Rule: board setup solder mask min width; Severity: error
     @(-6.3500 mm, -48.4200 mm): Pad [<no net>] of xiao-ble1 on B.Cu
@@ -433,249 +391,249 @@
     Rule: board setup solder mask min width; Severity: error
     @(-18.6280 mm, -3.8100 mm): Polygon on F.Mask
     @(-5.8420 mm, -61.1200 mm): Pad [<no net>] of xiao-ble1 on F.Cu
-[lib_footprint_mismatch]: Footprint 'REV_SOD123' does not match copy in library 'ucw'.
+[lib_footprint_mismatch]: Footprint 'REV_0805' does not match copy in library 'ucw'.
     Local override; Severity: warning
-    @(33.1000 mm, -29.9000 mm): Footprint D8
-[lib_footprint_mismatch]: Footprint 'REV_LED0603' does not match copy in library 'ucw'.
-    Local override; Severity: warning
-    @(72.0000 mm, -45.5000 mm): Footprint L15
-[lib_footprint_mismatch]: Footprint 'REV_SOD123' does not match copy in library 'ucw'.
-    Local override; Severity: warning
-    @(69.1000 mm, -37.9000 mm): Footprint D15
-[lib_footprint_mismatch]: Footprint 'REV_LED0603' does not match copy in library 'ucw'.
-    Local override; Severity: warning
-    @(36.0000 mm, -20.5000 mm): Footprint L7
-[lib_footprint_issues]: The current configuration does not include the library ''.
-    Local override; Severity: warning
-    @(54.0000 mm, -28.3750 mm): Footprint SW11
-[lib_footprint_mismatch]: Footprint 'REV_LED0603' does not match copy in library 'ucw'.
-    Local override; Severity: warning
-    @(18.0000 mm, -48.5000 mm): Footprint L6
+    @(33.0000 mm, -3.0000 mm): Footprint C2
 [lib_footprint_mismatch]: Footprint 'REV_0603' does not match copy in library 'ucw'.
     Local override; Severity: warning
-    @(2.4000 mm, 5.1000 mm): Footprint R1
-[lib_footprint_mismatch]: Footprint 'REV_SOD123' does not match copy in library 'ucw'.
-    Local override; Severity: warning
-    @(33.1000 mm, -12.9000 mm): Footprint D7
-[lib_footprint_mismatch]: Footprint 'REV_LED0603' does not match copy in library 'ucw'.
-    Local override; Severity: warning
-    @(36.0000 mm, -37.5000 mm): Footprint L8
+    @(86.2000 mm, 18.8067 mm): Footprint R18
 [lib_footprint_mismatch]: Footprint 'REV_0603' does not match copy in library 'ucw'.
     Local override; Severity: warning
-    @(56.4000 mm, -40.2750 mm): Footprint R12
-[lib_footprint_mismatch]: Footprint 'REV_0603' does not match copy in library 'ucw'.
-    Local override; Severity: warning
-    @(74.4000 mm, -20.9000 mm): Footprint R14
-[lib_footprint_mismatch]: Footprint 'REV_SOD123' does not match copy in library 'ucw'.
-    Local override; Severity: warning
-    @(-2.9000 mm, 5.1000 mm): Footprint D1
-[lib_footprint_mismatch]: Footprint 'REV_SOD123' does not match copy in library 'ucw'.
-    Local override; Severity: warning
-    @(15.1000 mm, -40.9000 mm): Footprint D6
-[lib_footprint_mismatch]: Footprint 'REV_SOD123' does not match copy in library 'ucw'.
-    Local override; Severity: warning
-    @(51.1000 mm, -23.2750 mm): Footprint D11
-[lib_footprint_mismatch]: Footprint 'REV_LED0603' does not match copy in library 'ucw'.
-    Local override; Severity: warning
-    @(68.7970 mm, 8.7652 mm): Footprint L17
-[lib_footprint_issues]: The current configuration does not include the library ''.
-    Local override; Severity: warning
-    @(0.0000 mm, -34.0000 mm): Footprint SW3
-[lib_footprint_issues]: The current configuration does not include the library ''.
-    Local override; Severity: warning
-    @(48.1000 mm, 8.5900 mm): Footprint SW16
-[lib_footprint_issues]: The current configuration does not include the library ''.
-    Local override; Severity: warning
-    @(88.7500 mm, 14.3900 mm): Footprint SW18
-[lib_footprint_issues]: The current configuration does not include the library ''.
-    Local override; Severity: warning
-    @(36.0000 mm, -35.0000 mm): Footprint SW8
-[lib_footprint_mismatch]: Footprint 'REV_SOD123' does not match copy in library 'ucw'.
-    Local override; Severity: warning
-    @(51.1000 mm, -6.2750 mm): Footprint D10
-[lib_footprint_mismatch]: Footprint 'REV_SOD123' does not match copy in library 'ucw'.
-    Local override; Severity: warning
-    @(15.1000 mm, -23.9000 mm): Footprint D5
-[lib_footprint_mismatch]: Footprint 'REV_SOD123' does not match copy in library 'ucw'.
-    Local override; Severity: warning
-    @(29.0000 mm, -9.0000 mm): Footprint D19
-[lib_footprint_mismatch]: Footprint 'REV_0603' does not match copy in library 'ucw'.
-    Local override; Severity: warning
-    @(20.4000 mm, -6.9000 mm): Footprint R4
-[lib_footprint_mismatch]: Footprint 'REV_LED0603' does not match copy in library 'ucw'.
-    Local override; Severity: warning
-    @(72.0000 mm, -11.5000 mm): Footprint L13
-[lib_footprint_mismatch]: Footprint 'REV_0603' does not match copy in library 'ucw'.
-    Local override; Severity: warning
-    @(56.4000 mm, -6.2750 mm): Footprint R10
-[lib_footprint_mismatch]: Footprint 'REV_CR2032_BC2003' does not match copy in library 'ucw'.
-    Local override; Severity: warning
-    @(22.0000 mm, 10.0000 mm): Footprint BT1
-[lib_footprint_mismatch]: Footprint 'REV_SOD123' does not match copy in library 'ucw'.
-    Local override; Severity: warning
-    @(69.1000 mm, -3.9000 mm): Footprint D13
-[lib_footprint_mismatch]: Footprint 'REV_LED0603' does not match copy in library 'ucw'.
-    Local override; Severity: warning
-    @(48.1000 mm, 6.0900 mm): Footprint L16
-[lib_footprint_mismatch]: Footprint 'REV_LED0603' does not match copy in library 'ucw'.
-    Local override; Severity: warning
-    @(18.0000 mm, -31.5000 mm): Footprint L5
-[lib_footprint_issues]: The current configuration does not include the library ''.
-    Local override; Severity: warning
-    @(0.0000 mm, -42.5000 mm): Footprint PAD1
-[lib_footprint_mismatch]: Footprint 'REV_SOD123' does not match copy in library 'ucw'.
-    Local override; Severity: warning
-    @(15.1000 mm, -6.9000 mm): Footprint D4
-[lib_footprint_mismatch]: Footprint 'REV_0603' does not match copy in library 'ucw'.
-    Local override; Severity: warning
-    @(69.1482 mm, 16.7274 mm): Footprint R17
-[lib_footprint_mismatch]: Footprint 'REV_0603' does not match copy in library 'ucw'.
-    Local override; Severity: warning
-    @(74.4000 mm, -37.9000 mm): Footprint R15
-[lib_footprint_mismatch]: Footprint 'REV_LED0603' does not match copy in library 'ucw'.
-    Local override; Severity: warning
-    @(72.0000 mm, -28.5000 mm): Footprint L14
-[lib_footprint_issues]: The current configuration does not include the library ''.
-    Local override; Severity: warning
-    @(0.0000 mm, 0.0000 mm): Footprint SW1
-[lib_footprint_mismatch]: Footprint 'REV_LED0603' does not match copy in library 'ucw'.
-    Local override; Severity: warning
-    @(54.0000 mm, -30.8750 mm): Footprint L11
-[lib_footprint_mismatch]: Footprint 'REV_0603' does not match copy in library 'ucw'.
-    Local override; Severity: warning
-    @(56.4000 mm, -23.2750 mm): Footprint R11
-[lib_footprint_mismatch]: Footprint 'REV_LED0603' does not match copy in library 'ucw'.
-    Local override; Severity: warning
-    @(0.0000 mm, -2.5000 mm): Footprint L1
-[lib_footprint_mismatch]: Footprint 'REV_0603' does not match copy in library 'ucw'.
-    Local override; Severity: warning
-    @(2.4000 mm, -28.9000 mm): Footprint R3
-[lib_footprint_mismatch]: Footprint 'REV_0603' does not match copy in library 'ucw'.
-    Local override; Severity: warning
-    @(2.4000 mm, -11.9000 mm): Footprint R2
-[lib_footprint_mismatch]: Footprint 'REV_SPDT_C128955' does not match copy in library 'ucw'.
-    Local override; Severity: warning
-    @(17.0000 mm, -59.9000 mm): Footprint T1
-[lib_footprint_mismatch]: Footprint 'REV_SOD123' does not match copy in library 'ucw'.
-    Local override; Severity: warning
-    @(69.1000 mm, -20.9000 mm): Footprint D14
-[lib_footprint_issues]: The current configuration does not include the library ''.
-    Local override; Severity: warning
-    @(68.1500 mm, 11.1800 mm): Footprint SW17
+    @(0.0000 mm, 5.1000 mm): Footprint R1
 [lib_footprint_issues]: The current configuration does not include the library ''.
     Local override; Severity: warning
     @(18.0000 mm, -46.0000 mm): Footprint SW6
-[lib_footprint_issues]: The current configuration does not include the library ''.
-    Local override; Severity: warning
-    @(18.0000 mm, -12.0000 mm): Footprint SW4
-[lib_footprint_issues]: The current configuration does not include the library ''.
-    Local override; Severity: warning
-    @(0.0000 mm, -17.0000 mm): Footprint SW2
 [lib_footprint_mismatch]: Footprint 'REV_LED0603' does not match copy in library 'ucw'.
     Local override; Severity: warning
-    @(0.0000 mm, -19.5000 mm): Footprint L2
-[lib_footprint_mismatch]: Footprint 'REV_SOD123' does not match copy in library 'ucw'.
+    @(54.0000 mm, -14.6250 mm): Footprint L10
+[lib_footprint_mismatch]: Footprint 'REV_SOD323' does not match copy in library 'ucw'.
     Local override; Severity: warning
-    @(-2.9000 mm, -28.9000 mm): Footprint D3
-[lib_footprint_issues]: The current configuration does not include the library ''.
-    Local override; Severity: warning
-    @(54.0000 mm, -45.3750 mm): Footprint SW12
-[lib_footprint_issues]: The current configuration does not include the library ''.
-    Local override; Severity: warning
-    @(36.0000 mm, -18.0000 mm): Footprint SW7
-[lib_footprint_issues]: The current configuration does not include the library ''.
-    Local override; Severity: warning
-    @(72.0000 mm, -26.0000 mm): Footprint SW14
+    @(54.0000 mm, -13.1750 mm): Footprint D10
 [lib_footprint_mismatch]: Footprint 'REV_LED0603' does not match copy in library 'ucw'.
     Local override; Severity: warning
-    @(18.0000 mm, -14.5000 mm): Footprint L4
+    @(18.0000 mm, -15.2500 mm): Footprint L4
+[lib_footprint_mismatch]: Footprint 'REV_LED0603' does not match copy in library 'ucw'.
+    Local override; Severity: warning
+    @(0.0000 mm, -20.2500 mm): Footprint L2
 [lib_footprint_mismatch]: Footprint 'REV_0603' does not match copy in library 'ucw'.
     Local override; Severity: warning
-    @(38.4000 mm, -12.9000 mm): Footprint R7
-[lib_footprint_mismatch]: Footprint 'REV_SOD123' does not match copy in library 'ucw'.
+    @(0.0000 mm, -28.9000 mm): Footprint R3
+[lib_footprint_mismatch]: Footprint 'REV_0603' does not match copy in library 'ucw'.
     Local override; Severity: warning
-    @(-2.9000 mm, -11.9000 mm): Footprint D2
-[lib_footprint_mismatch]: Footprint 'REV_SOD123' does not match copy in library 'ucw'.
+    @(0.0000 mm, -11.9000 mm): Footprint R2
+[lib_footprint_issues]: The current configuration does not include the library ''.
     Local override; Severity: warning
-    @(45.2000 mm, 13.6900 mm): Footprint D16
-[lib_footprint_mismatch]: Footprint 'REV_0805' does not match copy in library 'ucw'.
+    @(36.0000 mm, -52.0000 mm): Footprint SW9
+[lib_footprint_mismatch]: Footprint 'REV_LED0603' does not match copy in library 'ucw'.
     Local override; Severity: warning
-    @(29.0000 mm, -5.5000 mm): Footprint C1
+    @(72.0000 mm, -12.2500 mm): Footprint L13
 [lib_footprint_mismatch]: Footprint 'REV_0603' does not match copy in library 'ucw'.
     Local override; Severity: warning
     @(39.0000 mm, -2.5000 mm): Footprint R19
 [lib_footprint_mismatch]: Footprint 'REV_LED0603' does not match copy in library 'ucw'.
     Local override; Severity: warning
-    @(0.0000 mm, -36.5000 mm): Footprint L3
+    @(54.0000 mm, -31.6250 mm): Footprint L11
+[lib_footprint_mismatch]: Footprint 'REV_0603' does not match copy in library 'ucw'.
+    Local override; Severity: warning
+    @(18.0000 mm, -6.9000 mm): Footprint R4
+[lib_footprint_issues]: The current configuration does not include the library ''.
+    Local override; Severity: warning
+    @(48.1000 mm, 8.5900 mm): Footprint SW16
 [lib_footprint_mismatch]: Footprint 'REV_LED0603' does not match copy in library 'ucw'.
     Local override; Severity: warning
-    @(36.0000 mm, -54.5000 mm): Footprint L9
-[lib_footprint_issues]: The current configuration does not include the library ''.
+    @(0.0000 mm, -3.2500 mm): Footprint L1
+[lib_footprint_mismatch]: Footprint 'REV_SOD323' does not match copy in library 'ucw'.
     Local override; Severity: warning
-    @(36.0000 mm, -52.0000 mm): Footprint SW9
-[lib_footprint_mismatch]: Footprint 'REV_0603' does not match copy in library 'ucw'.
-    Local override; Severity: warning
-    @(38.4000 mm, -46.9000 mm): Footprint R9
-[lib_footprint_mismatch]: Footprint 'REV_0603' does not match copy in library 'ucw'.
-    Local override; Severity: warning
-    @(88.2785 mm, 20.0067 mm): Footprint R18
-[lib_footprint_issues]: The current configuration does not include the library ''.
-    Local override; Severity: warning
-    @(54.0000 mm, -11.3750 mm): Footprint SW10
-[lib_footprint_issues]: The current configuration does not include the library ''.
-    Local override; Severity: warning
-    @(18.0000 mm, -29.0000 mm): Footprint SW5
+    @(89.6500 mm, 12.8312 mm): Footprint D18
 [lib_footprint_issues]: The current configuration does not include the library ''.
     Local override; Severity: warning
     @(72.0000 mm, -43.0000 mm): Footprint SW15
-[lib_footprint_mismatch]: Footprint 'REV_0603' does not match copy in library 'ucw'.
-    Local override; Severity: warning
-    @(74.4000 mm, -3.9000 mm): Footprint R13
 [lib_footprint_issues]: The current configuration does not include the library ''.
     Local override; Severity: warning
-    @(-8.8900 mm, -43.0000 mm): Footprint xiao-ble1
-[lib_footprint_mismatch]: Footprint 'REV_0603' does not match copy in library 'ucw'.
+    @(68.1500 mm, 11.1800 mm): Footprint SW17
+[lib_footprint_mismatch]: Footprint 'REV_SOD323' does not match copy in library 'ucw'.
     Local override; Severity: warning
-    @(38.4000 mm, -29.9000 mm): Footprint R8
-[lib_footprint_mismatch]: Footprint 'REV_0603' does not match copy in library 'ucw'.
-    Local override; Severity: warning
-    @(20.4000 mm, -40.9000 mm): Footprint R6
+    @(72.0000 mm, -10.8000 mm): Footprint D13
 [lib_footprint_mismatch]: Footprint 'REV_LED0603' does not match copy in library 'ucw'.
     Local override; Severity: warning
-    @(54.0000 mm, -13.8750 mm): Footprint L10
-[lib_footprint_mismatch]: Footprint 'REV_LED0603' does not match copy in library 'ucw'.
+    @(36.0000 mm, -55.2500 mm): Footprint L9
+[lib_footprint_mismatch]: Footprint 'REV_0603' does not match copy in library 'ucw'.
     Local override; Severity: warning
-    @(54.0000 mm, -47.8750 mm): Footprint L12
-[lib_footprint_mismatch]: Footprint 'REV_SOD123' does not match copy in library 'ucw'.
+    @(36.0000 mm, -12.9000 mm): Footprint R7
+[lib_footprint_mismatch]: Footprint 'REV_0603' does not match copy in library 'ucw'.
     Local override; Severity: warning
-    @(64.0288 mm, 15.3556 mm): Footprint D17
+    @(72.0000 mm, -37.9000 mm): Footprint R15
+[lib_footprint_mismatch]: Footprint 'REV_0603' does not match copy in library 'ucw'.
+    Local override; Severity: warning
+    @(18.0000 mm, -40.9000 mm): Footprint R6
+[lib_footprint_mismatch]: Footprint 'REV_SOD323' does not match copy in library 'ucw'.
+    Local override; Severity: warning
+    @(54.0000 mm, -30.1750 mm): Footprint D11
+[lib_footprint_mismatch]: Footprint 'REV_SOD323' does not match copy in library 'ucw'.
+    Local override; Severity: warning
+    @(0.0000 mm, -1.8000 mm): Footprint D1
+[lib_footprint_issues]: The current configuration does not include the library ''.
+    Local override; Severity: warning
+    @(0.0000 mm, -17.0000 mm): Footprint SW2
 [lib_footprint_mismatch]: Footprint 'REV_SOT-23' does not match copy in library 'ucw'.
     Local override; Severity: warning
     @(39.0000 mm, -7.0000 mm): Footprint Q1
 [lib_footprint_mismatch]: Footprint 'REV_SOD123' does not match copy in library 'ucw'.
     Local override; Severity: warning
-    @(51.1000 mm, -40.2750 mm): Footprint D12
+    @(29.0000 mm, -9.0000 mm): Footprint D19
 [lib_footprint_mismatch]: Footprint 'REV_0603' does not match copy in library 'ucw'.
     Local override; Severity: warning
-    @(20.4000 mm, -23.9000 mm): Footprint R5
-[lib_footprint_mismatch]: Footprint 'REV_0805' does not match copy in library 'ucw'.
+    @(36.0000 mm, -46.9000 mm): Footprint R9
+[lib_footprint_issues]: The current configuration does not include the library ''.
     Local override; Severity: warning
-    @(33.0000 mm, -3.0000 mm): Footprint C2
-[lib_footprint_mismatch]: Footprint 'REV_SOD123' does not match copy in library 'ucw'.
+    @(54.0000 mm, -28.3750 mm): Footprint SW11
+[lib_footprint_mismatch]: Footprint 'REV_0603' does not match copy in library 'ucw'.
     Local override; Severity: warning
-    @(33.1000 mm, -46.9000 mm): Footprint D9
+    @(66.8300 mm, 16.1062 mm): Footprint R17
+[lib_footprint_mismatch]: Footprint 'REV_SOD323' does not match copy in library 'ucw'.
+    Local override; Severity: warning
+    @(18.0000 mm, -13.8000 mm): Footprint D4
+[lib_footprint_issues]: The current configuration does not include the library ''.
+    Local override; Severity: warning
+    @(18.0000 mm, -12.0000 mm): Footprint SW4
+[lib_footprint_issues]: The current configuration does not include the library ''.
+    Local override; Severity: warning
+    @(0.0000 mm, -42.5000 mm): Footprint PAD1
+[lib_footprint_mismatch]: Footprint 'REV_0603' does not match copy in library 'ucw'.
+    Local override; Severity: warning
+    @(18.0000 mm, -23.9000 mm): Footprint R5
 [lib_footprint_issues]: The current configuration does not include the library ''.
     Local override; Severity: warning
     @(72.0000 mm, -9.0000 mm): Footprint SW13
+[lib_footprint_mismatch]: Footprint 'REV_SOD323' does not match copy in library 'ucw'.
+    Local override; Severity: warning
+    @(68.6159 mm, 9.4413 mm): Footprint D17
 [lib_footprint_mismatch]: Footprint 'REV_0603' does not match copy in library 'ucw'.
     Local override; Severity: warning
-    @(50.5000 mm, 13.6900 mm): Footprint R16
-[lib_footprint_mismatch]: Footprint 'REV_SOD123' does not match copy in library 'ucw'.
+    @(72.0000 mm, -20.9000 mm): Footprint R14
+[lib_footprint_mismatch]: Footprint 'REV_SOD323' does not match copy in library 'ucw'.
     Local override; Severity: warning
-    @(83.6885 mm, 17.3567 mm): Footprint D18
+    @(54.0000 mm, -47.1750 mm): Footprint D12
+[lib_footprint_issues]: The current configuration does not include the library ''.
+    Local override; Severity: warning
+    @(54.0000 mm, -11.3750 mm): Footprint SW10
 [lib_footprint_mismatch]: Footprint 'REV_LED0603' does not match copy in library 'ucw'.
     Local override; Severity: warning
-    @(90.0000 mm, 12.2249 mm): Footprint L18
+    @(54.0000 mm, -48.6250 mm): Footprint L12
+[lib_footprint_mismatch]: Footprint 'REV_0603' does not match copy in library 'ucw'.
+    Local override; Severity: warning
+    @(54.0000 mm, -6.2750 mm): Footprint R10
+[lib_footprint_mismatch]: Footprint 'REV_LED0603' does not match copy in library 'ucw'.
+    Local override; Severity: warning
+    @(90.3750 mm, 11.5754 mm): Footprint L18
+[lib_footprint_mismatch]: Footprint 'REV_LED0603' does not match copy in library 'ucw'.
+    Local override; Severity: warning
+    @(72.0000 mm, -29.2500 mm): Footprint L14
+[lib_footprint_issues]: The current configuration does not include the library ''.
+    Local override; Severity: warning
+    @(88.7500 mm, 14.3900 mm): Footprint SW18
+[lib_footprint_mismatch]: Footprint 'REV_SOD323' does not match copy in library 'ucw'.
+    Local override; Severity: warning
+    @(18.0000 mm, -30.8000 mm): Footprint D5
+[lib_footprint_issues]: The current configuration does not include the library ''.
+    Local override; Severity: warning
+    @(72.0000 mm, -26.0000 mm): Footprint SW14
+[lib_footprint_mismatch]: Footprint 'REV_SOD323' does not match copy in library 'ucw'.
+    Local override; Severity: warning
+    @(0.0000 mm, -35.8000 mm): Footprint D3
+[lib_footprint_mismatch]: Footprint 'REV_LED0603' does not match copy in library 'ucw'.
+    Local override; Severity: warning
+    @(36.0000 mm, -38.2500 mm): Footprint L8
+[lib_footprint_mismatch]: Footprint 'REV_LED0603' does not match copy in library 'ucw'.
+    Local override; Severity: warning
+    @(68.9912 mm, 8.0407 mm): Footprint L17
+[lib_footprint_issues]: The current configuration does not include the library ''.
+    Local override; Severity: warning
+    @(18.0000 mm, -29.0000 mm): Footprint SW5
+[lib_footprint_mismatch]: Footprint 'REV_0603' does not match copy in library 'ucw'.
+    Local override; Severity: warning
+    @(48.1000 mm, 13.6900 mm): Footprint R16
+[lib_footprint_mismatch]: Footprint 'REV_0603' does not match copy in library 'ucw'.
+    Local override; Severity: warning
+    @(54.0000 mm, -23.2750 mm): Footprint R11
+[lib_footprint_mismatch]: Footprint 'REV_SOD323' does not match copy in library 'ucw'.
+    Local override; Severity: warning
+    @(72.0000 mm, -44.8000 mm): Footprint D15
+[lib_footprint_mismatch]: Footprint 'REV_LED0603' does not match copy in library 'ucw'.
+    Local override; Severity: warning
+    @(72.0000 mm, -46.2500 mm): Footprint L15
+[lib_footprint_mismatch]: Footprint 'REV_LED0603' does not match copy in library 'ucw'.
+    Local override; Severity: warning
+    @(18.0000 mm, -49.2500 mm): Footprint L6
+[lib_footprint_mismatch]: Footprint 'REV_LED0603' does not match copy in library 'ucw'.
+    Local override; Severity: warning
+    @(0.0000 mm, -37.2500 mm): Footprint L3
+[lib_footprint_mismatch]: Footprint 'REV_LED0603' does not match copy in library 'ucw'.
+    Local override; Severity: warning
+    @(18.0000 mm, -32.2500 mm): Footprint L5
+[lib_footprint_mismatch]: Footprint 'REV_LED0603' does not match copy in library 'ucw'.
+    Local override; Severity: warning
+    @(36.0000 mm, -21.2500 mm): Footprint L7
+[lib_footprint_mismatch]: Footprint 'REV_CR2032_BC2003' does not match copy in library 'ucw'.
+    Local override; Severity: warning
+    @(22.0000 mm, 10.0000 mm): Footprint BT1
+[lib_footprint_mismatch]: Footprint 'REV_SOD323' does not match copy in library 'ucw'.
+    Local override; Severity: warning
+    @(36.0000 mm, -53.8000 mm): Footprint D9
+[lib_footprint_mismatch]: Footprint 'REV_LED0603' does not match copy in library 'ucw'.
+    Local override; Severity: warning
+    @(48.1000 mm, 5.3400 mm): Footprint L16
+[lib_footprint_mismatch]: Footprint 'REV_0805' does not match copy in library 'ucw'.
+    Local override; Severity: warning
+    @(29.0000 mm, -5.5000 mm): Footprint C1
+[lib_footprint_mismatch]: Footprint 'REV_0603' does not match copy in library 'ucw'.
+    Local override; Severity: warning
+    @(54.0000 mm, -40.2750 mm): Footprint R12
+[lib_footprint_mismatch]: Footprint 'REV_SPDT_C128955' does not match copy in library 'ucw'.
+    Local override; Severity: warning
+    @(17.0000 mm, -59.9000 mm): Footprint T1
+[lib_footprint_issues]: The current configuration does not include the library ''.
+    Local override; Severity: warning
+    @(36.0000 mm, -18.0000 mm): Footprint SW7
+[lib_footprint_issues]: The current configuration does not include the library ''.
+    Local override; Severity: warning
+    @(36.0000 mm, -35.0000 mm): Footprint SW8
+[lib_footprint_mismatch]: Footprint 'REV_0603' does not match copy in library 'ucw'.
+    Local override; Severity: warning
+    @(36.0000 mm, -29.9000 mm): Footprint R8
+[lib_footprint_mismatch]: Footprint 'REV_SOD323' does not match copy in library 'ucw'.
+    Local override; Severity: warning
+    @(36.0000 mm, -19.8000 mm): Footprint D7
+[lib_footprint_mismatch]: Footprint 'REV_SOD323' does not match copy in library 'ucw'.
+    Local override; Severity: warning
+    @(0.0000 mm, -18.8000 mm): Footprint D2
+[lib_footprint_issues]: The current configuration does not include the library ''.
+    Local override; Severity: warning
+    @(54.0000 mm, -45.3750 mm): Footprint SW12
+[lib_footprint_mismatch]: Footprint 'REV_SOD323' does not match copy in library 'ucw'.
+    Local override; Severity: warning
+    @(36.0000 mm, -36.8000 mm): Footprint D8
+[lib_footprint_mismatch]: Footprint 'REV_SOD323' does not match copy in library 'ucw'.
+    Local override; Severity: warning
+    @(72.0000 mm, -27.8000 mm): Footprint D14
+[lib_footprint_issues]: The current configuration does not include the library ''.
+    Local override; Severity: warning
+    @(-8.8900 mm, -43.0000 mm): Footprint xiao-ble1
+[lib_footprint_mismatch]: Footprint 'REV_0603' does not match copy in library 'ucw'.
+    Local override; Severity: warning
+    @(72.0000 mm, -3.9000 mm): Footprint R13
+[lib_footprint_issues]: The current configuration does not include the library ''.
+    Local override; Severity: warning
+    @(0.0000 mm, -34.0000 mm): Footprint SW3
+[lib_footprint_issues]: The current configuration does not include the library ''.
+    Local override; Severity: warning
+    @(0.0000 mm, 0.0000 mm): Footprint SW1
+[lib_footprint_mismatch]: Footprint 'REV_SOD323' does not match copy in library 'ucw'.
+    Local override; Severity: warning
+    @(48.1000 mm, 6.7900 mm): Footprint D16
+[lib_footprint_mismatch]: Footprint 'REV_SOD323' does not match copy in library 'ucw'.
+    Local override; Severity: warning
+    @(18.0000 mm, -47.8000 mm): Footprint D6
 [hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.2200 mm)
     Rule: board setup constraints hole; Severity: error
     @(7.6200 mm, -61.1200 mm): PTH pad [<no net>] of xiao-ble1
