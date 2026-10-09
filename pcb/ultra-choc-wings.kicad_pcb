@@ -92,6 +92,7 @@
 		(layer "F.Cu")
 		(uuid "09e5da02-08be-4be2-8d6c-58699f1487ac")
 		(at 240.2968 151.1968)
+		(path "/e386c83c-aca7-585e-860b-4084cb9e44d6")
 		(property "Reference" "L13"
 			(at 0 -1.43 0)
 			(layer "F.SilkS")
@@ -358,6 +359,7 @@
 		(layer "F.Cu")
 		(uuid "0b65939d-02c4-4df4-a3bc-2d6f1b39a6c1")
 		(at 216.3968 168.7868)
+		(path "/53bb9486-8f6f-5030-bf11-088b7bbac468")
 		(property "Reference" "L16"
 			(at 0 -1.43 0)
 			(layer "F.SilkS")
@@ -624,6 +626,7 @@
 		(layer "F.Cu")
 		(uuid "0bc136a0-3d3c-465f-906c-1445dec44bb6")
 		(at 244.7968 165.1968)
+		(path "/f9243245-494a-5350-9e3b-17a714364a55")
 		(property "Reference" "H3"
 			(at 0 -2.6 0)
 			(layer "F.SilkS")
@@ -707,6 +710,7 @@
 		(layer "F.Cu")
 		(uuid "0d7f65c9-3597-4e7f-a627-96ad485bddf8")
 		(at 165.6968 135.8968)
+		(path "/090d3f67-5331-55c9-a427-f8be924cc38d")
 		(property "Reference" "R3"
 			(at 0 -1.43 0)
 			(layer "F.SilkS")
@@ -949,10 +953,11 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "CPG1316S01D02_reversible"
+	(footprint "ucw:CPG1316S01D02_reversible"
 		(layer "F.Cu")
 		(uuid "0e1fb221-b6ba-445d-ae8d-ca515ca4b856")
 		(at 222.2968 151.3218)
+		(path "/aba79196-630b-59a1-895b-34ae0faac2ac")
 		(property "Reference" "SW10"
 			(at 0 0.5 0)
 			(layer "F.SilkS")
@@ -1282,6 +1287,7 @@
 		(layer "F.Cu")
 		(uuid "0e98f6ea-9d14-4052-abfd-2507891530c4")
 		(at 183.6968 140.8968)
+		(path "/65102a4d-388f-5ff3-86df-2530ef19ee58")
 		(property "Reference" "R5"
 			(at 0 -1.43 0)
 			(layer "F.SilkS")
@@ -1528,6 +1534,7 @@
 		(layer "F.Cu")
 		(uuid "1606d15d-9ff4-4c5e-837e-4b55f80c0a4e")
 		(at 188.8968 123.8968)
+		(path "/c0f70b37-3117-5dfd-b874-8477c1b0f4d1")
 		(property "Reference" "D6"
 			(at 0 -1.85 0)
 			(layer "F.SilkS")
@@ -1794,6 +1801,7 @@
 		(layer "F.Cu")
 		(uuid "1fdec3de-245f-4ce6-b04d-5207c5f07838")
 		(at 190.2968 172.6968)
+		(path "/b5f976f0-9cfc-55f9-a53f-263d7371e5e1")
 		(property "Reference" "BT1"
 			(at 0 7 0)
 			(layer "F.SilkS")
@@ -1980,6 +1988,7 @@
 		(layer "F.Cu")
 		(uuid "229365e8-6bf0-4fba-977c-a1edd33fd644")
 		(at 204.2968 125.1968)
+		(path "/a7223374-9f82-5e65-a490-af42eb0131f3")
 		(property "Reference" "L8"
 			(at 0 -1.43 0)
 			(layer "F.SilkS")
@@ -2246,6 +2255,7 @@
 		(layer "F.Cu")
 		(uuid "250111dc-327f-454d-8d23-1b343a99a441")
 		(at 201.6968 151.8968)
+		(path "/1bcfaab9-e541-5f5b-a4c1-0a18b37d1ed1")
 		(property "Reference" "R7"
 			(at 0 -1.43 0)
 			(layer "F.SilkS")
@@ -2492,6 +2502,7 @@
 		(layer "F.Cu")
 		(uuid "258b0522-7088-4c06-bac2-1d68857acfd2")
 		(at 165.6968 152.8968)
+		(path "/8134b7d2-8078-5d35-acee-eafc3cca7361")
 		(property "Reference" "R2"
 			(at 0 -1.43 0)
 			(layer "F.SilkS")
@@ -2738,6 +2749,7 @@
 		(layer "F.Cu")
 		(uuid "261c679a-736d-487a-a880-748afcd4c7a8")
 		(at 224.8968 124.5218)
+		(path "/5a79ed9a-7899-5ac9-a8ed-7ffdd1071554")
 		(property "Reference" "D12"
 			(at 0 -1.85 0)
 			(layer "F.SilkS")
@@ -3000,10 +3012,11 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "CPG1316S01D02_reversible"
+	(footprint "ucw:CPG1316S01D02_reversible"
 		(layer "F.Cu")
 		(uuid "26b92f0c-ba22-42e4-a898-bd29a9f4d6e2")
 		(at 222.2968 134.3218)
+		(path "/90c94b9b-dc1f-5588-ac7a-3f4fefbdd06c")
 		(property "Reference" "SW11"
 			(at 0 0.5 0)
 			(layer "F.SilkS")
@@ -3333,6 +3346,7 @@
 		(layer "F.Cu")
 		(uuid "28bd6fba-71ab-43a5-814f-565d6f2d8fdb")
 		(at 207.2968 155.6968 90)
+		(path "/79e44aa1-f321-5cf5-a201-1484b74274bb")
 		(property "Reference" "Q1"
 			(at 0 -2.4 0)
 			(layer "F.SilkS")
@@ -3573,10 +3587,11 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "SMDPad"
+	(footprint "ucw:SMDPad"
 		(layer "F.Cu")
 		(uuid "299d00e0-e4d3-4aa0-bb40-99c42566062a")
 		(at 168.2968 120.1968)
+		(path "/1e86dd76-d304-5168-a6c7-a404b95ad072")
 		(property "Reference" "PAD1"
 			(at 0 0 0)
 			(layer "F.SilkS")
@@ -3641,10 +3656,11 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "CPG1316S01D02_reversible"
+	(footprint "ucw:CPG1316S01D02_reversible"
 		(layer "F.Cu")
 		(uuid "30e9911b-eb3c-4770-b1cc-40f63374efde")
 		(at 168.2968 162.6968)
+		(path "/a6f646a6-7c45-5499-9b66-8bc1f3823469")
 		(property "Reference" "SW1"
 			(at 0 0.5 0)
 			(layer "F.SilkS")
@@ -3974,6 +3990,7 @@
 		(layer "F.Cu")
 		(uuid "342030a7-d057-42c6-9280-793b4f986705")
 		(at 217.6968 164.0868)
+		(path "/76c28df1-ecff-5fe0-b08c-8b5acec8919c")
 		(property "Reference" "D16"
 			(at 0 -1.85 0)
 			(layer "F.SilkS")
@@ -4240,6 +4257,7 @@
 		(layer "F.Cu")
 		(uuid "343b06d3-8567-41f9-a61c-fa4b521053d7")
 		(at 197.2968 157.1968)
+		(path "/db350c4a-da7c-5168-98d3-a5dc0f17651e")
 		(property "Reference" "C1"
 			(at 0 -1.68 0)
 			(layer "F.SilkS")
@@ -4486,6 +4504,7 @@
 		(layer "F.Cu")
 		(uuid "370244ae-5edb-40e9-81ea-20e8197fedbd")
 		(at 201.2968 159.6968)
+		(path "/b5b484cc-5a81-50b7-9c4a-bcee589a4745")
 		(property "Reference" "C2"
 			(at 0 -1.68 0)
 			(layer "F.SilkS")
@@ -4732,6 +4751,7 @@
 		(layer "F.Cu")
 		(uuid "3877b356-4450-42c3-ae00-7915ebbf5146")
 		(at 188.8968 140.8968)
+		(path "/a91ec33e-8ddb-5640-ae8d-a2ac322458fc")
 		(property "Reference" "D5"
 			(at 0 -1.85 0)
 			(layer "F.SilkS")
@@ -4998,6 +5018,7 @@
 		(layer "F.Cu")
 		(uuid "41e319e1-1e32-413f-93dc-cfa65d45519f")
 		(at 197.2968 153.6968)
+		(path "/e3877d86-d287-53c1-8ffb-87ffe9507be0")
 		(property "Reference" "D19"
 			(at 0 -1.85 0)
 			(layer "F.SilkS")
@@ -5264,6 +5285,7 @@
 		(layer "F.Cu")
 		(uuid "4323317e-6a5d-42b6-b13a-40fda45e5670")
 		(at 237.093848 171.461985 -15)
+		(path "/9f3b30a7-8844-5991-84ad-8edbcfd338d8")
 		(property "Reference" "L17"
 			(at 0 -1.43 0)
 			(layer "F.SilkS")
@@ -5530,6 +5552,7 @@
 		(layer "F.Cu")
 		(uuid "4584c376-b588-4752-a7c5-466a86926559")
 		(at 257.269301 168.901417 -30)
+		(path "/5e33a8df-001b-5d57-baf9-78028aa91cd9")
 		(property "Reference" "R18"
 			(at 0 -1.43 0)
 			(layer "F.SilkS")
@@ -5772,10 +5795,11 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "CPG1316S01D02_reversible"
+	(footprint "ucw:CPG1316S01D02_reversible"
 		(layer "F.Cu")
 		(uuid "460b1e33-f2a0-45c7-9f14-e03bec2ed76d")
 		(at 186.2968 116.6968)
+		(path "/56062e4a-5520-5bbd-9217-857ebffda30a")
 		(property "Reference" "SW6"
 			(at 0 0.5 0)
 			(layer "F.SilkS")
@@ -6105,6 +6129,7 @@
 		(layer "F.Cu")
 		(uuid "4b1eafa6-be29-4095-9df6-8a437d37a73a")
 		(at 237.6968 160.8968)
+		(path "/0bb0a2b5-a544-5b0f-b910-839527cd5701")
 		(property "Reference" "R13"
 			(at 0 -1.43 0)
 			(layer "F.SilkS")
@@ -6351,6 +6376,7 @@
 		(layer "F.Cu")
 		(uuid "4c9a6379-352f-4e18-ba31-f8724e5d570c")
 		(at 224.8968 158.5218)
+		(path "/d410fc01-2eee-5409-be59-6072a3ca30ab")
 		(property "Reference" "D10"
 			(at 0 -1.85 0)
 			(layer "F.SilkS")
@@ -6613,10 +6639,11 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "CPG1316S01D02_reversible"
+	(footprint "ucw:CPG1316S01D02_reversible"
 		(layer "F.Cu")
 		(uuid "525bdadf-bdce-4f08-a8fa-f82ee127a827")
 		(at 222.2968 117.3218)
+		(path "/736fcb05-0905-5c4b-b769-a34370b650e5")
 		(property "Reference" "SW12"
 			(at 0 0.5 0)
 			(layer "F.SilkS")
@@ -6946,6 +6973,7 @@
 		(layer "F.Cu")
 		(uuid "5381c2dd-9ce9-4a7d-ae89-2192bb9ea08f")
 		(at 224.8968 141.5218)
+		(path "/95a14396-404b-57cf-aa7e-9eaa7fa42e04")
 		(property "Reference" "D11"
 			(at 0 -1.85 0)
 			(layer "F.SilkS")
@@ -7208,10 +7236,11 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "CPG1316S01D02_reversible"
+	(footprint "ucw:CPG1316S01D02_reversible"
 		(layer "F.Cu")
 		(uuid "5440b623-d9af-4978-9783-c2fcc2287274")
 		(at 240.2968 119.6968)
+		(path "/76f727dd-4668-5337-be8f-bfdc23022bcd")
 		(property "Reference" "SW15"
 			(at 0 0.5 0)
 			(layer "F.SilkS")
@@ -7541,6 +7570,7 @@
 		(layer "F.Cu")
 		(uuid "5aacf070-cd43-46ab-b084-038c403ece13")
 		(at 212.4968 164.0868)
+		(path "/c7bef7c6-8c35-5433-b486-b905ae58b687")
 		(property "Reference" "R16"
 			(at 0 -1.43 0)
 			(layer "F.SilkS")
@@ -7787,6 +7817,7 @@
 		(layer "F.Cu")
 		(uuid "5c031af7-9c82-4159-8961-888f349f1837")
 		(at 183.6968 123.8968)
+		(path "/64e03ee4-1cfc-5400-9eb0-de58452c55af")
 		(property "Reference" "R6"
 			(at 0 -1.43 0)
 			(layer "F.SilkS")
@@ -8029,10 +8060,11 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "CPG1316S01D02_reversible"
+	(footprint "ucw:CPG1316S01D02_reversible"
 		(layer "F.Cu")
 		(uuid "5dd34de6-8a5d-4217-8bd7-b0459f454034")
 		(at 186.2968 133.6968)
+		(path "/23755226-6cf7-5bf5-a2bb-159f02c5ba4a")
 		(property "Reference" "SW5"
 			(at 0 0.5 0)
 			(layer "F.SilkS")
@@ -8362,6 +8394,7 @@
 		(layer "F.Cu")
 		(uuid "5ee41214-a5f6-41e5-a0cf-6c9a48fcc6ca")
 		(at 185.2968 102.7968)
+		(path "/08fac882-cd70-5d98-9b5c-796235c6f978")
 		(property "Reference" "T1"
 			(at 0 0 0)
 			(layer "F.SilkS")
@@ -8734,10 +8767,11 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "CPG1316S01D02_reversible"
+	(footprint "ucw:CPG1316S01D02_reversible"
 		(layer "F.Cu")
 		(uuid "5f756a02-48a6-4eaa-968f-74791b60e896")
 		(at 186.2968 150.6968)
+		(path "/0549c64e-c09d-5140-92be-2bf15a6daf3f")
 		(property "Reference" "SW4"
 			(at 0 0.5 0)
 			(layer "F.SilkS")
@@ -9067,6 +9101,7 @@
 		(layer "F.Cu")
 		(uuid "5f7c030a-5683-4fe1-bc01-37a8692bc3d3")
 		(at 192.7968 103.1968)
+		(path "/af28c009-b90c-5194-aff8-e930bce35d62")
 		(property "Reference" "H1"
 			(at 0 -2.6 0)
 			(layer "F.SilkS")
@@ -9146,10 +9181,11 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "CPG1316S01D02_reversible"
+	(footprint "ucw:CPG1316S01D02_reversible"
 		(layer "F.Cu")
 		(uuid "689e1b47-bcaa-4c35-b05a-be843b63876a")
 		(at 168.2968 145.6968)
+		(path "/93552862-cc91-572b-9797-eaca27efe793")
 		(property "Reference" "SW2"
 			(at 0 0.5 0)
 			(layer "F.SilkS")
@@ -9479,6 +9515,7 @@
 		(layer "F.Cu")
 		(uuid "693790d6-0259-45ff-bd5d-18b1abb8e1f8")
 		(at 219.6968 124.5218)
+		(path "/374d9147-1751-5f42-a179-1e31b800df7a")
 		(property "Reference" "R12"
 			(at 0 -1.43 0)
 			(layer "F.SilkS")
@@ -9725,6 +9762,7 @@
 		(layer "F.Cu")
 		(uuid "6c09a7cb-d422-4196-89a6-ee728c0c6963")
 		(at 219.6968 141.5218)
+		(path "/856375f1-e588-5c25-bb01-9129159abebd")
 		(property "Reference" "R11"
 			(at 0 -1.43 0)
 			(layer "F.SilkS")
@@ -9971,6 +10009,7 @@
 		(layer "F.Cu")
 		(uuid "7021dab6-c482-4848-a5d8-25e12b2976ce")
 		(at 186.2968 131.1968)
+		(path "/1b1358f0-71fc-52d2-a051-3b9a77647699")
 		(property "Reference" "L5"
 			(at 0 -1.43 0)
 			(layer "F.SilkS")
@@ -10237,6 +10276,7 @@
 		(layer "F.Cu")
 		(uuid "742bb735-b142-47af-a254-bb6026dd11b9")
 		(at 222.2968 131.8218)
+		(path "/e3d51493-f4a6-51af-8ec1-730a894d2b5d")
 		(property "Reference" "L11"
 			(at 0 -1.43 0)
 			(layer "F.SilkS")
@@ -10499,10 +10539,11 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "CPG1316S01D02_reversible"
+	(footprint "ucw:CPG1316S01D02_reversible"
 		(layer "F.Cu")
 		(uuid "795e9fb0-e1c5-402e-b75e-19b961857fe5")
 		(at 236.4468 173.8768 -15)
+		(path "/50564f1c-55c6-5d24-b342-b9d03248f5e6")
 		(property "Reference" "SW17"
 			(at 0 0.5 0)
 			(layer "F.SilkS")
@@ -10832,6 +10873,7 @@
 		(layer "F.Cu")
 		(uuid "7ea01f24-857e-4063-a70f-64e6c23bc003")
 		(at 242.8968 126.8968)
+		(path "/db2918e2-b72a-5ea5-b1b1-7ed2f440c45b")
 		(property "Reference" "D15"
 			(at 0 -1.85 0)
 			(layer "F.SilkS")
@@ -11094,10 +11136,11 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "CPG1316S01D02_reversible"
+	(footprint "ucw:CPG1316S01D02_reversible"
 		(layer "F.Cu")
 		(uuid "83b0955a-a06e-43f9-832c-39d6c05ad612")
 		(at 204.2968 127.6968)
+		(path "/bf81ed36-5fe7-52db-b954-e975ce6c8a62")
 		(property "Reference" "SW8"
 			(at 0 0.5 0)
 			(layer "F.SilkS")
@@ -11423,10 +11466,11 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "CPG1316S01D02_reversible"
+	(footprint "ucw:CPG1316S01D02_reversible"
 		(layer "F.Cu")
 		(uuid "8664de55-e9b2-409f-804b-088ad46a026c")
 		(at 240.2968 136.6968)
+		(path "/0a6e837a-e32b-5082-8c58-73cff964727f")
 		(property "Reference" "SW14"
 			(at 0 0.5 0)
 			(layer "F.SilkS")
@@ -11756,6 +11800,7 @@
 		(layer "F.Cu")
 		(uuid "8c819dff-4bdd-4310-9890-9d05b5cde58b")
 		(at 239.566001 167.258599 -15)
+		(path "/0599fb57-872a-5553-8054-d340ff5dfe09")
 		(property "Reference" "D17"
 			(at 0 -1.85 0)
 			(layer "F.SilkS")
@@ -12022,6 +12067,7 @@
 		(layer "F.Cu")
 		(uuid "9097c1c3-9176-4a7f-83dc-accd0478c8db")
 		(at 240.2968 134.1968)
+		(path "/8169577c-69e1-520c-a6b1-d4b9e9839726")
 		(property "Reference" "L14"
 			(at 0 -1.43 0)
 			(layer "F.SilkS")
@@ -12288,6 +12334,7 @@
 		(layer "F.Cu")
 		(uuid "90baf4ec-5bb6-425e-83d6-b0009cc7b64f")
 		(at 242.8968 143.8968)
+		(path "/23574149-0d4c-58d3-ac20-8abcee181052")
 		(property "Reference" "D14"
 			(at 0 -1.85 0)
 			(layer "F.SilkS")
@@ -12554,6 +12601,7 @@
 		(layer "F.Cu")
 		(uuid "911e585a-7d42-406f-bbce-2c0935b4fa37")
 		(at 168.2968 126.1968)
+		(path "/a4699159-fea7-54fe-b05c-cf3b2b47f66c")
 		(property "Reference" "L3"
 			(at 0 -1.43 0)
 			(layer "F.SilkS")
@@ -12820,6 +12868,7 @@
 		(layer "F.Cu")
 		(uuid "91d98dc4-cdee-4738-9f7f-1e28bcbceac9")
 		(at 170.8968 169.8968)
+		(path "/c602a38e-472a-58a5-8af7-6be5c6037b0f")
 		(property "Reference" "D1"
 			(at 0 -1.85 0)
 			(layer "F.SilkS")
@@ -13086,6 +13135,7 @@
 		(layer "F.Cu")
 		(uuid "a23261d4-f5dd-4de0-bb1c-163b3180310e")
 		(at 234.543186 165.91274 -15)
+		(path "/64ec8acb-319d-5018-a000-8278905a6699")
 		(property "Reference" "R17"
 			(at 0 -1.43 0)
 			(layer "F.SilkS")
@@ -13328,10 +13378,11 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "CPG1316S01D02_reversible"
+	(footprint "ucw:CPG1316S01D02_reversible"
 		(layer "F.Cu")
 		(uuid "a4af8c08-4e79-4d40-b598-507126a54626")
 		(at 204.2968 144.6968)
+		(path "/de7a4927-fe8c-56ec-b841-e69f8ad2554a")
 		(property "Reference" "SW7"
 			(at 0 0.5 0)
 			(layer "F.SilkS")
@@ -13661,6 +13712,7 @@
 		(layer "F.Cu")
 		(uuid "a88a67ee-ab86-45f6-a89a-3d0d1946adb4")
 		(at 222.2968 114.8218)
+		(path "/e20d6426-01b8-5a5a-826d-0d6e596ad792")
 		(property "Reference" "L12"
 			(at 0 -1.43 0)
 			(layer "F.SilkS")
@@ -13927,6 +13979,7 @@
 		(layer "F.Cu")
 		(uuid "ac5260e4-6269-483a-b2f3-abc80f97666c")
 		(at 170.8968 135.8968)
+		(path "/4da0fea4-dd78-5668-b7d8-c0bd54ae5d59")
 		(property "Reference" "D3"
 			(at 0 -1.85 0)
 			(layer "F.SilkS")
@@ -14193,6 +14246,7 @@
 		(layer "F.Cu")
 		(uuid "ada76ac5-a0cc-4c1e-b43f-1f6255f435e3")
 		(at 206.8968 134.8968)
+		(path "/71f9ba16-9874-50ff-8a98-3fc084074b6a")
 		(property "Reference" "D8"
 			(at 0 -1.85 0)
 			(layer "F.SilkS")
@@ -14459,6 +14513,7 @@
 		(layer "F.Cu")
 		(uuid "af5c9a03-b064-4b6f-9bda-38703b3a02e8")
 		(at 206.8968 151.8968)
+		(path "/38c527df-32d5-5dc9-afdd-5031ec2eb4c4")
 		(property "Reference" "D7"
 			(at 0 -1.85 0)
 			(layer "F.SilkS")
@@ -14721,10 +14776,11 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "CPG1316S01D02_reversible"
+	(footprint "ucw:CPG1316S01D02_reversible"
 		(layer "F.Cu")
 		(uuid "b02810e5-ae7d-4bfd-ac5d-90c8d573555a")
 		(at 168.2968 128.6968)
+		(path "/2dbc138d-8c2e-52b6-9aa4-d322be8b847a")
 		(property "Reference" "SW3"
 			(at 0 0.5 0)
 			(layer "F.SilkS")
@@ -15054,6 +15110,7 @@
 		(layer "F.Cu")
 		(uuid "b160a925-11a3-4b2a-ba23-bf386f33b0b1")
 		(at 170.2968 173.4968)
+		(path "/c0946444-5a11-59d0-8703-9ebe67d669bf")
 		(property "Reference" "H2"
 			(at 0 -2.6 0)
 			(layer "F.SilkS")
@@ -15137,6 +15194,7 @@
 		(layer "F.Cu")
 		(uuid "b3cc2fc7-b3b8-4a1c-9f5e-e1e02307dc68")
 		(at 261.772633 171.501417 -30)
+		(path "/fed4ab46-0283-59e4-91fa-95f387187d20")
 		(property "Reference" "D18"
 			(at 0 -1.85 0)
 			(layer "F.SilkS")
@@ -15403,6 +15461,7 @@
 		(layer "F.Cu")
 		(uuid "b72a8159-3c16-47c8-92a2-3431091f62ef")
 		(at 258.2968 174.921737 -30)
+		(path "/28d2a0be-2c9d-5751-b537-b4c9e6f0deef")
 		(property "Reference" "L18"
 			(at 0 -1.43 0)
 			(layer "F.SilkS")
@@ -15669,6 +15728,7 @@
 		(layer "F.Cu")
 		(uuid "b9a14cf9-58a2-4f06-b752-fb0f1bf69cd6")
 		(at 201.6968 134.8968)
+		(path "/d4b19226-3cd7-5e23-aa9b-ead027b0b44c")
 		(property "Reference" "R8"
 			(at 0 -1.43 0)
 			(layer "F.SilkS")
@@ -15915,6 +15975,7 @@
 		(layer "F.Cu")
 		(uuid "c5e3d8dd-c196-4d2a-b219-d860bd4ffa7e")
 		(at 242.8968 160.8968)
+		(path "/eb852d1b-269b-5625-9cf1-984afffbd4f9")
 		(property "Reference" "D13"
 			(at 0 -1.85 0)
 			(layer "F.SilkS")
@@ -16181,6 +16242,7 @@
 		(layer "F.Cu")
 		(uuid "c6254df9-040e-4b65-8b07-8e002c7b2531")
 		(at 188.8968 157.8968)
+		(path "/a6327fa9-ecbb-5148-8459-ba7e06dfff15")
 		(property "Reference" "D4"
 			(at 0 -1.85 0)
 			(layer "F.SilkS")
@@ -16447,6 +16509,7 @@
 		(layer "F.Cu")
 		(uuid "c6453741-a7c6-4f73-b918-de92dcfca43f")
 		(at 201.6968 117.8968)
+		(path "/ba5d1f68-1867-521e-b0a7-ad6475766ac1")
 		(property "Reference" "R9"
 			(at 0 -1.43 0)
 			(layer "F.SilkS")
@@ -16693,6 +16756,7 @@
 		(layer "F.Cu")
 		(uuid "c73243f0-4ee9-444f-8ff8-b3f816270609")
 		(at 204.2968 108.1968)
+		(path "/0cf5d154-0e2b-591f-b439-e552249d41cf")
 		(property "Reference" "L9"
 			(at 0 -1.43 0)
 			(layer "F.SilkS")
@@ -16959,6 +17023,7 @@
 		(layer "F.Cu")
 		(uuid "c86648c8-90b4-4f59-bcec-b8b272b23a35")
 		(at 219.6968 158.5218)
+		(path "/a9289b0c-7077-5320-ac98-a55b15a71843")
 		(property "Reference" "R10"
 			(at 0 -1.43 0)
 			(layer "F.SilkS")
@@ -17205,6 +17270,7 @@
 		(layer "F.Cu")
 		(uuid "c9d68ca3-23cb-4a80-aa02-8845e0cfa1f8")
 		(at 204.2968 142.1968)
+		(path "/431d3bfc-e874-5864-9ea2-69a7787d00bb")
 		(property "Reference" "L7"
 			(at 0 -1.43 0)
 			(layer "F.SilkS")
@@ -17467,10 +17533,11 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "CPG1316S01D02_reversible"
+	(footprint "ucw:CPG1316S01D02_reversible"
 		(layer "F.Cu")
 		(uuid "cb420ab1-ce28-4d63-803f-47147ce44e4d")
 		(at 204.2968 110.6968)
+		(path "/d6be629c-4b2e-53a9-8608-e1b667238196")
 		(property "Reference" "SW9"
 			(at 0 0.5 0)
 			(layer "F.SilkS")
@@ -17800,6 +17867,7 @@
 		(layer "F.Cu")
 		(uuid "ccd1f87b-d2dc-492c-9b71-341e7d556772")
 		(at 183.6968 157.8968)
+		(path "/aeb2a6c8-350e-58d7-ae6a-e5aac52d1d33")
 		(property "Reference" "R4"
 			(at 0 -1.43 0)
 			(layer "F.SilkS")
@@ -18046,6 +18114,7 @@
 		(layer "F.Cu")
 		(uuid "cdac92c3-fa87-4cae-9acb-2936c9857f06")
 		(at 165.6968 169.8968)
+		(path "/8986fa35-d1e1-5fb9-842c-45b146ef4f00")
 		(property "Reference" "R1"
 			(at 0 -1.43 0)
 			(layer "F.SilkS")
@@ -18292,6 +18361,7 @@
 		(layer "F.Cu")
 		(uuid "d23e1eda-b47c-495f-b8ff-5e217f9fe530")
 		(at 237.6968 143.8968)
+		(path "/e361ed7a-8f83-51af-a950-151e91a9babc")
 		(property "Reference" "R14"
 			(at 0 -1.43 0)
 			(layer "F.SilkS")
@@ -18538,6 +18608,7 @@
 		(layer "F.Cu")
 		(uuid "d40daa41-d171-43c7-b53b-b755d0b1263d")
 		(at 207.2968 160.1968 90)
+		(path "/957b4479-d12b-5103-92a1-344e87417257")
 		(property "Reference" "R19"
 			(at 0 -1.43 0)
 			(layer "F.SilkS")
@@ -18784,6 +18855,7 @@
 		(layer "F.Cu")
 		(uuid "d59bc43b-bc3e-45ae-a6cf-436283b38a69")
 		(at 240.2968 117.1968)
+		(path "/93695641-d631-523d-8238-ad3033eb66a2")
 		(property "Reference" "L15"
 			(at 0 -1.43 0)
 			(layer "F.SilkS")
@@ -19050,6 +19122,7 @@
 		(layer "F.Cu")
 		(uuid "d6416f41-904d-443b-881f-b382e0cffe63")
 		(at 186.2968 114.1968)
+		(path "/ab2aa0f5-2d8e-5115-9095-fe0319c019f8")
 		(property "Reference" "L6"
 			(at 0 -1.43 0)
 			(layer "F.SilkS")
@@ -19316,6 +19389,7 @@
 		(layer "F.Cu")
 		(uuid "e36ba356-3c10-45a3-be77-c730fa86b7ce")
 		(at 170.8968 152.8968)
+		(path "/48de7b06-4b27-52c5-acb1-85b7ab97d596")
 		(property "Reference" "D2"
 			(at 0 -1.85 0)
 			(layer "F.SilkS")
@@ -19578,10 +19652,11 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "xiao-ble"
+	(footprint "ucw:xiao-ble"
 		(layer "F.Cu")
 		(uuid "e731e554-812f-475b-93b0-e9f8c721c2a8")
 		(at 159.4068 119.6968 -90)
+		(path "/02f75948-c23a-56ae-afdc-8eb9874f82d8")
 		(property "Reference" "xiao-ble1"
 			(at -20.406 -9.144 0)
 			(layer "F.SilkS")
@@ -22951,10 +23026,11 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "CPG1316S01D02_reversible"
+	(footprint "ucw:CPG1316S01D02_reversible"
 		(layer "F.Cu")
 		(uuid "e771bb19-8cbe-41cb-a2f7-745d5ce01a86")
 		(at 216.3968 171.2868)
+		(path "/f8128c2a-4d6a-5047-bfd1-3012b38a405e")
 		(property "Reference" "SW16"
 			(at 0 0.5 0)
 			(layer "F.SilkS")
@@ -23284,6 +23360,7 @@
 		(layer "F.Cu")
 		(uuid "e77460f0-3910-4bc3-9aa5-c54831cd8244")
 		(at 168.2968 143.1968)
+		(path "/8cbcfb1f-398e-5d90-9fef-15ebf784e3f5")
 		(property "Reference" "L2"
 			(at 0 -1.43 0)
 			(layer "F.SilkS")
@@ -23546,10 +23623,11 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "CPG1316S01D02_reversible"
+	(footprint "ucw:CPG1316S01D02_reversible"
 		(layer "F.Cu")
 		(uuid "e9ae8d08-01d5-450a-9bf8-697706ba2929")
 		(at 257.0468 177.0868 -30)
+		(path "/8c344eb7-6c08-5fe5-bc46-6d7515aa4da0")
 		(property "Reference" "SW18"
 			(at 0 0.5 0)
 			(layer "F.SilkS")
@@ -23875,10 +23953,11 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "CPG1316S01D02_reversible"
+	(footprint "ucw:CPG1316S01D02_reversible"
 		(layer "F.Cu")
 		(uuid "f01204d6-4495-4d83-a890-6512c6cc649d")
 		(at 240.2968 153.6968)
+		(path "/148ed4f0-840f-50a1-b812-9ff828858557")
 		(property "Reference" "SW13"
 			(at 0 0.5 0)
 			(layer "F.SilkS")
@@ -24208,6 +24287,7 @@
 		(layer "F.Cu")
 		(uuid "f4ca1347-6e32-4c92-b058-d04df43ea824")
 		(at 222.2968 148.8218)
+		(path "/2852a72c-b9c1-5204-912c-99a0a5f6504d")
 		(property "Reference" "L10"
 			(at 0 -1.43 0)
 			(layer "F.SilkS")
@@ -24474,6 +24554,7 @@
 		(layer "F.Cu")
 		(uuid "fc40fea1-42e2-414d-84d8-024a207a5c7c")
 		(at 206.8968 117.8968)
+		(path "/a0e8da4a-1f0a-5b84-a2be-93cccc985dff")
 		(property "Reference" "D9"
 			(at 0 -1.85 0)
 			(layer "F.SilkS")
@@ -24740,6 +24821,7 @@
 		(layer "F.Cu")
 		(uuid "fd509572-bc12-4976-87cb-fc3a6e062603")
 		(at 186.2968 148.1968)
+		(path "/a844fd2c-8946-56d4-866f-379d2d8a1acc")
 		(property "Reference" "L4"
 			(at 0 -1.43 0)
 			(layer "F.SilkS")
@@ -25006,6 +25088,7 @@
 		(layer "F.Cu")
 		(uuid "ff84c121-99dd-4f66-b5e0-e5b7f7e5808e")
 		(at 168.2968 160.1968)
+		(path "/81c4b7d7-dee0-564d-a1fa-45ca1f80237c")
 		(property "Reference" "L1"
 			(at 0 -1.43 0)
 			(layer "F.SilkS")
@@ -25272,6 +25355,7 @@
 		(layer "F.Cu")
 		(uuid "ff8eedd8-f664-4bd3-afe4-a185d94cd2b9")
 		(at 237.6968 126.8968)
+		(path "/6337ec0f-b944-566f-8d4a-0226ac53f2cd")
 		(property "Reference" "R15"
 			(at 0 -1.43 0)
 			(layer "F.SilkS")
