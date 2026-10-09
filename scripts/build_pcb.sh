@@ -10,6 +10,8 @@
 #   output/                       raw ergogen output (unrouted)
 #   pcb/ultra-choc-wings.kicad_pcb routed board, open this in KiCad
 #   pcb/drc.rpt                   DRC report
+#   pcb/ultra-choc-wings.kicad_sch schematic of the board, with pcb/ucw.kicad_sym
+#                                 and pcb/ucw.pretty (symbol and footprint libraries)
 #   jlcpcb/gerbers.zip            upload to JLCPCB (same file for both halves)
 #   jlcpcb/bom.csv, jlcpcb/cpl-*.csv  assembly files, see jlcpcb/README.md
 #   case/board.scad, case/stl/       board data for the cases, printable parts
@@ -39,6 +41,10 @@ kicad-cli pcb export drill pcb/ultra-choc-wings.kicad_pcb -o build/gerbers/ --ex
 (cd build/gerbers && rm -f ../../jlcpcb/gerbers.zip && zip -q ../../jlcpcb/gerbers.zip *)
 
 $PYTHON scripts/jlcpcb.py pcb/ultra-choc-wings.kicad_pcb jlcpcb/
+
+# Schematic, symbol and footprint libraries from the routed board, and the
+# board's footprints linked to them
+$PYTHON scripts/make_schematic.py pcb/ultra-choc-wings.kicad_pcb
 
 # Cases: board outline, holes and parts from the routed board, then the STLs
 $PYTHON scripts/make_case.py pcb/ultra-choc-wings.kicad_pcb case/board.scad
