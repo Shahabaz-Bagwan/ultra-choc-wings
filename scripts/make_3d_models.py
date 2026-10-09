@@ -53,6 +53,7 @@ SWITCH = [box(GRAY, 0, 0, 1.1, 13.8, 13.8, 2.2), box(WHITE, 0, 0, 2.7, 4.2, 3.0,
 # Pad 1 (cathode) is at -x on the front.
 SOD123 = [box(BLACK, 0, 0, 0.55, 2.6, 1.6, 1.1), box(SILVER, -1.0, 0, 0.56, 0.3, 1.62, 1.12),
           box(SILVER, -1.7, 0, 0.15, 0.8, 1.0, 0.3), box(SILVER, 1.7, 0, 0.15, 0.8, 1.0, 0.3)]
+SOD323 = chip(BLACK, 1.7, 1.25, 0.9, SILVER, 0.35)
 LED0603 = chip(RED, 1.6, 0.8, 0.5, SILVER, 0.3) + [box(BLACK, -0.45, 0, 0.51, 0.12, 0.8, 0.52)]
 SOT23 = [box(BLACK, 0, 0, 0.55, 1.3, 2.9, 1.1)] + \
         [box(SILVER, -0.95, y, 0.2, 0.8, 0.5, 0.3) for y in (-0.95, 0.95)] + [box(SILVER, 0.95, 0, 0.2, 0.8, 0.5, 0.3)]
@@ -69,6 +70,7 @@ XIAO = [box(BLACK, -10.6, 8.89, 0.8, 21.0, 17.78, 1.0), box(SILVER, -17.8, 8.89,
 MODELS = {
     "CPG1316S01D02_reversible": ("ucw_switch", SWITCH),
     "REV_SOD123": ("ucw_sod123", SOD123),
+    "REV_SOD323": ("ucw_sod323", SOD323),
     "REV_0603": ("ucw_0603", chip(BLACK, 1.6, 0.8, 0.45, SILVER, 0.3)),
     "REV_0805": ("ucw_0805", chip(TAN, 2.0, 1.25, 0.9, SILVER, 0.4)),
     "REV_LED0603": ("ucw_led0603", LED0603),

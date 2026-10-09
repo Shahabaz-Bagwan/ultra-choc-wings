@@ -113,6 +113,7 @@ SYMBOLS["XIAO_nRF52840"] = (
 SYMBOL_OF = {
     "CPG1316S01D02_reversible": "SW_Push",
     "REV_SOD123": "D",
+    "REV_SOD323": "D",
     "REV_LED0603": "LED",
     "REV_0603": "R",
     "REV_0805": "C",

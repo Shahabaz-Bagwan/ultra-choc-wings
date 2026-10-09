@@ -23,6 +23,7 @@ import pcbnew
 # value -> (description, footprint, LCSC part). Check stock before ordering.
 PARTS = {
     "1N4148W": ("Switching diode 1N4148W", "SOD-123", "C81598"),
+    "1N4148WS": ("Switching diode 1N4148WS", "SOD-323", "C2128"),
     "B5819W": ("Schottky diode 40V 1A B5819W", "SOD-123", "C8598"),
     "LED_red_0603": ("LED red 0603", "0603", "C2286"),
     "1k": ("Resistor 1k 1% 0603", "0603", "C21190"),

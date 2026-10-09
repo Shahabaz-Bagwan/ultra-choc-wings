@@ -204,25 +204,27 @@ pcbs:
         params:
           from: "{{colrow}}"
           to: "{{column_net}}"
-      # The PG1316S is ultra low profile: nothing may sit beside it, so the
-      # diode, LED and resistor all go under the switch body, as in the v1
-      # board. Positions are in the key frame, so they rotate with the key.
-      # Diode and resistor share the row below the switch pads.
+      # The PG1316S is ultra low profile: nothing may sit beside it, so every
+      # part goes under the switch body, on the same side as the switch (one
+      # side to place per half). The LED and a small SOD-323 diode stack in the
+      # switch's cavity (the Dwgs.User polygon in the footprint; only the part
+      # common to both mirrored pockets is used, since the board is reversible);
+      # the resistor is just below the switch pads. Positions are in the key
+      # frame, so they rotate with the key.
       diode:
         what: rev_smd2
         where: true
         params:
           designator: D
-          package: SOD123
+          package: SOD323
           polarized: true
-          value: 1N4148W
+          value: 1N4148WS
           pad1: "{{row_net}}"
           pad2: "{{colrow}}"
         adjust:
-          shift: [-2.9, -5.1]
-      # Per-key LED in the component pocket of the PG1316S (the Dwgs.User
-      # polygon in the footprint). Anodes go to 3V3 through the resistor,
-      # cathodes share LED_K, switched to GND by Q1 (PWM on D6).
+          shift: [0, 1.8]
+      # Anodes go to 3V3 through the resistor, cathodes share LED_K, switched
+      # to GND by Q1 (PWM on D6).
       led:
         what: rev_smd2
         where: true
@@ -234,7 +236,7 @@ pcbs:
           pad1: LED_K
           pad2: "LA_{{colrow}}"
         adjust:
-          shift: [0, 2.5]
+          shift: [0, 3.25]
       led_resistor:
         what: rev_smd2
         where: true
@@ -245,7 +247,7 @@ pcbs:
           pad1: VCC3
           pad2: "LA_{{colrow}}"
         adjust:
-          shift: [2.4, -5.1]
+          shift: [0, -5.1]
       xiao_flippable:
         what: xiao_flippable
         where:
