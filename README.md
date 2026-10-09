@@ -85,6 +85,15 @@ KiCad side from the routed board (it runs as part of `build_pcb.sh`):
 * `pcb/ucw.pretty/`: one footprint per part type, taken from the board.
 * `pcb/fp-lib-table`, `pcb/sym-lib-table`: point the project at both.
 
+![The board with parts and keycaps](docs/board-3d.png)
+
+Every part also has a simple 3D model (`pcb/ucw.3dshapes/`, boxes and
+cylinders from the datasheet outlines, not exact CAD), so KiCad's 3D viewer
+shows the populated board; `docs/board-3d-parts.png` is the same without
+keycaps. `scripts/make_3d_models.py` writes them and links them into the board
+and the `ucw` footprints. The models sit on the switch side, the front (F)
+for the left half.
+
 Every footprint on the board is linked to its `ucw` footprint and to its
 schematic symbol, so cross-probing and "Update PCB from Schematic" match part
 for part. Change the design in `config.yaml` and rerun the build rather than
