@@ -26,8 +26,13 @@ hole_top_x: 24.5
 hole_top_y: 59.5
 hole_bottom_x: 2
 hole_bottom_y: -10.8
-hole_thumb_x: 73
-hole_thumb_y: -3
+hole_thumb_x: 76.5
+hole_thumb_y: -2.5
+top_flat_x: 40
+bottom_x: 21
+bottom_y: -26.5
+bottom_left_y: -10
+corner_r: 3
 mcu_top: 28.9
 xiao_length: 21
 xiao_width: 17.78

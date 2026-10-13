@@ -39,6 +39,9 @@ module.exports = {
       (fp_line (start 6.75 6.5) (end -6.75 6.5) (layer B.Fab) (width 0.1))
       (fp_line (start -6.75 6.5) (end -6.75 -6.5) (layer B.Fab) (width 0.1))
 
+      (fp_poly (pts (xy -3.8 -3.5) (xy -3.8 -1.65) (xy -3.3 -1.15) (xy 2.2 -1.15) (xy 2.2 -3.9) (xy -2.2 -3.9) (xy -2.2 -3.5)) (layer Dwgs.User) (width 0.1))
+      (fp_poly (pts (xy 3.8 -3.5) (xy 3.8 -1.65) (xy 3.3 -1.15) (xy -2.2 -1.15) (xy -2.2 -3.9) (xy 2.2 -3.9) (xy 2.2 -3.5)) (layer Dwgs.User) (width 0.1))
+
       (pad "" np_thru_hole circle (at -5.8 -2.75) (size 1.2 1.2) (drill 1.2) (layers *.Cu *.Mask))
       (pad "" np_thru_hole circle (at -5.8 2.75) (size 1 1) (drill 1) (layers *.Cu *.Mask))
       (pad "" np_thru_hole circle (at 5.8 -2.75) (size 1.2 1.2) (drill 1.2) (layers *.Cu *.Mask))

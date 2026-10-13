@@ -27,8 +27,16 @@ units:
   hole_top_y: 59.5
   hole_bottom_x: 2
   hole_bottom_y: -10.8
-  hole_thumb_x: 73
-  hole_thumb_y: -3
+  hole_thumb_x: 76.5
+  hole_thumb_y: -2.5
+
+  # Board outline (see outlines.board_noround): end of the flat top edge,
+  # bottom point under the coin cell, bottom-left corner and corner radius
+  top_flat_x: 40
+  bottom_x: 21
+  bottom_y: -26.5
+  bottom_left_y: -10
+  corner_r: 3
 
   # Board top edge above the pinky top key (clears the XIAO's top pin row)
   mcu_top: 28.9
@@ -99,45 +107,34 @@ points:
           row_net: P4
 
 outlines:
+  # One straight-edged polygon with rounded corners. It hugs the key grid,
+  # the XIAO/power switch strip on top, the CR2032 below the pinky/ring
+  # columns and the thumb fan, with a single notch between the inner column
+  # and the outermost thumb key.
   board_noround:
-    keys:
-      what: rectangle
-      where: true
-      size: [lpx, py]
-    # Top edge is set from the pinky key, not the middle column, so it stays
-    # clear of the XIAO's top pin row whatever the stagger is.
-    mcu:
+    main:
       what: polygon
       points:
-        - ref: matrix_pinky_top # Top left
+        - ref: matrix_pinky_top # Top left, above the XIAO
           shift: [-0.5lpx, mcu_top]
-        - ref: matrix_pinky_top # Top right
-          shift: [2px, mcu_top]
-        - ref: matrix_pinky_top # Bottom right (in board)
-          shift: [2px, 0]
-        - ref: matrix_pinky_top # Bottom left
-          shift: [-0.5lpx, 0]
-    battery:
-      what: polygon
-      points:
-        - ref: matrix_pinky_bottom # Top left (in board)
-          shift: [-10, -10]
-        - ref: matrix_index_bottom # Top right (in board)
-          shift: [0, 30]
-        - ref: thumbfan_home_thumb # Bottom right
-          shift: [0, 0]
-        - ref: thumbfan_middle_thumb # Bottom left
-          shift: [-0, -15]
-    coincell:
-      what: circle
-      where:
-        ref: matrix_pinky_bottom
-        shift: [coin_x, coin_y]
-      radius: 14.5
+        - ref: matrix_pinky_top # End of the flat top edge
+          shift: [top_flat_x, mcu_top]
+        - ref: matrix_inner_top # Top right, diagonal down from the flat top
+          shift: [0.5lpx, 0.5py+1]
+        - ref: matrix_inner_bottom # Bottom of the inner column (notch corner)
+          shift: [0.5lpx, -0.5py]
+        - ref: thumbfan_home_thumb # Outer thumb, top right
+          shift: [0.5lpx+0.5, 0.5py+0.5]
+        - ref: thumbfan_home_thumb # Outer thumb, bottom right
+          shift: [0.5lpx+0.5, -0.5py-0.5]
+        - ref: matrix_pinky_bottom # Under the coin cell, tangent to it
+          shift: [bottom_x, bottom_y]
+        - ref: matrix_pinky_bottom # Bottom left, below the pinky column
+          shift: [-0.5lpx, bottom_left_y]
   board:
     - what: outline
       name: board_noround
-      fillet: 1
+      fillet: corner_r
 
   top_plate_base:
     keys:

@@ -20,7 +20,7 @@ why the right half can use the exact same board flipped over;
 
 | Ref | Part | LCSC |
 | --- | --- | --- |
-| D1–D18 | 1N4148W matrix diodes (SOD-123) | C81598 |
+| D1–D18 | 1N4148WS matrix diodes (SOD-323) | C2128 |
 | D19 | B5819W Schottky, reverse protection for the coin cell | C8598 |
 | L1–L18 | Red LED 0603 (per key) | C2286 |
 | R1–R18 | 1 kΩ 0603 (LED current) | C21190 |

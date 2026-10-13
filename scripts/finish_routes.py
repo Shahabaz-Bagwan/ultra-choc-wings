@@ -71,15 +71,21 @@ def anchors(group):
 class Obstacles:
     def __init__(self, board, code):
         self.shapes = {layer: [] for layer in LAYERS}
+        # This net's own copper, where the router may start and end.
+        self.own = {layer: [] for layer in LAYERS}
         self.holes = []
         for pad in board.GetPads():
             for layer in LAYERS:
-                if pad.IsOnLayer(layer) and pad.GetNetCode() != code:
-                    self.shapes[layer].append(pad.GetEffectiveShape(layer))
+                if pad.IsOnLayer(layer):
+                    (self.own if pad.GetNetCode() == code else self.shapes)[layer].append(
+                        pad.GetEffectiveShape(layer))
             if pad.HasHole():
                 self.holes.append(pad.GetEffectiveHoleShape())
         for t in board.GetTracks():
             if t.GetNetCode() == code:
+                for layer in LAYERS:
+                    if t.IsOnLayer(layer):
+                        self.own[layer].append(t.GetEffectiveShape(layer))
                 continue
             for layer in LAYERS:
                 if t.IsOnLayer(layer):
@@ -226,14 +232,17 @@ def maze_route(obs, src, dst, grid=MM(0.2), margin=MM(5), via_cost=40):
     def h(k):
         return min(max(abs(k[0] - a), abs(k[1] - b)) for a, b in zip(gx, gy))
 
-    # Cells next to the anchors sit inside this net's own pads, so they are
-    # free even when the raster says otherwise.
+    # Cells next to the anchors that sit inside this net's own copper are
+    # free even when the raster says otherwise; a track there adds nothing
+    # closer to the other nets than the copper already is.
     own = set()
     for p, l in src + dst:
         ci, cj = cell(p)
         for di in range(-3, 4):
             for dj in range(-3, 4):
-                own.add((ci + di, cj + dj, li[l]))
+                q = pos(ci + di, cj + dj)
+                if any(s.Collide(pcbnew.SHAPE_CIRCLE(q, 0), 0) for s in obs.own[l]):
+                    own.add((ci + di, cj + dj, li[l]))
 
     steps = [(1, 0, 1), (-1, 0, 1), (0, 1, 1), (0, -1, 1), (1, 1, 1.414), (1, -1, 1.414), (-1, 1, 1.414), (-1, -1, 1.414)]
     end = None
