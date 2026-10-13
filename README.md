@@ -90,8 +90,11 @@ KiCad side from the routed board (it runs as part of `build_pcb.sh`):
 Every part also has a simple 3D model (`pcb/ucw.3dshapes/`, boxes and
 cylinders from the datasheet outlines, not exact CAD), so KiCad's 3D viewer
 shows the populated board; `docs/board-3d-parts.png` is the same without
-keycaps. `scripts/make_3d_models.py` writes them and links them into the board
-and the `ucw` footprints. The models sit on the switch side, the front (F)
+keycaps. The switches use the real Kailh STEP model (`PG1316S.step`, copied from
+`library/leptiosis.pretty`); the mounting holes and the test pad have no 3D
+model. The preview images still draw the switch as a simple box.
+`scripts/make_3d_models.py` writes them and links them into the board
+and the `ucw` footprints, also for switches swapped to the `leptiosis` footprint. The models sit on the switch side, the front (F)
 for the left half.
 
 Every footprint on the board is linked to its `ucw` footprint and to its

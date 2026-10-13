@@ -18,6 +18,7 @@ and a board KiCad's python module can open).
 import argparse
 import math
 import os
+import shutil
 import re
 import subprocess
 import sys
@@ -128,6 +129,27 @@ def model_line(name, indent):
             f'{i}{t}(scale (xyz 1 1 1))\n{i}{t}(rotate (xyz 0 0 0))\n{i})')
 
 
+# The switch uses Kailh's real STEP model (copied from library/leptiosis.pretty
+# next to the generated models). The offset places its origin at the footprint
+# origin, same as the v1 footprint.
+SWITCH_STEP = "PG1316S.step"
+SWITCH_STEP_SRC = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "library", "leptiosis.pretty", "PG1316S--装配体.STEP")
+SWITCH_STEP_OFFSET = (-4.75, -6.25, -10.25)
+SWITCH_NAMES = ("CPG1316S01D02_reversible", "CPG1316S01D02_reversible_mikefives")
+
+
+def step_line(indent):
+    i, t = indent, "\t" if "\t" in indent else "  "
+    x, y, z = SWITCH_STEP_OFFSET
+    return (f'{i}(model "${{KIPRJMOD}}/ucw.3dshapes/{SWITCH_STEP}"\n{i}{t}(offset (xyz {x} {y} {z}))\n'
+            f'{i}{t}(scale (xyz 1 1 1))\n{i}{t}(rotate (xyz 0 0 0))\n{i})')
+
+
+def strip_all_models(block):
+    """Remove every (model ...) entry of a footprint block, whatever its path."""
+    return re.sub(r'\n[ \t]*\(model "[^"]*"(?:[^()]|\([^()]*(?:\([^()]*\)[^()]*)*\))*\)', "", block)
+
+
 def strip_models(block):
     """Remove earlier (model "${KIPRJMOD}/ucw.3dshapes/...") entries."""
     return re.sub(r'\n[ \t]*\(model "\$\{KIPRJMOD\}/ucw\.3dshapes/[^"]*"(?:[^()]|\([^()]*(?:\([^()]*\)[^()]*)*\))*\)', "", block)
@@ -136,7 +158,7 @@ def strip_models(block):
 def add_to_board(path):
     src = open(path).read()
     out, i, n = [], 0, 0
-    for m in re.finditer(r'\(footprint "(?:ucw:)?([^"]+)"', src):
+    for m in re.finditer(r'\(footprint "(?:\w+:)?([^"]+)"', src):
         if m.start() < i:
             continue
         depth, j = 0, m.start()
@@ -154,7 +176,12 @@ def add_to_board(path):
                     j += 2 if src[j] == "\\" else 1
             j += 1
         block = strip_models(src[m.start():j + 1])
-        if m.group(1) in MODELS:
+        if m.group(1) in SWITCH_NAMES:
+            block = strip_all_models(block)
+            indent = re.search(r"\n([ \t]*)\(", block).group(1)
+            block = block[:-1].rstrip() + "\n" + step_line(indent) + "\n" + indent[:-1] + ")"
+            n += 1
+        elif m.group(1) in MODELS:
             indent = re.search(r"\n([ \t]*)\(", block).group(1)
             block = block[:-1].rstrip() + "\n" + model_line(MODELS[m.group(1)][0], indent) + "\n" + indent[:-1] + ")"
             n += 1
@@ -174,8 +201,13 @@ def add_to_library(libdir):
             continue
         src = strip_models(open(path).read()).rstrip()
         assert src.endswith(")")
+        if name in SWITCH_NAMES:
+            src = strip_all_models(src)
+            line = step_line("  ")
+        else:
+            line = model_line(model, "  ")
         with open(path, "w") as f:
-            f.write(src[:-1].rstrip() + "\n" + model_line(model, "  ") + "\n)\n")
+            f.write(src[:-1].rstrip() + "\n" + line + "\n)\n")
 
 
 # --- preview ----------------------------------------------------------------
@@ -229,6 +261,7 @@ def main():
     outdir = os.path.dirname(os.path.abspath(args.board))
     shapes = os.path.join(outdir, "ucw.3dshapes")
     os.makedirs(shapes, exist_ok=True)
+    shutil.copy(SWITCH_STEP_SRC, os.path.join(shapes, SWITCH_STEP))
     for model, prims in MODELS.values():
         write_wrl(os.path.join(shapes, model + ".wrl"), prims)
     n = add_to_board(args.board)
