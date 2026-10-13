@@ -335,15 +335,9 @@
 		)
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/ucw.3dshapes/ucw_0805.wrl"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
+			(offset (xyz 0 0 0))
+			(scale (xyz 1 1 1))
+			(rotate (xyz 0 0 0))
 		)
 	)
 	(footprint "ucw:REV_0603"
@@ -593,15 +587,9 @@
 		)
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/ucw.3dshapes/ucw_0603.wrl"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
+			(offset (xyz 0 0 0))
+			(scale (xyz 1 1 1))
+			(rotate (xyz 0 0 0))
 		)
 	)
 	(footprint "ucw:REV_0603"
@@ -851,15 +839,9 @@
 		)
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/ucw.3dshapes/ucw_0603.wrl"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
+			(offset (xyz 0 0 0))
+			(scale (xyz 1 1 1))
+			(rotate (xyz 0 0 0))
 		)
 	)
 	(footprint "leptiosis:CPG1316S01D02_reversible_mikefives"
@@ -1111,16 +1093,10 @@
 			(uuid "efa5eec0-9ca3-4cc2-83d7-56b9760f3314")
 		)
 		(embedded_fonts no)
-		(model "${MODELS}/PG1316S--装配体.STEP"
-			(offset
-				(xyz -4.75 -6.25 -10.25)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
+		(model "${KIPRJMOD}/ucw.3dshapes/PG1316S.step"
+			(offset (xyz -4.75 -6.25 -10.25))
+			(scale (xyz 1 1 1))
+			(rotate (xyz 0 0 0))
 		)
 	)
 	(footprint "ucw:REV_LED0603"
@@ -1390,15 +1366,9 @@
 		)
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/ucw.3dshapes/ucw_led0603.wrl"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
+			(offset (xyz 0 0 0))
+			(scale (xyz 1 1 1))
+			(rotate (xyz 0 0 0))
 		)
 	)
 	(footprint "ucw:REV_SOD323"
@@ -1668,15 +1638,9 @@
 		)
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/ucw.3dshapes/ucw_sod323.wrl"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
+			(offset (xyz 0 0 0))
+			(scale (xyz 1 1 1))
+			(rotate (xyz 0 0 0))
 		)
 	)
 	(footprint "ucw:REV_LED0603"
@@ -1946,15 +1910,9 @@
 		)
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/ucw.3dshapes/ucw_led0603.wrl"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
+			(offset (xyz 0 0 0))
+			(scale (xyz 1 1 1))
+			(rotate (xyz 0 0 0))
 		)
 	)
 	(footprint "ucw:REV_LED0603"
@@ -2224,15 +2182,9 @@
 		)
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/ucw.3dshapes/ucw_led0603.wrl"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
+			(offset (xyz 0 0 0))
+			(scale (xyz 1 1 1))
+			(rotate (xyz 0 0 0))
 		)
 	)
 	(footprint "ucw:REV_0603"
@@ -2482,15 +2434,9 @@
 		)
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/ucw.3dshapes/ucw_0603.wrl"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
+			(offset (xyz 0 0 0))
+			(scale (xyz 1 1 1))
+			(rotate (xyz 0 0 0))
 		)
 	)
 	(footprint "ucw:REV_0603"
@@ -2740,15 +2686,9 @@
 		)
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/ucw.3dshapes/ucw_0603.wrl"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
+			(offset (xyz 0 0 0))
+			(scale (xyz 1 1 1))
+			(rotate (xyz 0 0 0))
 		)
 	)
 	(footprint "leptiosis:CPG1316S01D02_reversible_mikefives"
@@ -3000,16 +2940,10 @@
 			(uuid "d6070f6c-e33c-4d5b-877a-016db0702a39")
 		)
 		(embedded_fonts no)
-		(model "/home/shahabaz/repos/ultra-choc-wings/library/leptiosis.pretty/PG1316S--装配体.STEP"
-			(offset
-				(xyz -4.5 -6.2 -8.1)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz -0 -0 -0)
-			)
+		(model "${KIPRJMOD}/ucw.3dshapes/PG1316S.step"
+			(offset (xyz -4.75 -6.25 -10.25))
+			(scale (xyz 1 1 1))
+			(rotate (xyz 0 0 0))
 		)
 	)
 	(footprint "ucw:REV_LED0603"
@@ -3279,15 +3213,9 @@
 		)
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/ucw.3dshapes/ucw_led0603.wrl"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
+			(offset (xyz 0 0 0))
+			(scale (xyz 1 1 1))
+			(rotate (xyz 0 0 0))
 		)
 	)
 	(footprint "ucw:REV_0603"
@@ -3537,15 +3465,9 @@
 		)
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/ucw.3dshapes/ucw_0603.wrl"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
+			(offset (xyz 0 0 0))
+			(scale (xyz 1 1 1))
+			(rotate (xyz 0 0 0))
 		)
 	)
 	(footprint "ucw:REV_LED0603"
@@ -3815,15 +3737,9 @@
 		)
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/ucw.3dshapes/ucw_led0603.wrl"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
+			(offset (xyz 0 0 0))
+			(scale (xyz 1 1 1))
+			(rotate (xyz 0 0 0))
 		)
 	)
 	(footprint "ucw:REV_0603"
@@ -4073,15 +3989,9 @@
 		)
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/ucw.3dshapes/ucw_0603.wrl"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
+			(offset (xyz 0 0 0))
+			(scale (xyz 1 1 1))
+			(rotate (xyz 0 0 0))
 		)
 	)
 	(footprint "ucw:M2_NPTH"
@@ -4417,16 +4327,10 @@
 			(uuid "522393df-e957-44c5-9342-9b731967a002")
 		)
 		(embedded_fonts no)
-		(model "${MODELS}/PG1316S--装配体.STEP"
-			(offset
-				(xyz -4.75 -6.25 -10.25)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
+		(model "${KIPRJMOD}/ucw.3dshapes/PG1316S.step"
+			(offset (xyz -4.75 -6.25 -10.25))
+			(scale (xyz 1 1 1))
+			(rotate (xyz 0 0 0))
 		)
 	)
 	(footprint "ucw:REV_LED0603"
@@ -4696,15 +4600,9 @@
 		)
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/ucw.3dshapes/ucw_led0603.wrl"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
+			(offset (xyz 0 0 0))
+			(scale (xyz 1 1 1))
+			(rotate (xyz 0 0 0))
 		)
 	)
 	(footprint "ucw:REV_SOD323"
@@ -4974,15 +4872,9 @@
 		)
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/ucw.3dshapes/ucw_sod323.wrl"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
+			(offset (xyz 0 0 0))
+			(scale (xyz 1 1 1))
+			(rotate (xyz 0 0 0))
 		)
 	)
 	(footprint "leptiosis:CPG1316S01D02_reversible_mikefives"
@@ -5234,16 +5126,10 @@
 			(uuid "0c687d97-e983-4ed4-8e21-f35528e2d79c")
 		)
 		(embedded_fonts no)
-		(model "${MODELS}/PG1316S--装配体.STEP"
-			(offset
-				(xyz -4.75 -6.25 -10.25)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
+		(model "${KIPRJMOD}/ucw.3dshapes/PG1316S.step"
+			(offset (xyz -4.75 -6.25 -10.25))
+			(scale (xyz 1 1 1))
+			(rotate (xyz 0 0 0))
 		)
 	)
 	(footprint "leptiosis:CPG1316S01D02_reversible_mikefives"
@@ -5498,16 +5384,10 @@
 			(uuid "aee9484b-05aa-4c32-9916-443d84247fcd")
 		)
 		(embedded_fonts no)
-		(model "${MODELS}/PG1316S--装配体.STEP"
-			(offset
-				(xyz -4.75 -6.25 -10.25)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
+		(model "${KIPRJMOD}/ucw.3dshapes/PG1316S.step"
+			(offset (xyz -4.75 -6.25 -10.25))
+			(scale (xyz 1 1 1))
+			(rotate (xyz 0 0 0))
 		)
 	)
 	(footprint "ucw:REV_SOD323"
@@ -5777,15 +5657,9 @@
 		)
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/ucw.3dshapes/ucw_sod323.wrl"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
+			(offset (xyz 0 0 0))
+			(scale (xyz 1 1 1))
+			(rotate (xyz 0 0 0))
 		)
 	)
 	(footprint "ucw:REV_LED0603"
@@ -6055,15 +5929,9 @@
 		)
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/ucw.3dshapes/ucw_led0603.wrl"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
+			(offset (xyz 0 0 0))
+			(scale (xyz 1 1 1))
+			(rotate (xyz 0 0 0))
 		)
 	)
 	(footprint "ucw:REV_0603"
@@ -6313,15 +6181,9 @@
 		)
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/ucw.3dshapes/ucw_0603.wrl"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
+			(offset (xyz 0 0 0))
+			(scale (xyz 1 1 1))
+			(rotate (xyz 0 0 0))
 		)
 	)
 	(footprint "ucw:REV_0603"
@@ -6571,15 +6433,9 @@
 		)
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/ucw.3dshapes/ucw_0603.wrl"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
+			(offset (xyz 0 0 0))
+			(scale (xyz 1 1 1))
+			(rotate (xyz 0 0 0))
 		)
 	)
 	(footprint "ucw:REV_0603"
@@ -6829,15 +6685,9 @@
 		)
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/ucw.3dshapes/ucw_0603.wrl"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
+			(offset (xyz 0 0 0))
+			(scale (xyz 1 1 1))
+			(rotate (xyz 0 0 0))
 		)
 	)
 	(footprint "ucw:M2_NPTH"
@@ -7191,15 +7041,9 @@
 		)
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/ucw.3dshapes/ucw_sod323.wrl"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
+			(offset (xyz 0 0 0))
+			(scale (xyz 1 1 1))
+			(rotate (xyz 0 0 0))
 		)
 	)
 	(footprint "ucw:REV_SOD323"
@@ -7469,15 +7313,9 @@
 		)
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/ucw.3dshapes/ucw_sod323.wrl"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
+			(offset (xyz 0 0 0))
+			(scale (xyz 1 1 1))
+			(rotate (xyz 0 0 0))
 		)
 	)
 	(footprint "leptiosis:CPG1316S01D02_reversible_mikefives"
@@ -7729,16 +7567,10 @@
 			(uuid "8419c5f1-e4c4-4099-9524-141e9fe42034")
 		)
 		(embedded_fonts no)
-		(model "${MODELS}/PG1316S--装配体.STEP"
-			(offset
-				(xyz -4.75 -6.25 -10.25)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
+		(model "${KIPRJMOD}/ucw.3dshapes/PG1316S.step"
+			(offset (xyz -4.75 -6.25 -10.25))
+			(scale (xyz 1 1 1))
+			(rotate (xyz 0 0 0))
 		)
 	)
 	(footprint "ucw:REV_SOT-23"
@@ -7986,15 +7818,9 @@
 		)
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/ucw.3dshapes/ucw_sot23.wrl"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
+			(offset (xyz 0 0 0))
+			(scale (xyz 1 1 1))
+			(rotate (xyz 0 0 0))
 		)
 	)
 	(footprint "ucw:REV_SOD123"
@@ -8264,15 +8090,9 @@
 		)
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/ucw.3dshapes/ucw_sod123.wrl"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
+			(offset (xyz 0 0 0))
+			(scale (xyz 1 1 1))
+			(rotate (xyz 0 0 0))
 		)
 	)
 	(footprint "ucw:REV_0603"
@@ -8522,15 +8342,9 @@
 		)
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/ucw.3dshapes/ucw_0603.wrl"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
+			(offset (xyz 0 0 0))
+			(scale (xyz 1 1 1))
+			(rotate (xyz 0 0 0))
 		)
 	)
 	(footprint "leptiosis:CPG1316S01D02_reversible_mikefives"
@@ -8782,16 +8596,10 @@
 			(uuid "047e336e-8b70-4a55-8b21-f1e58d6c4c6f")
 		)
 		(embedded_fonts no)
-		(model "${MODELS}/PG1316S--装配体.STEP"
-			(offset
-				(xyz -4.75 -6.25 -10.25)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
+		(model "${KIPRJMOD}/ucw.3dshapes/PG1316S.step"
+			(offset (xyz -4.75 -6.25 -10.25))
+			(scale (xyz 1 1 1))
+			(rotate (xyz 0 0 0))
 		)
 	)
 	(footprint "ucw:REV_0603"
@@ -9041,15 +8849,9 @@
 		)
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/ucw.3dshapes/ucw_0603.wrl"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
+			(offset (xyz 0 0 0))
+			(scale (xyz 1 1 1))
+			(rotate (xyz 0 0 0))
 		)
 	)
 	(footprint "ucw:REV_SOD323"
@@ -9319,15 +9121,9 @@
 		)
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/ucw.3dshapes/ucw_sod323.wrl"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
+			(offset (xyz 0 0 0))
+			(scale (xyz 1 1 1))
+			(rotate (xyz 0 0 0))
 		)
 	)
 	(footprint "leptiosis:CPG1316S01D02_reversible_mikefives"
@@ -9579,16 +9375,10 @@
 			(uuid "c6af43cf-698b-44be-ac62-a0d8f8d7fc90")
 		)
 		(embedded_fonts no)
-		(model "${MODELS}/PG1316S--装配体.STEP"
-			(offset
-				(xyz -4.75 -6.25 -10.25)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
+		(model "${KIPRJMOD}/ucw.3dshapes/PG1316S.step"
+			(offset (xyz -4.75 -6.25 -10.25))
+			(scale (xyz 1 1 1))
+			(rotate (xyz 0 0 0))
 		)
 	)
 	(footprint "ucw:SMDPad"
@@ -9907,15 +9697,9 @@
 		)
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/ucw.3dshapes/ucw_0603.wrl"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
+			(offset (xyz 0 0 0))
+			(scale (xyz 1 1 1))
+			(rotate (xyz 0 0 0))
 		)
 	)
 	(footprint "leptiosis:CPG1316S01D02_reversible_mikefives"
@@ -10167,16 +9951,10 @@
 			(uuid "7992c09a-1674-4812-9a1d-2b27b2de63d5")
 		)
 		(embedded_fonts no)
-		(model "${MODELS}/PG1316S--装配体.STEP"
-			(offset
-				(xyz -4.75 -6.25 -10.25)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
+		(model "${KIPRJMOD}/ucw.3dshapes/PG1316S.step"
+			(offset (xyz -4.75 -6.25 -10.25))
+			(scale (xyz 1 1 1))
+			(rotate (xyz 0 0 0))
 		)
 	)
 	(footprint "ucw:REV_SOD323"
@@ -10446,15 +10224,9 @@
 		)
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/ucw.3dshapes/ucw_sod323.wrl"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
+			(offset (xyz 0 0 0))
+			(scale (xyz 1 1 1))
+			(rotate (xyz 0 0 0))
 		)
 	)
 	(footprint "ucw:REV_0603"
@@ -10704,15 +10476,9 @@
 		)
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/ucw.3dshapes/ucw_0603.wrl"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
+			(offset (xyz 0 0 0))
+			(scale (xyz 1 1 1))
+			(rotate (xyz 0 0 0))
 		)
 	)
 	(footprint "ucw:REV_SOD323"
@@ -10982,15 +10748,9 @@
 		)
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/ucw.3dshapes/ucw_sod323.wrl"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
+			(offset (xyz 0 0 0))
+			(scale (xyz 1 1 1))
+			(rotate (xyz 0 0 0))
 		)
 	)
 	(footprint "leptiosis:CPG1316S01D02_reversible_mikefives"
@@ -11242,16 +11002,10 @@
 			(uuid "7f63bcbf-9a5a-4323-80d2-2f8d05566175")
 		)
 		(embedded_fonts no)
-		(model "${MODELS}/PG1316S--装配体.STEP"
-			(offset
-				(xyz -4.75 -6.25 -10.25)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
+		(model "${KIPRJMOD}/ucw.3dshapes/PG1316S.step"
+			(offset (xyz -4.75 -6.25 -10.25))
+			(scale (xyz 1 1 1))
+			(rotate (xyz 0 0 0))
 		)
 	)
 	(footprint "ucw:REV_LED0603"
@@ -11521,15 +11275,9 @@
 		)
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/ucw.3dshapes/ucw_led0603.wrl"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
+			(offset (xyz 0 0 0))
+			(scale (xyz 1 1 1))
+			(rotate (xyz 0 0 0))
 		)
 	)
 	(footprint "ucw:M2_NPTH"
@@ -11863,15 +11611,9 @@
 		)
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/ucw.3dshapes/ucw_0603.wrl"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
+			(offset (xyz 0 0 0))
+			(scale (xyz 1 1 1))
+			(rotate (xyz 0 0 0))
 		)
 	)
 	(footprint "ucw:REV_LED0603"
@@ -12141,15 +11883,9 @@
 		)
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/ucw.3dshapes/ucw_led0603.wrl"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
+			(offset (xyz 0 0 0))
+			(scale (xyz 1 1 1))
+			(rotate (xyz 0 0 0))
 		)
 	)
 	(footprint "ucw:REV_LED0603"
@@ -12419,15 +12155,9 @@
 		)
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/ucw.3dshapes/ucw_led0603.wrl"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
+			(offset (xyz 0 0 0))
+			(scale (xyz 1 1 1))
+			(rotate (xyz 0 0 0))
 		)
 	)
 	(footprint "leptiosis:CPG1316S01D02_reversible_mikefives"
@@ -12681,16 +12411,10 @@
 			(uuid "2fb986a2-340b-4153-8452-a7def3523fc0")
 		)
 		(embedded_fonts no)
-		(model "${MODELS}/PG1316S--装配体.STEP"
-			(offset
-				(xyz -4.75 -6.25 -10.25)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
+		(model "${KIPRJMOD}/ucw.3dshapes/PG1316S.step"
+			(offset (xyz -4.75 -6.25 -10.25))
+			(scale (xyz 1 1 1))
+			(rotate (xyz 0 0 0))
 		)
 	)
 	(footprint "ucw:REV_SOD323"
@@ -12960,15 +12684,9 @@
 		)
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/ucw.3dshapes/ucw_sod323.wrl"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
+			(offset (xyz 0 0 0))
+			(scale (xyz 1 1 1))
+			(rotate (xyz 0 0 0))
 		)
 	)
 	(footprint "leptiosis:CPG1316S01D02_reversible_mikefives"
@@ -13220,16 +12938,10 @@
 			(uuid "f800f486-5805-42cb-b063-fee2863dde1e")
 		)
 		(embedded_fonts no)
-		(model "${MODELS}/PG1316S--装配体.STEP"
-			(offset
-				(xyz -4.75 -6.25 -10.25)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
+		(model "${KIPRJMOD}/ucw.3dshapes/PG1316S.step"
+			(offset (xyz -4.75 -6.25 -10.25))
+			(scale (xyz 1 1 1))
+			(rotate (xyz 0 0 0))
 		)
 	)
 	(footprint "ucw:REV_SOD323"
@@ -13499,15 +13211,9 @@
 		)
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/ucw.3dshapes/ucw_sod323.wrl"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
+			(offset (xyz 0 0 0))
+			(scale (xyz 1 1 1))
+			(rotate (xyz 0 0 0))
 		)
 	)
 	(footprint "ucw:REV_LED0603"
@@ -13777,15 +13483,9 @@
 		)
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/ucw.3dshapes/ucw_led0603.wrl"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
+			(offset (xyz 0 0 0))
+			(scale (xyz 1 1 1))
+			(rotate (xyz 0 0 0))
 		)
 	)
 	(footprint "ucw:REV_LED0603"
@@ -14055,15 +13755,9 @@
 		)
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/ucw.3dshapes/ucw_led0603.wrl"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
+			(offset (xyz 0 0 0))
+			(scale (xyz 1 1 1))
+			(rotate (xyz 0 0 0))
 		)
 	)
 	(footprint "leptiosis:CPG1316S01D02_reversible_mikefives"
@@ -14315,16 +14009,10 @@
 			(uuid "81edd335-a347-401d-b60f-6cfea99b01f6")
 		)
 		(embedded_fonts no)
-		(model "${MODELS}/PG1316S--装配体.STEP"
-			(offset
-				(xyz -4.75 -6.25 -10.25)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
+		(model "${KIPRJMOD}/ucw.3dshapes/PG1316S.step"
+			(offset (xyz -4.75 -6.25 -10.25))
+			(scale (xyz 1 1 1))
+			(rotate (xyz 0 0 0))
 		)
 	)
 	(footprint "ucw:REV_0603"
@@ -14574,15 +14262,9 @@
 		)
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/ucw.3dshapes/ucw_0603.wrl"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
+			(offset (xyz 0 0 0))
+			(scale (xyz 1 1 1))
+			(rotate (xyz 0 0 0))
 		)
 	)
 	(footprint "ucw:REV_0603"
@@ -14832,15 +14514,9 @@
 		)
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/ucw.3dshapes/ucw_0603.wrl"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
+			(offset (xyz 0 0 0))
+			(scale (xyz 1 1 1))
+			(rotate (xyz 0 0 0))
 		)
 	)
 	(footprint "ucw:REV_SOD323"
@@ -15110,15 +14786,9 @@
 		)
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/ucw.3dshapes/ucw_sod323.wrl"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
+			(offset (xyz 0 0 0))
+			(scale (xyz 1 1 1))
+			(rotate (xyz 0 0 0))
 		)
 	)
 	(footprint "ucw:REV_LED0603"
@@ -15388,15 +15058,9 @@
 		)
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/ucw.3dshapes/ucw_led0603.wrl"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
+			(offset (xyz 0 0 0))
+			(scale (xyz 1 1 1))
+			(rotate (xyz 0 0 0))
 		)
 	)
 	(footprint "ucw:REV_LED0603"
@@ -15666,15 +15330,9 @@
 		)
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/ucw.3dshapes/ucw_led0603.wrl"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
+			(offset (xyz 0 0 0))
+			(scale (xyz 1 1 1))
+			(rotate (xyz 0 0 0))
 		)
 	)
 	(footprint "ucw:REV_LED0603"
@@ -15944,15 +15602,9 @@
 		)
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/ucw.3dshapes/ucw_led0603.wrl"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
+			(offset (xyz 0 0 0))
+			(scale (xyz 1 1 1))
+			(rotate (xyz 0 0 0))
 		)
 	)
 	(footprint "ucw:REV_LED0603"
@@ -16222,15 +15874,9 @@
 		)
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/ucw.3dshapes/ucw_led0603.wrl"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
+			(offset (xyz 0 0 0))
+			(scale (xyz 1 1 1))
+			(rotate (xyz 0 0 0))
 		)
 	)
 	(footprint "ucw:REV_LED0603"
@@ -16500,15 +16146,9 @@
 		)
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/ucw.3dshapes/ucw_led0603.wrl"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
+			(offset (xyz 0 0 0))
+			(scale (xyz 1 1 1))
+			(rotate (xyz 0 0 0))
 		)
 	)
 	(footprint "ucw:REV_CR2032_BC2003"
@@ -16698,15 +16338,9 @@
 		)
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/ucw.3dshapes/ucw_cr2032.wrl"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
+			(offset (xyz 0 0 0))
+			(scale (xyz 1 1 1))
+			(rotate (xyz 0 0 0))
 		)
 	)
 	(footprint "ucw:REV_SOD323"
@@ -16976,15 +16610,9 @@
 		)
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/ucw.3dshapes/ucw_sod323.wrl"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
+			(offset (xyz 0 0 0))
+			(scale (xyz 1 1 1))
+			(rotate (xyz 0 0 0))
 		)
 	)
 	(footprint "ucw:REV_LED0603"
@@ -17254,15 +16882,9 @@
 		)
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/ucw.3dshapes/ucw_led0603.wrl"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
+			(offset (xyz 0 0 0))
+			(scale (xyz 1 1 1))
+			(rotate (xyz 0 0 0))
 		)
 	)
 	(footprint "ucw:REV_0805"
@@ -17512,15 +17134,9 @@
 		)
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/ucw.3dshapes/ucw_0805.wrl"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
+			(offset (xyz 0 0 0))
+			(scale (xyz 1 1 1))
+			(rotate (xyz 0 0 0))
 		)
 	)
 	(footprint "ucw:REV_0603"
@@ -17770,15 +17386,9 @@
 		)
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/ucw.3dshapes/ucw_0603.wrl"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
+			(offset (xyz 0 0 0))
+			(scale (xyz 1 1 1))
+			(rotate (xyz 0 0 0))
 		)
 	)
 	(footprint "ucw:REV_SPDT_C128955"
@@ -18158,15 +17768,9 @@
 		)
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/ucw.3dshapes/ucw_slide.wrl"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
+			(offset (xyz 0 0 0))
+			(scale (xyz 1 1 1))
+			(rotate (xyz 0 0 0))
 		)
 	)
 	(footprint "leptiosis:CPG1316S01D02_reversible_mikefives"
@@ -18418,16 +18022,10 @@
 			(uuid "dd941446-cbf0-4aae-8658-14ebdb3bfd17")
 		)
 		(embedded_fonts no)
-		(model "${MODELS}/PG1316S--装配体.STEP"
-			(offset
-				(xyz -4.75 -6.25 -10.25)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
+		(model "${KIPRJMOD}/ucw.3dshapes/PG1316S.step"
+			(offset (xyz -4.75 -6.25 -10.25))
+			(scale (xyz 1 1 1))
+			(rotate (xyz 0 0 0))
 		)
 	)
 	(footprint "leptiosis:CPG1316S01D02_reversible_mikefives"
@@ -18679,16 +18277,10 @@
 			(uuid "21b1692e-4b91-47a7-83d0-916544ec0395")
 		)
 		(embedded_fonts no)
-		(model "${MODELS}/PG1316S--装配体.STEP"
-			(offset
-				(xyz -4.75 -6.25 -10.25)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
+		(model "${KIPRJMOD}/ucw.3dshapes/PG1316S.step"
+			(offset (xyz -4.75 -6.25 -10.25))
+			(scale (xyz 1 1 1))
+			(rotate (xyz 0 0 0))
 		)
 	)
 	(footprint "ucw:REV_0603"
@@ -18938,15 +18530,9 @@
 		)
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/ucw.3dshapes/ucw_0603.wrl"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
+			(offset (xyz 0 0 0))
+			(scale (xyz 1 1 1))
+			(rotate (xyz 0 0 0))
 		)
 	)
 	(footprint "ucw:REV_SOD323"
@@ -19216,15 +18802,9 @@
 		)
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/ucw.3dshapes/ucw_sod323.wrl"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
+			(offset (xyz 0 0 0))
+			(scale (xyz 1 1 1))
+			(rotate (xyz 0 0 0))
 		)
 	)
 	(footprint "ucw:REV_SOD323"
@@ -19494,15 +19074,9 @@
 		)
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/ucw.3dshapes/ucw_sod323.wrl"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
+			(offset (xyz 0 0 0))
+			(scale (xyz 1 1 1))
+			(rotate (xyz 0 0 0))
 		)
 	)
 	(footprint "leptiosis:CPG1316S01D02_reversible_mikefives"
@@ -19754,16 +19328,10 @@
 			(uuid "fd9cc3dc-98c0-40c8-bea9-df92c47c7d0d")
 		)
 		(embedded_fonts no)
-		(model "${MODELS}/PG1316S--装配体.STEP"
-			(offset
-				(xyz -4.75 -6.25 -10.25)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
+		(model "${KIPRJMOD}/ucw.3dshapes/PG1316S.step"
+			(offset (xyz -4.75 -6.25 -10.25))
+			(scale (xyz 1 1 1))
+			(rotate (xyz 0 0 0))
 		)
 	)
 	(footprint "ucw:REV_SOD323"
@@ -20033,15 +19601,9 @@
 		)
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/ucw.3dshapes/ucw_sod323.wrl"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
+			(offset (xyz 0 0 0))
+			(scale (xyz 1 1 1))
+			(rotate (xyz 0 0 0))
 		)
 	)
 	(footprint "ucw:REV_SOD323"
@@ -20311,15 +19873,9 @@
 		)
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/ucw.3dshapes/ucw_sod323.wrl"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
+			(offset (xyz 0 0 0))
+			(scale (xyz 1 1 1))
+			(rotate (xyz 0 0 0))
 		)
 	)
 	(footprint "ucw:xiao-ble"
@@ -23696,15 +23252,9 @@
 		)
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/ucw.3dshapes/ucw_xiao.wrl"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
+			(offset (xyz 0 0 0))
+			(scale (xyz 1 1 1))
+			(rotate (xyz 0 0 0))
 		)
 	)
 	(footprint "ucw:REV_0603"
@@ -23954,15 +23504,9 @@
 		)
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/ucw.3dshapes/ucw_0603.wrl"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
+			(offset (xyz 0 0 0))
+			(scale (xyz 1 1 1))
+			(rotate (xyz 0 0 0))
 		)
 	)
 	(footprint "leptiosis:CPG1316S01D02_reversible_mikefives"
@@ -24214,16 +23758,10 @@
 			(uuid "8d3a317b-ca7b-4bb7-a0f7-b1e7700106c3")
 		)
 		(embedded_fonts no)
-		(model "${MODELS}/PG1316S--装配体.STEP"
-			(offset
-				(xyz -4.75 -6.25 -10.25)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
+		(model "${KIPRJMOD}/ucw.3dshapes/PG1316S.step"
+			(offset (xyz -4.75 -6.25 -10.25))
+			(scale (xyz 1 1 1))
+			(rotate (xyz 0 0 0))
 		)
 	)
 	(footprint "leptiosis:CPG1316S01D02_reversible_mikefives"
@@ -24475,16 +24013,10 @@
 			(uuid "69fe5cbb-dcd0-4c4d-886e-7fc0b754755c")
 		)
 		(embedded_fonts no)
-		(model "${MODELS}/PG1316S--装配体.STEP"
-			(offset
-				(xyz -4.75 -6.25 -10.25)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
+		(model "${KIPRJMOD}/ucw.3dshapes/PG1316S.step"
+			(offset (xyz -4.75 -6.25 -10.25))
+			(scale (xyz 1 1 1))
+			(rotate (xyz 0 0 0))
 		)
 	)
 	(footprint "ucw:REV_SOD323"
@@ -24754,15 +24286,9 @@
 		)
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/ucw.3dshapes/ucw_sod323.wrl"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
+			(offset (xyz 0 0 0))
+			(scale (xyz 1 1 1))
+			(rotate (xyz 0 0 0))
 		)
 	)
 	(footprint "ucw:REV_SOD323"
@@ -25032,15 +24558,9 @@
 		)
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/ucw.3dshapes/ucw_sod323.wrl"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
+			(offset (xyz 0 0 0))
+			(scale (xyz 1 1 1))
+			(rotate (xyz 0 0 0))
 		)
 	)
 	(gr_arc
