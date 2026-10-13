@@ -334,7 +334,7 @@
 			(uuid "6086bb05-cac6-4fad-88a6-351024a9ad16")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/ucw.3dshapes/ucw_0805.wrl"
+		(model "${KIPRJMOD}/ucw.3dshapes/ucw_0805.step"
 			(offset (xyz 0 0 0))
 			(scale (xyz 1 1 1))
 			(rotate (xyz 0 0 0))
@@ -586,7 +586,7 @@
 			(uuid "10579d1c-1f41-456f-9a5c-a454475b9015")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/ucw.3dshapes/ucw_0603.wrl"
+		(model "${KIPRJMOD}/ucw.3dshapes/ucw_0603.step"
 			(offset (xyz 0 0 0))
 			(scale (xyz 1 1 1))
 			(rotate (xyz 0 0 0))
@@ -838,7 +838,7 @@
 			(uuid "3fd5bc12-793d-4eec-8978-d262a0dc5566")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/ucw.3dshapes/ucw_0603.wrl"
+		(model "${KIPRJMOD}/ucw.3dshapes/ucw_0603.step"
 			(offset (xyz 0 0 0))
 			(scale (xyz 1 1 1))
 			(rotate (xyz 0 0 0))
@@ -1365,7 +1365,7 @@
 			(uuid "4e7365c5-c59c-44f9-a5e0-d170b5145f97")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/ucw.3dshapes/ucw_led0603.wrl"
+		(model "${KIPRJMOD}/ucw.3dshapes/ucw_led0603.step"
 			(offset (xyz 0 0 0))
 			(scale (xyz 1 1 1))
 			(rotate (xyz 0 0 0))
@@ -1637,7 +1637,7 @@
 			(uuid "274436c4-3b2c-43f3-a99c-bc2a98934f2b")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/ucw.3dshapes/ucw_sod323.wrl"
+		(model "${KIPRJMOD}/ucw.3dshapes/ucw_sod323.step"
 			(offset (xyz 0 0 0))
 			(scale (xyz 1 1 1))
 			(rotate (xyz 0 0 0))
@@ -1909,7 +1909,7 @@
 			(uuid "c23fe651-141b-452c-8044-af78dd1452b6")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/ucw.3dshapes/ucw_led0603.wrl"
+		(model "${KIPRJMOD}/ucw.3dshapes/ucw_led0603.step"
 			(offset (xyz 0 0 0))
 			(scale (xyz 1 1 1))
 			(rotate (xyz 0 0 0))
@@ -2181,7 +2181,7 @@
 			(uuid "9d9ac8b1-7f42-48af-a349-612bf4e82028")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/ucw.3dshapes/ucw_led0603.wrl"
+		(model "${KIPRJMOD}/ucw.3dshapes/ucw_led0603.step"
 			(offset (xyz 0 0 0))
 			(scale (xyz 1 1 1))
 			(rotate (xyz 0 0 0))
@@ -2433,7 +2433,7 @@
 			(uuid "c0968791-2bdc-4c44-ac0c-47a7c7999ec5")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/ucw.3dshapes/ucw_0603.wrl"
+		(model "${KIPRJMOD}/ucw.3dshapes/ucw_0603.step"
 			(offset (xyz 0 0 0))
 			(scale (xyz 1 1 1))
 			(rotate (xyz 0 0 0))
@@ -2685,7 +2685,7 @@
 			(uuid "3bcb94c1-b857-4b98-8843-49dc8b1afc13")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/ucw.3dshapes/ucw_0603.wrl"
+		(model "${KIPRJMOD}/ucw.3dshapes/ucw_0603.step"
 			(offset (xyz 0 0 0))
 			(scale (xyz 1 1 1))
 			(rotate (xyz 0 0 0))
@@ -3212,7 +3212,7 @@
 			(uuid "f155ba5d-17c1-4584-9699-5c3641e94660")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/ucw.3dshapes/ucw_led0603.wrl"
+		(model "${KIPRJMOD}/ucw.3dshapes/ucw_led0603.step"
 			(offset (xyz 0 0 0))
 			(scale (xyz 1 1 1))
 			(rotate (xyz 0 0 0))
@@ -3464,7 +3464,7 @@
 			(uuid "583cc426-3ad5-4412-8982-f4b635028231")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/ucw.3dshapes/ucw_0603.wrl"
+		(model "${KIPRJMOD}/ucw.3dshapes/ucw_0603.step"
 			(offset (xyz 0 0 0))
 			(scale (xyz 1 1 1))
 			(rotate (xyz 0 0 0))
@@ -3736,7 +3736,7 @@
 			(uuid "2259628f-dbfd-4a27-ab73-551881a9d7d8")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/ucw.3dshapes/ucw_led0603.wrl"
+		(model "${KIPRJMOD}/ucw.3dshapes/ucw_led0603.step"
 			(offset (xyz 0 0 0))
 			(scale (xyz 1 1 1))
 			(rotate (xyz 0 0 0))
@@ -3988,7 +3988,7 @@
 			(uuid "1377c770-7c6f-4505-a285-30c79e2cbacd")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/ucw.3dshapes/ucw_0603.wrl"
+		(model "${KIPRJMOD}/ucw.3dshapes/ucw_0603.step"
 			(offset (xyz 0 0 0))
 			(scale (xyz 1 1 1))
 			(rotate (xyz 0 0 0))
@@ -4599,7 +4599,7 @@
 			(uuid "081089df-a0bf-47a2-81ae-9acc3764f094")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/ucw.3dshapes/ucw_led0603.wrl"
+		(model "${KIPRJMOD}/ucw.3dshapes/ucw_led0603.step"
 			(offset (xyz 0 0 0))
 			(scale (xyz 1 1 1))
 			(rotate (xyz 0 0 0))
@@ -4871,7 +4871,7 @@
 			(uuid "d9b218af-af23-4a8a-8dfb-cce3aec7518f")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/ucw.3dshapes/ucw_sod323.wrl"
+		(model "${KIPRJMOD}/ucw.3dshapes/ucw_sod323.step"
 			(offset (xyz 0 0 0))
 			(scale (xyz 1 1 1))
 			(rotate (xyz 0 0 0))
@@ -5656,7 +5656,7 @@
 			(uuid "add5a12f-60e0-434e-a160-c5c2a764b10e")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/ucw.3dshapes/ucw_sod323.wrl"
+		(model "${KIPRJMOD}/ucw.3dshapes/ucw_sod323.step"
 			(offset (xyz 0 0 0))
 			(scale (xyz 1 1 1))
 			(rotate (xyz 0 0 0))
@@ -5928,7 +5928,7 @@
 			(uuid "96f2c35c-a7dd-4d9c-81fc-64edd527c001")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/ucw.3dshapes/ucw_led0603.wrl"
+		(model "${KIPRJMOD}/ucw.3dshapes/ucw_led0603.step"
 			(offset (xyz 0 0 0))
 			(scale (xyz 1 1 1))
 			(rotate (xyz 0 0 0))
@@ -6180,7 +6180,7 @@
 			(uuid "77018ef6-04a0-43dc-bf4b-acbfec707033")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/ucw.3dshapes/ucw_0603.wrl"
+		(model "${KIPRJMOD}/ucw.3dshapes/ucw_0603.step"
 			(offset (xyz 0 0 0))
 			(scale (xyz 1 1 1))
 			(rotate (xyz 0 0 0))
@@ -6432,7 +6432,7 @@
 			(uuid "4b7d6fae-07d4-4d53-9385-4ae7d706d7db")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/ucw.3dshapes/ucw_0603.wrl"
+		(model "${KIPRJMOD}/ucw.3dshapes/ucw_0603.step"
 			(offset (xyz 0 0 0))
 			(scale (xyz 1 1 1))
 			(rotate (xyz 0 0 0))
@@ -6684,7 +6684,7 @@
 			(uuid "125f5498-eed1-49a7-a342-4a4d5783ddcd")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/ucw.3dshapes/ucw_0603.wrl"
+		(model "${KIPRJMOD}/ucw.3dshapes/ucw_0603.step"
 			(offset (xyz 0 0 0))
 			(scale (xyz 1 1 1))
 			(rotate (xyz 0 0 0))
@@ -7040,7 +7040,7 @@
 			(uuid "bb3b0544-9f51-4cf5-b177-f5fcf9665a95")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/ucw.3dshapes/ucw_sod323.wrl"
+		(model "${KIPRJMOD}/ucw.3dshapes/ucw_sod323.step"
 			(offset (xyz 0 0 0))
 			(scale (xyz 1 1 1))
 			(rotate (xyz 0 0 0))
@@ -7312,7 +7312,7 @@
 			(uuid "83182ccb-7d3c-4b37-aa47-8923160317a7")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/ucw.3dshapes/ucw_sod323.wrl"
+		(model "${KIPRJMOD}/ucw.3dshapes/ucw_sod323.step"
 			(offset (xyz 0 0 0))
 			(scale (xyz 1 1 1))
 			(rotate (xyz 0 0 0))
@@ -7817,7 +7817,7 @@
 			(uuid "bf5673b2-2248-4da6-9bab-319847f6cca1")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/ucw.3dshapes/ucw_sot23.wrl"
+		(model "${KIPRJMOD}/ucw.3dshapes/ucw_sot23.step"
 			(offset (xyz 0 0 0))
 			(scale (xyz 1 1 1))
 			(rotate (xyz 0 0 0))
@@ -8089,7 +8089,7 @@
 			(uuid "87edbcb2-82b6-49df-ae23-2d7fa36620fb")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/ucw.3dshapes/ucw_sod123.wrl"
+		(model "${KIPRJMOD}/ucw.3dshapes/ucw_sod123.step"
 			(offset (xyz 0 0 0))
 			(scale (xyz 1 1 1))
 			(rotate (xyz 0 0 0))
@@ -8341,7 +8341,7 @@
 			(uuid "7f06d7c2-07a0-40e2-958c-223e432fcf4f")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/ucw.3dshapes/ucw_0603.wrl"
+		(model "${KIPRJMOD}/ucw.3dshapes/ucw_0603.step"
 			(offset (xyz 0 0 0))
 			(scale (xyz 1 1 1))
 			(rotate (xyz 0 0 0))
@@ -8848,7 +8848,7 @@
 			(uuid "6b37486a-293b-4432-bb89-df7855ed6a63")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/ucw.3dshapes/ucw_0603.wrl"
+		(model "${KIPRJMOD}/ucw.3dshapes/ucw_0603.step"
 			(offset (xyz 0 0 0))
 			(scale (xyz 1 1 1))
 			(rotate (xyz 0 0 0))
@@ -9120,7 +9120,7 @@
 			(uuid "b6680f25-0bb3-45a4-ab6b-6b416fbdca6e")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/ucw.3dshapes/ucw_sod323.wrl"
+		(model "${KIPRJMOD}/ucw.3dshapes/ucw_sod323.step"
 			(offset (xyz 0 0 0))
 			(scale (xyz 1 1 1))
 			(rotate (xyz 0 0 0))
@@ -9696,7 +9696,7 @@
 			(uuid "acbf9aa3-ea19-4152-a0fb-4e3900e4b491")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/ucw.3dshapes/ucw_0603.wrl"
+		(model "${KIPRJMOD}/ucw.3dshapes/ucw_0603.step"
 			(offset (xyz 0 0 0))
 			(scale (xyz 1 1 1))
 			(rotate (xyz 0 0 0))
@@ -10223,7 +10223,7 @@
 			(uuid "0fb788ab-9da1-44c2-a9aa-642ee4f175f9")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/ucw.3dshapes/ucw_sod323.wrl"
+		(model "${KIPRJMOD}/ucw.3dshapes/ucw_sod323.step"
 			(offset (xyz 0 0 0))
 			(scale (xyz 1 1 1))
 			(rotate (xyz 0 0 0))
@@ -10475,7 +10475,7 @@
 			(uuid "f6a5e07f-94c6-4ffe-b160-80b1f4a062cb")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/ucw.3dshapes/ucw_0603.wrl"
+		(model "${KIPRJMOD}/ucw.3dshapes/ucw_0603.step"
 			(offset (xyz 0 0 0))
 			(scale (xyz 1 1 1))
 			(rotate (xyz 0 0 0))
@@ -10747,7 +10747,7 @@
 			(uuid "e9ae4044-01fb-4e76-afa1-9ce8a76a21a9")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/ucw.3dshapes/ucw_sod323.wrl"
+		(model "${KIPRJMOD}/ucw.3dshapes/ucw_sod323.step"
 			(offset (xyz 0 0 0))
 			(scale (xyz 1 1 1))
 			(rotate (xyz 0 0 0))
@@ -11274,7 +11274,7 @@
 			(uuid "0df56845-5a5e-4971-bbfe-5faa47efbb7e")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/ucw.3dshapes/ucw_led0603.wrl"
+		(model "${KIPRJMOD}/ucw.3dshapes/ucw_led0603.step"
 			(offset (xyz 0 0 0))
 			(scale (xyz 1 1 1))
 			(rotate (xyz 0 0 0))
@@ -11610,7 +11610,7 @@
 			(uuid "6dedf8bd-b6c0-4885-8204-ad217bb4cbce")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/ucw.3dshapes/ucw_0603.wrl"
+		(model "${KIPRJMOD}/ucw.3dshapes/ucw_0603.step"
 			(offset (xyz 0 0 0))
 			(scale (xyz 1 1 1))
 			(rotate (xyz 0 0 0))
@@ -11882,7 +11882,7 @@
 			(uuid "22b2af9b-b506-49fd-a8cc-7cbb2eee2e1a")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/ucw.3dshapes/ucw_led0603.wrl"
+		(model "${KIPRJMOD}/ucw.3dshapes/ucw_led0603.step"
 			(offset (xyz 0 0 0))
 			(scale (xyz 1 1 1))
 			(rotate (xyz 0 0 0))
@@ -12154,7 +12154,7 @@
 			(uuid "02a3cde0-61ac-4a57-9e31-fb16a7a2d8f3")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/ucw.3dshapes/ucw_led0603.wrl"
+		(model "${KIPRJMOD}/ucw.3dshapes/ucw_led0603.step"
 			(offset (xyz 0 0 0))
 			(scale (xyz 1 1 1))
 			(rotate (xyz 0 0 0))
@@ -12683,7 +12683,7 @@
 			(uuid "dcf95c60-4bd4-47d4-af0b-1a691cb32d20")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/ucw.3dshapes/ucw_sod323.wrl"
+		(model "${KIPRJMOD}/ucw.3dshapes/ucw_sod323.step"
 			(offset (xyz 0 0 0))
 			(scale (xyz 1 1 1))
 			(rotate (xyz 0 0 0))
@@ -13210,7 +13210,7 @@
 			(uuid "ea58ab86-6059-493a-a931-9247452282ca")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/ucw.3dshapes/ucw_sod323.wrl"
+		(model "${KIPRJMOD}/ucw.3dshapes/ucw_sod323.step"
 			(offset (xyz 0 0 0))
 			(scale (xyz 1 1 1))
 			(rotate (xyz 0 0 0))
@@ -13482,7 +13482,7 @@
 			(uuid "d1a68f57-34c2-4c9c-a312-a998429152fd")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/ucw.3dshapes/ucw_led0603.wrl"
+		(model "${KIPRJMOD}/ucw.3dshapes/ucw_led0603.step"
 			(offset (xyz 0 0 0))
 			(scale (xyz 1 1 1))
 			(rotate (xyz 0 0 0))
@@ -13754,7 +13754,7 @@
 			(uuid "b5e464f6-362e-4c79-8eaf-0065887b1dda")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/ucw.3dshapes/ucw_led0603.wrl"
+		(model "${KIPRJMOD}/ucw.3dshapes/ucw_led0603.step"
 			(offset (xyz 0 0 0))
 			(scale (xyz 1 1 1))
 			(rotate (xyz 0 0 0))
@@ -14261,7 +14261,7 @@
 			(uuid "0f5141db-5a22-4502-ab56-5b2c8141a2de")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/ucw.3dshapes/ucw_0603.wrl"
+		(model "${KIPRJMOD}/ucw.3dshapes/ucw_0603.step"
 			(offset (xyz 0 0 0))
 			(scale (xyz 1 1 1))
 			(rotate (xyz 0 0 0))
@@ -14513,7 +14513,7 @@
 			(uuid "ddda843f-2780-4798-8968-2241aed2eea0")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/ucw.3dshapes/ucw_0603.wrl"
+		(model "${KIPRJMOD}/ucw.3dshapes/ucw_0603.step"
 			(offset (xyz 0 0 0))
 			(scale (xyz 1 1 1))
 			(rotate (xyz 0 0 0))
@@ -14785,7 +14785,7 @@
 			(uuid "c838e9a0-4f0b-4e99-b02b-fa2d551c8696")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/ucw.3dshapes/ucw_sod323.wrl"
+		(model "${KIPRJMOD}/ucw.3dshapes/ucw_sod323.step"
 			(offset (xyz 0 0 0))
 			(scale (xyz 1 1 1))
 			(rotate (xyz 0 0 0))
@@ -15057,7 +15057,7 @@
 			(uuid "bdc4f7f8-26a6-4741-bbc1-24c7feab44d3")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/ucw.3dshapes/ucw_led0603.wrl"
+		(model "${KIPRJMOD}/ucw.3dshapes/ucw_led0603.step"
 			(offset (xyz 0 0 0))
 			(scale (xyz 1 1 1))
 			(rotate (xyz 0 0 0))
@@ -15329,7 +15329,7 @@
 			(uuid "1fe54d0a-786f-4c87-bab2-22da80265b5b")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/ucw.3dshapes/ucw_led0603.wrl"
+		(model "${KIPRJMOD}/ucw.3dshapes/ucw_led0603.step"
 			(offset (xyz 0 0 0))
 			(scale (xyz 1 1 1))
 			(rotate (xyz 0 0 0))
@@ -15601,7 +15601,7 @@
 			(uuid "986c919d-7158-4823-bdd6-0b91024862e1")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/ucw.3dshapes/ucw_led0603.wrl"
+		(model "${KIPRJMOD}/ucw.3dshapes/ucw_led0603.step"
 			(offset (xyz 0 0 0))
 			(scale (xyz 1 1 1))
 			(rotate (xyz 0 0 0))
@@ -15873,7 +15873,7 @@
 			(uuid "f5d866d8-1ed8-4e27-b2c3-74df411afd29")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/ucw.3dshapes/ucw_led0603.wrl"
+		(model "${KIPRJMOD}/ucw.3dshapes/ucw_led0603.step"
 			(offset (xyz 0 0 0))
 			(scale (xyz 1 1 1))
 			(rotate (xyz 0 0 0))
@@ -16145,7 +16145,7 @@
 			(uuid "ff645567-c80d-4c8d-a004-b906193e0393")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/ucw.3dshapes/ucw_led0603.wrl"
+		(model "${KIPRJMOD}/ucw.3dshapes/ucw_led0603.step"
 			(offset (xyz 0 0 0))
 			(scale (xyz 1 1 1))
 			(rotate (xyz 0 0 0))
@@ -16337,7 +16337,7 @@
 			(uuid "3862593a-9ad4-4a54-958e-edb6b625cf3a")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/ucw.3dshapes/ucw_cr2032.wrl"
+		(model "${KIPRJMOD}/ucw.3dshapes/ucw_cr2032.step"
 			(offset (xyz 0 0 0))
 			(scale (xyz 1 1 1))
 			(rotate (xyz 0 0 0))
@@ -16609,7 +16609,7 @@
 			(uuid "e96f6fe2-c0f6-4758-ab48-6a15929b9dc3")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/ucw.3dshapes/ucw_sod323.wrl"
+		(model "${KIPRJMOD}/ucw.3dshapes/ucw_sod323.step"
 			(offset (xyz 0 0 0))
 			(scale (xyz 1 1 1))
 			(rotate (xyz 0 0 0))
@@ -16881,7 +16881,7 @@
 			(uuid "047ae410-e7f9-4cd4-976c-72f1cb4ce20a")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/ucw.3dshapes/ucw_led0603.wrl"
+		(model "${KIPRJMOD}/ucw.3dshapes/ucw_led0603.step"
 			(offset (xyz 0 0 0))
 			(scale (xyz 1 1 1))
 			(rotate (xyz 0 0 0))
@@ -17133,7 +17133,7 @@
 			(uuid "35704a1a-3fc1-43d6-99d0-8b5c2e95a449")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/ucw.3dshapes/ucw_0805.wrl"
+		(model "${KIPRJMOD}/ucw.3dshapes/ucw_0805.step"
 			(offset (xyz 0 0 0))
 			(scale (xyz 1 1 1))
 			(rotate (xyz 0 0 0))
@@ -17385,7 +17385,7 @@
 			(uuid "79e29012-cd75-4574-a1be-91e383dfd0cd")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/ucw.3dshapes/ucw_0603.wrl"
+		(model "${KIPRJMOD}/ucw.3dshapes/ucw_0603.step"
 			(offset (xyz 0 0 0))
 			(scale (xyz 1 1 1))
 			(rotate (xyz 0 0 0))
@@ -17767,7 +17767,7 @@
 			(uuid "27988411-7bd0-4796-ad9f-fdb229a62199")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/ucw.3dshapes/ucw_slide.wrl"
+		(model "${KIPRJMOD}/ucw.3dshapes/ucw_slide.step"
 			(offset (xyz 0 0 0))
 			(scale (xyz 1 1 1))
 			(rotate (xyz 0 0 0))
@@ -18529,7 +18529,7 @@
 			(uuid "1a8ce7a5-49bc-471a-b03e-c13ed95ec72a")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/ucw.3dshapes/ucw_0603.wrl"
+		(model "${KIPRJMOD}/ucw.3dshapes/ucw_0603.step"
 			(offset (xyz 0 0 0))
 			(scale (xyz 1 1 1))
 			(rotate (xyz 0 0 0))
@@ -18801,7 +18801,7 @@
 			(uuid "6a3f5cdc-738a-454f-99a6-fbe442b7715d")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/ucw.3dshapes/ucw_sod323.wrl"
+		(model "${KIPRJMOD}/ucw.3dshapes/ucw_sod323.step"
 			(offset (xyz 0 0 0))
 			(scale (xyz 1 1 1))
 			(rotate (xyz 0 0 0))
@@ -19073,7 +19073,7 @@
 			(uuid "bef46151-c3e1-4df4-a087-f8ea3d7f85f2")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/ucw.3dshapes/ucw_sod323.wrl"
+		(model "${KIPRJMOD}/ucw.3dshapes/ucw_sod323.step"
 			(offset (xyz 0 0 0))
 			(scale (xyz 1 1 1))
 			(rotate (xyz 0 0 0))
@@ -19600,7 +19600,7 @@
 			(uuid "c0ce750f-15c8-4133-87ef-28edbbf39335")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/ucw.3dshapes/ucw_sod323.wrl"
+		(model "${KIPRJMOD}/ucw.3dshapes/ucw_sod323.step"
 			(offset (xyz 0 0 0))
 			(scale (xyz 1 1 1))
 			(rotate (xyz 0 0 0))
@@ -19872,7 +19872,7 @@
 			(uuid "d632716c-7058-4100-832b-cf9f63286ed4")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/ucw.3dshapes/ucw_sod323.wrl"
+		(model "${KIPRJMOD}/ucw.3dshapes/ucw_sod323.step"
 			(offset (xyz 0 0 0))
 			(scale (xyz 1 1 1))
 			(rotate (xyz 0 0 0))
@@ -23251,7 +23251,7 @@
 			(uuid "4d7a6515-7c8e-411c-9e6d-91a9c1583fa8")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/ucw.3dshapes/ucw_xiao.wrl"
+		(model "${KIPRJMOD}/ucw.3dshapes/ucw_xiao.step"
 			(offset (xyz 0 0 0))
 			(scale (xyz 1 1 1))
 			(rotate (xyz 0 0 0))
@@ -23503,7 +23503,7 @@
 			(uuid "1fad8263-1c2b-465a-9e90-d2bee3bb4894")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/ucw.3dshapes/ucw_0603.wrl"
+		(model "${KIPRJMOD}/ucw.3dshapes/ucw_0603.step"
 			(offset (xyz 0 0 0))
 			(scale (xyz 1 1 1))
 			(rotate (xyz 0 0 0))
@@ -24285,7 +24285,7 @@
 			(uuid "9eae87ef-6afa-4f39-a479-c23a0a25759c")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/ucw.3dshapes/ucw_sod323.wrl"
+		(model "${KIPRJMOD}/ucw.3dshapes/ucw_sod323.step"
 			(offset (xyz 0 0 0))
 			(scale (xyz 1 1 1))
 			(rotate (xyz 0 0 0))
@@ -24557,7 +24557,7 @@
 			(uuid "97c01cf9-1f79-463e-88e5-6d56117de199")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/ucw.3dshapes/ucw_sod323.wrl"
+		(model "${KIPRJMOD}/ucw.3dshapes/ucw_sod323.step"
 			(offset (xyz 0 0 0))
 			(scale (xyz 1 1 1))
 			(rotate (xyz 0 0 0))
