@@ -87,9 +87,9 @@ KiCad side from the routed board (it runs as part of `build_pcb.sh`):
 
 ![The board with parts and keycaps](docs/board-3d.png)
 
-Every part also has a simple 3D model (`pcb/ucw.3dshapes/`, boxes and
+Every part also has a simple STEP 3D model (`pcb/ucw.3dshapes/`, boxes and
 cylinders from the datasheet outlines, not exact CAD), so KiCad's 3D viewer
-shows the populated board; `docs/board-3d-parts.png` is the same without
+and its STEP export (File > Export > STEP) show the populated board; `docs/board-3d-parts.png` is the same without
 keycaps. The switches use the real Kailh STEP model (`PG1316S.step`, copied from
 `library/leptiosis.pretty`); the mounting holes and the test pad have no 3D
 model. The preview images still draw the switch as a simple box.
